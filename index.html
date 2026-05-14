@@ -101,7 +101,7 @@
   </nav>
 
   <main class="relative z-10">    <!-- HERO SECTION -->
-    <section id="hero" class="min-h-screen flex items-center px-8 md:px-16 pt-24 pb-12 max-w-[1600px] mx-auto relative">
+    <section id="hero" class="min-h-screen flex flex-col justify-center px-8 md:px-16 pt-24 pb-12 max-w-[1600px] mx-auto relative">
       <div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div class="lg:col-span-7 fade-in-up" style="animation-delay: 0.1s">
           <div class="flex items-center gap-3 mb-6">
@@ -140,34 +140,9 @@
             <span data-lang="pt" class="hidden">Workflows nativos de IA</span>
             <span data-lang="pt" class="hidden">Mercado americano</span>
           </div>
-          <!-- Core Operations: MOBILE ONLY - inside hero column, below stats -->
-          <div class="lg:hidden mt-8">
-            <div class="glass-panel p-8 rounded-[2.5rem] relative overflow-hidden group">
-              <div class="absolute top-0 right-0 w-32 h-32 bg-neonBlue/20 blur-[60px] rounded-full group-hover:bg-neonBlue/30 transition-all"></div>
-              <h3 class="text-lg font-medium mb-6 flex items-center gap-3 relative z-10">
-                <iconify-icon icon="solar:layers-minimalistic-linear" class="text-neonBlue" width="24"></iconify-icon>
-                <span data-lang="en">Core Operations</span>
-                <span data-lang="pt">Operações Principais</span>
-              </h3>
-              <div class="flex flex-wrap gap-2 mb-8 relative z-10">
-                <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide">Branding</span>
-                <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide">Growth</span>
-                <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide"><span data-lang="en">AI Systems</span><span data-lang="pt">Sistemas IA</span></span>
-                <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide"><span data-lang="en">Creative Strategy</span><span data-lang="pt">Estratégia Criativa</span></span>
-                <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide"><span data-lang="en">Behavioral Marketing</span><span data-lang="pt">Marketing Comportamental</span></span>
-                <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide">Performance</span>
-              </div>
-              <div class="p-5 bg-white/[0.02] border border-white/5 rounded-2xl relative z-10">
-                <p class="text-sm text-white/60 leading-relaxed font-light">
-                  <span data-lang="en">I build revenue-oriented workflows that connect brand clarity, customer behavior, AI-assisted production and commercial delivery into scalable results.</span>
-                  <span data-lang="pt">Construo workflows orientados a receita que conectam clareza de marca, comportamento do cliente, produção assistida por IA e entrega comercial em resultados escaláveis.</span>
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
         
-      <!-- Core Operations: hidden on mobile inside grid (alignment bug) -->
+      <!-- Core Operations: desktop only inside grid -->
         <div class="hidden lg:block lg:col-span-5 fade-in-up" style="animation-delay: 0.3s">
           <div class="glass-panel p-8 md:p-10 rounded-[2.5rem] relative overflow-hidden group">
             <div class="absolute top-0 right-0 w-32 h-32 bg-neonBlue/20 blur-[60px] rounded-full group-hover:bg-neonBlue/30 transition-all"></div>
@@ -193,6 +168,33 @@
           </div>
         </div>
       </div>
+
+      <!-- Core Operations: mobile only block (centered) -->
+      <div class="lg:hidden w-full mt-10 fade-in-up" style="animation-delay: 0.35s">
+        <div class="glass-panel p-7 rounded-[2rem] relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-neonBlue/20 blur-[60px] rounded-full"></div>
+          <h3 class="text-base font-medium mb-5 flex items-center justify-center gap-3 relative z-10">
+            <iconify-icon icon="solar:layers-minimalistic-linear" class="text-neonBlue" width="20"></iconify-icon>
+            <span data-lang="en">Core Operations</span>
+            <span data-lang="pt">Operações Principais</span>
+          </h3>
+          <div class="flex flex-wrap justify-center gap-2 mb-6 relative z-10">
+            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide">Branding</span>
+            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide">Growth</span>
+            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide"><span data-lang="en">AI Systems</span><span data-lang="pt">Sistemas IA</span></span>
+            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide"><span data-lang="en">Creative Strategy</span><span data-lang="pt">Estratégia Criativa</span></span>
+            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide"><span data-lang="en">Behavioral Marketing</span><span data-lang="pt">Marketing Comportamental</span></span>
+            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide">Performance</span>
+          </div>
+          <div class="p-5 bg-white/[0.02] border border-white/5 rounded-2xl relative z-10 text-center">
+            <p class="text-sm text-white/60 leading-relaxed font-light">
+              <span data-lang="en">I build revenue-oriented workflows that connect brand clarity, customer behavior, AI-assisted production and commercial delivery into scalable results.</span>
+              <span data-lang="pt">Construo workflows orientados a receita que conectam clareza de marca, comportamento do cliente, produção assistida por IA e entrega comercial em resultados escaláveis.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div class="flex justify-center mt-12 pb-8">
         <div class="flex flex-col items-center gap-2 text-white/30 animate-bounce">
           <span class="text-[10px] font-mono tracking-widest uppercase">Scroll</span>
