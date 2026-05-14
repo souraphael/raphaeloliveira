@@ -1,0 +1,82 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #020205;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.font-mono {
+  font-family: 'Space Mono', monospace;
+}
+
+/* Enhanced Glass Effect */
+.glass-panel {
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    rgba(255, 255, 255, 0.01) 40%,
+    rgba(255, 255, 255, 0.005) 100%
+  );
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 20px 60px -10px rgba(0, 0, 0, 0.5),
+    inset 0 0 40px rgba(255, 255, 255, 0.01);
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Blobs - adjusted for soft neon blue */
+.blob {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.35;
+  z-index: -1;
+  animation: drift 15s infinite alternate ease-in-out;
+}
+.blob-1 { background: #0ea5e9; width: 600px; height: 600px; top: -10%; left: -10%; }
+.blob-2 { background: #0284c7; width: 500px; height: 500px; bottom: -10%; right: -5%; animation-delay: -5s; }
+.blob-3 { background: #38bdf8; width: 400px; height: 400px; top: 40%; left: 30%; opacity: 0.15; }
+
+@keyframes drift {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(30px, 50px); }
+}
+
+.text-glow { 
+  text-shadow: 0 0 40px rgba(14, 165, 233, 0.25); 
+}
+
+/* Custom Animations */
+.fade-in-up {
+  animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base custom selection */
+::selection {
+  background-color: rgba(14, 165, 233, 0.3);
+  color: white;
+}
+
+/* Professional Internationalization System */
+html[lang="en"] [data-lang="pt"] {
+  display: none !important;
+}
+html[lang="pt"] [data-lang="en"] {
+  display: none !important;
+}

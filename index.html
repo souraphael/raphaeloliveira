@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raphael Oliveira - Strategic Creative Operator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['Space Mono', 'monospace'],
+          },
+          colors: {
+            neonBlue: '#0ea5e9',
+            darkBg: '#020205',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="text-white selection:bg-neonBlue/30 overflow-x-hidden relative">
+  <!-- Background Elements -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-150 contrast-150 pointer-events-none mix-blend-overlay z-0"></div>
+  <div class="fixed inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:100px_100px] pointer-events-none z-0"></div>
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 w-full z-50 px-8 py-6 bg-gradient-to-b from-darkBg/90 to-transparent backdrop-blur-sm">
+    <div class="max-w-[1600px] mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center border border-white/10 shadow-[0_0_20px_rgba(14,165,233,0.15)]">
+          <iconify-icon icon="solar:command-bold" class="text-neonBlue" width="20"></iconify-icon>
+        </div>
+        <span class="text-lg font-medium tracking-tight">Raphael Oliveira</span>
+      </div>
+      <div class="hidden md:flex items-center gap-2 bg-white/5 p-1.5 rounded-full border border-white/10 backdrop-blur-md">
+        <a href="#hero" class="px-5 py-2 rounded-full text-white text-sm font-medium hover:bg-white/10 transition-all">
+          <span data-lang="en">Start</span>
+          <span data-lang="pt">Início</span>
+        </a>
+        <a href="#about" class="px-5 py-2 rounded-full text-white/60 hover:text-white hover:bg-white/5 text-sm font-medium transition-all">
+          <span data-lang="en">Operator</span>
+          <span data-lang="pt">Operador</span>
+        </a>
+        <a href="#cases" class="px-5 py-2 rounded-full text-white/60 hover:text-white hover:bg-white/5 text-sm font-medium transition-all">
+          <span data-lang="en">Systems</span>
+          <span data-lang="pt">Sistemas</span>
+        </a>
+        <a href="#philosophy" class="px-5 py-2 rounded-full text-white/60 hover:text-white hover:bg-white/5 text-sm font-medium transition-all">
+          <span data-lang="en">Philosophy</span>
+          <span data-lang="pt">Filosofia</span>
+        </a>
+      </div>
+      <div class="flex items-center gap-4">
+        <!-- Language Toggle -->
+        <div class="hidden md:flex items-center gap-2 bg-white/5 p-1.5 rounded-full border border-white/10 backdrop-blur-md">
+          <span class="text-[10px] font-mono font-medium text-white px-1" id="lang-en-label">EN</span>
+          <button id="lang-toggle" onclick="toggleLanguage()" class="relative w-9 h-5 rounded-full bg-white/10 border border-white/20 transition-colors focus:outline-none hover:bg-white/20" aria-label="Toggle language">
+            <div id="lang-knob" class="absolute left-[3px] top-[1.5px] w-3.5 h-3.5 bg-neonBlue rounded-full transition-transform duration-300"></div>
+          </button>
+          <span class="text-[10px] font-mono font-medium text-white/40 px-1" id="lang-pt-label">PT</span>
+        </div>
+        <a href="mailto:contato@raphael.com" class="px-6 py-2.5 rounded-full bg-neonBlue/10 text-neonBlue border border-neonBlue/20 hover:bg-neonBlue/20 text-sm font-medium transition-all">
+          <span data-lang="en">Get in touch</span>
+          <span data-lang="pt">Fale comigo</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="relative z-10">    <!-- HERO SECTION -->
+    <section id="hero" class="min-h-screen flex items-center px-8 md:px-16 pt-24 pb-12 max-w-[1600px] mx-auto relative">
+      <div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 fade-in-up" style="animation-delay: 0.1s">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-2 h-2 rounded-full bg-neonBlue shadow-[0_0_10px_rgba(14,165,233,0.8)] animate-pulse"></div>
+            <span class="text-xs font-mono text-neonBlue/80 tracking-widest uppercase">
+              <span data-lang="en">Available for new challenges</span>
+              <span data-lang="pt">Disponível para novos desafios</span>
+            </span>
+          </div>
+          <div class="flex flex-col md:flex-row md:items-center gap-8 mb-8">
+            <img src="./profile.png" alt="Raphael Oliveira" class="w-32 h-32 md:w-48 md:h-48 rounded-full border border-white/10 shadow-[0_0_50px_rgba(14,165,233,0.3)] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105" />
+            <h1 class="text-6xl md:text-7xl lg:text-8xl font-medium tracking-tighter leading-[1.05] text-glow">
+              <span data-lang="en">AI Brand & <br/>Growth Strategist.</span>
+              <span data-lang="pt">Estrategista de<br/>Marca & Growth.</span>
+            </h1>
+          </div>
+          <p class="text-xl md:text-2xl text-white/70 font-light mb-10 max-w-2xl leading-relaxed">
+            <span data-lang="en">Building scalable digital systems through branding, behavior and AI.</span>
+            <span data-lang="pt">Construindo ecossistemas digitais escaláveis através de branding, comportamento e IA.</span>
+          </p>
+          <div class="text-sm text-white/50 font-mono max-w-xl leading-relaxed border-l-2 border-neonBlue/30 pl-4">
+            <span data-lang="en">10+ years creating growth systems, live marketing campaigns, digital ecosystems and AI-powered creative operations.</span>
+            <span data-lang="pt">10+ anos criando sistemas de growth, campanhas de live marketing, ecossistemas digitais e operações criativas impulsionadas por IA.</span>
+          </div>
+        </div>
+        
+        <div class="lg:col-span-5 fade-in-up" style="animation-delay: 0.3s">
+          <div class="glass-panel p-8 md:p-10 rounded-[2.5rem] relative overflow-hidden group">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-neonBlue/20 blur-[60px] rounded-full group-hover:bg-neonBlue/30 transition-all"></div>
+            <h3 class="text-lg font-medium mb-6 flex items-center gap-3 relative z-10">
+              <iconify-icon icon="solar:layers-minimalistic-linear" class="text-neonBlue" width="24"></iconify-icon>
+              <span data-lang="en">Core Operations</span>
+              <span data-lang="pt">Operações Principais</span>
+            </h3>
+            <div class="flex flex-wrap gap-2 md:gap-3 mb-8 relative z-10">
+              <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] md:text-xs font-mono tracking-wide">Branding</span>
+              <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] md:text-xs font-mono tracking-wide">Growth</span>
+              <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] md:text-xs font-mono tracking-wide"><span data-lang="en">AI Systems</span><span data-lang="pt">Sistemas IA</span></span>
+              <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] md:text-xs font-mono tracking-wide"><span data-lang="en">Creative Strategy</span><span data-lang="pt">Estratégia Criativa</span></span>
+              <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] md:text-xs font-mono tracking-wide"><span data-lang="en">Behavioral Marketing</span><span data-lang="pt">Marketing Comportamental</span></span>
+              <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] md:text-xs font-mono tracking-wide">Performance</span>
+            </div>
+            <div class="p-6 bg-white/[0.02] border border-white/5 rounded-2xl relative z-10">
+              <p class="text-sm md:text-base text-white/60 leading-relaxed font-light">
+                <span data-lang="en">I build digital ecosystems designed to grow brands, structure operations and create scalable customer experiences through strategy, storytelling and intelligent systems.</span>
+                <span data-lang="pt">Eu construo ecossistemas digitais projetados para crescer marcas, estruturar operações e criar experiências de cliente escaláveis através de estratégia, storytelling e sistemas inteligentes.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 animate-bounce">
+        <span class="text-[10px] font-mono tracking-widest uppercase">Scroll</span>
+        <iconify-icon icon="solar:arrow-down-linear" width="20"></iconify-icon>
+      </div>
+    </section>
+
+    <!-- SECTION 2: FROM DESIGNER TO OPERATOR -->
+    <section id="about" class="min-h-screen flex items-center px-8 md:px-16 py-24 max-w-[1600px] mx-auto border-t border-white/5">
+      <div class="max-w-4xl mx-auto text-center">
+        <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-8 inline-block"><span data-lang="en">The Journey</span><span data-lang="pt">A Jornada</span></span>
+        <h2 class="text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight text-glow mb-16 leading-[1.1]">
+          <span data-lang="en">From designer to<br/> strategic operator.</span>
+          <span data-lang="pt">De designer a<br/> operador estratégico.</span>
+        </h2>
+        
+        <div class="space-y-12 text-lg md:text-2xl text-white/60 font-light leading-relaxed text-left">
+          <p class="glass-panel p-10 md:p-16 rounded-[3rem] text-center">
+            <span data-lang="en">Started as a graphic designer over a decade ago and evolved into a multidisciplinary strategist working across branding, growth, digital systems, live marketing, behavioral communication and AI-driven creative operations.</span>
+            <span data-lang="pt">Comecei como designer gráfico há mais de uma década e evoluí para um estrategista multidisciplinar atuando em branding, growth, sistemas digitais, live marketing, comunicação comportamental e operações criativas com IA.</span>
+          </p>
+          <div class="max-w-3xl mx-auto">
+            <p class="pl-8 border-l-2 border-neonBlue/30">
+              <span data-lang="en">Throughout the years, I learned how businesses actually grow:<br/>
+              <span class="text-white font-medium">not only through aesthetics, but through positioning, systems, customer psychology, operational structure and execution.</span></span>
+              <span data-lang="pt">Ao longo dos anos, aprendi como os negócios realmente crescem:<br/>
+              <span class="text-white font-medium">não apenas através da estética, mas através de posicionamento, sistemas, psicologia do cliente, estrutura operacional e execução.</span></span>
+            </p>
+          </div>
+          <p class="text-3xl md:text-4xl text-white font-medium text-center pt-8 text-glow">
+            <span data-lang="en">My work today sits between strategy, creativity, technology and commercial thinking.</span>
+            <span data-lang="pt">Meu trabalho hoje transita entre estratégia, criatividade, tecnologia e visão comercial.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: LESS PAPER & ADAPTATION -->
+    <section id="cases" class="px-8 md:px-16 py-24 max-w-[1600px] mx-auto border-t border-white/5">
+      <div class="mb-12">
+        <span class="px-3 py-1 rounded-full bg-neonBlue/10 border border-neonBlue/20 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-6 inline-block"><span data-lang="en">Case Study 01</span><span data-lang="pt">Estudo de Caso 01</span></span>
+      </div>
+
+      <div class="glass-panel p-10 md:p-16 rounded-[3rem] relative overflow-hidden border border-white/5 flex flex-col gap-20">
+        <!-- Background glows -->
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-neonBlue/5 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-red-500/5 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <!-- 1. Intro / Context -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+          <div class="flex justify-center lg:order-1 order-2">
+            <img src="./assets/less-paper-logo-02.png" class="w-full max-w-[300px] object-cover rounded-3xl filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)] hover:scale-105 transition-transform duration-700" alt="Less Paper Official Logo">
+          </div>
+          <div class="lg:order-2 order-1">
+            <h2 class="text-5xl md:text-7xl font-bold tracking-tight mb-4 text-white flex items-center gap-4">
+              <img src="./assets/Logo-Less-Paper-icone-sem-fundo.png" class="h-16 md:h-20 object-contain filter drop-shadow-[0_0_15px_rgba(14,165,233,0.5)]" alt="Less Paper Icon">
+              Less Paper
+            </h2>
+            <h3 class="text-2xl text-white/70 font-light mb-8 leading-[1.3]">
+              <span data-lang="en">Building a remote digital agency before remote became mainstream.</span>
+              <span data-lang="pt">Construindo uma agência digital remota antes do remoto virar moda.</span>
+            </h3>
+            <div class="space-y-6 text-white/50 text-base font-light leading-relaxed">
+              <p><span data-lang="en">In 2018, I founded Less Paper with the vision of building a fully digital operation years before remote creative businesses became common.</span><span data-lang="pt">Em 2018, fundei a Less Paper com a visão de construir uma operação 100% digital anos antes de negócios criativos remotos se tornarem comuns.</span></p>
+              <p><span data-lang="en">I structured distributed workflows using freelancers and remote collaborators, coordinating multiple simultaneous projects while maintaining a lean operation model.</span><span data-lang="pt">Estruturei fluxos de trabalho distribuídos usando freelancers e colaboradores remotos, coordenando múltiplos projetos simultâneos mantendo um modelo de operação enxuta.</span></p>
+              <p class="text-white/90 font-medium pl-6 border-l-2 border-neonBlue/30"><span data-lang="en">During the pandemic, while many businesses struggled, the agency continued running remotely, generating more than R$500K in projects.</span><span data-lang="pt">Durante a pandemia, enquanto muitos negócios sofreram, a agência continuou rodando remotamente, gerando mais de R$500 mil em projetos.</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+
+        <!-- 2. Villa Rizza / 8Ps Award -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+          <div class="lg:col-span-5">
+            <h4 class="text-sm font-mono text-neonBlue tracking-widest uppercase mb-4 flex items-center gap-3">
+              <iconify-icon icon="solar:cup-star-bold" width="20"></iconify-icon> <span data-lang="en">National 8Ps Award (2018/2019)</span><span data-lang="pt">Prêmio Nacional 8Ps (2018/2019)</span>
+            </h4>
+            <h3 class="text-3xl md:text-4xl font-medium mb-6"><span data-lang="en">Extreme ROI in 1 Week</span><span data-lang="pt">ROI Extremo em 1 Semana</span></h3>
+            <div class="space-y-4 text-white/60 font-light text-sm leading-relaxed">
+              <p><span data-lang="en">During Conrado Adolpho's 8Ps immersion in São Paulo, I was challenged to apply the concepts in real-time. I executed a high-speed campaign for Villa Rizza's New Year's Eve event.</span><span data-lang="pt">Durante a imersão 8Ps do Conrado Adolpho em São Paulo, fui desafiado a aplicar os conceitos em tempo real. Executei uma campanha de alta velocidade para o Réveillon da Villa Rizza.</span></p>
+              <p><span data-lang="en">With an investment of only <strong class="text-white">R$ 600 in Facebook Ads</strong>, the strategy generated massive online ticket sales through Eventbrite in just one week.</span><span data-lang="pt">Com um investimento de apenas <strong class="text-white">R$ 600 em Facebook Ads</strong>, a estratégia gerou um volume massivo de vendas online via Eventbrite em apenas uma semana.</span></p>
+              <p><span data-lang="en">This aggressive and highly optimized execution won me a national marketing award in Brasília the following year, proving that systemic thinking beats large budgets.</span><span data-lang="pt">Essa execução agressiva e altamente otimizada me rendeu um prêmio nacional de marketing em Brasília no ano seguinte, provando que pensamento sistêmico vence grandes orçamentos.</span></p>
+            </div>
+          </div>
+          
+          <div class="lg:col-span-7 relative w-full flex flex-col items-end justify-center pt-8">
+            <!-- Eventbrite Sales Base -->
+            <img src="./assets/eventbrite-clean.png" class="relative z-10 w-[85%] md:w-[75%] rounded-2xl filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)] grayscale hover:grayscale-0 transition-all duration-500" alt="Eventbrite Sales Dashboard">
+            
+            <!-- Bottom Section (Collage overlap) -->
+            <div class="relative z-20 w-full flex items-end gap-4 md:gap-6 -mt-8 md:-mt-16 pr-[5%] md:pr-0">
+              <!-- Award (Overlaps the left side of the dashboard) -->
+              <img src="./assets/0.jpg" class="w-[140px] h-[140px] md:w-[220px] md:h-[220px] shrink-0 rounded-xl object-cover border-[6px] border-[#0a0a0f] filter drop-shadow-[0_20px_30px_rgba(0,0,0,0.9)] grayscale hover:grayscale-0 hover:scale-105 transition-transform duration-500" alt="8Ps Award">
+              
+              <!-- Logo and Explanatory Text block -->
+              <div class="flex items-center gap-4 bg-[#0a0a0f]/80 backdrop-blur-md border border-white/5 p-4 md:p-5 rounded-2xl mb-2 md:mb-4">
+                <img src="./assets/Logo-Reveillon-Negativa.png" class="w-[80px] md:w-[120px] shrink-0 object-contain filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)] opacity-90 hover:opacity-100 hover:scale-105 transition-all duration-500" alt="Villa Rizza Logo">
+                <p class="text-[10px] md:text-xs text-white/50 font-light leading-relaxed border-l border-white/10 pl-4 m-0">
+                  <span data-lang="en">Driving ultra-targeted Facebook traffic to a streamlined Eventbrite checkout. We turned a minimal ad spend into maximum event capacity.</span>
+                  <span data-lang="pt">Tráfego ultra-segmentado no Facebook direto para o checkout do Eventbrite. Transformamos um orçamento mínimo em capacidade máxima no evento.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+
+        <!-- 3. Domatus Pivot -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center relative z-10">
+          <div class="lg:col-span-7 flex justify-center">
+            <img src="./assets/domatus-composed.png" class="w-full h-auto object-contain scale-[1.25] -translate-y-10 md:-translate-y-16 filter drop-shadow-[0_30px_50px_rgba(0,0,0,0.8)] hover:scale-[1.3] transition-transform duration-700" alt="Domatus Case Composition">
+          </div>
+
+          <div class="lg:col-span-5">
+            <h4 class="text-sm font-mono text-red-400 tracking-widest uppercase mb-4 flex items-center gap-3">
+              <iconify-icon icon="solar:flame-bold" width="20"></iconify-icon> <span data-lang="en">The 2020 Pandemic Pivot</span><span data-lang="pt">O Pivô da Pandemia em 2020</span>
+            </h4>
+            <h3 class="text-3xl md:text-4xl font-medium mb-6"><span data-lang="en">Domatus: Adapting to Survive</span><span data-lang="pt">Domatus: Adaptação para Sobreviver</span></h3>
+            <div class="space-y-4 text-white/60 font-light text-sm leading-relaxed">
+              <p><span data-lang="en">Domatus was a client specialized in digital security and CCTV. In 2020, just after I won the 8Ps award, the pandemic hit and froze the traditional security market.</span><span data-lang="pt">A Domatus era um cliente especializado em segurança digital e CFTV. Em 2020, logo após eu ganhar o prêmio 8Ps, a pandemia atingiu e congelou o mercado tradicional de segurança.</span></p>
+              <p><span data-lang="en">Instead of waiting, we turned the ship 180 degrees. Leveraging their HaikiVision supplier, we pivoted the entire marketing strategy to sell high-end thermal cameras (costing R$ 50,000 each) to public agencies, courts, and supermarkets for fever detection.</span><span data-lang="pt">Em vez de esperar, giramos o barco 180 graus. Usando o fornecedor HaikiVision deles, pivotamos toda a estratégia de marketing para vender câmeras térmicas de ponta (custando R$ 50.000 cada) para órgãos públicos, tribunais e supermercados para detecção de febre.</span></p>
+              <p><span data-lang="en">This required lightning-fast adaptation, building new digital assets, and leading the client through a completely new market reality. A true test of grit and operational leadership.</span><span data-lang="pt">Isso exigiu uma adaptação ultrarrápida, construindo novos ativos digitais e liderando o cliente em uma realidade de mercado completamente nova. Um verdadeiro teste de resiliência e liderança operacional.</span></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: FIESTA MOTEL -->
+    <section class="min-h-screen flex items-center px-8 md:px-16 py-24 max-w-[1600px] mx-auto border-t border-white/5">
+      <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div class="order-2 lg:order-1 glass-panel rounded-[3rem] relative overflow-hidden group border border-white/5 flex flex-col">
+          <div class="h-64 w-full relative overflow-hidden">
+             <div class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10"></div>
+             <div class="absolute inset-0 bg-gradient-to-t from-[#020205] to-transparent z-10"></div>
+             <img src="./assets/suite-cinema.png" class="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" alt="Fiesta Motel" />
+          </div>
+          <div class="p-10 md:p-12 relative">
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-neonBlue/10 blur-[80px] rounded-full group-hover:bg-neonBlue/20 transition-all"></div>
+            <h4 class="text-sm font-mono text-white/40 tracking-widest uppercase mb-10 flex items-center gap-3">
+            <iconify-icon icon="solar:chart-square-linear" width="20"></iconify-icon>
+            <span data-lang="en">Impact</span><span data-lang="pt">Impacto</span>
+          </h4>
+          <div class="grid grid-cols-2 gap-6 md:gap-8">
+            <div class="bg-white/5 p-8 rounded-[2rem] border border-white/5 hover:bg-white/10 transition-colors">
+              <div class="text-4xl md:text-5xl font-light text-white mb-3">+5%</div>
+              <div class="text-sm text-white/50"><span data-lang="en">Occupancy growth in low-demand days</span><span data-lang="pt">Crescimento de ocupação em dias de baixa</span></div>
+            </div>
+            <div class="bg-white/5 p-8 rounded-[2rem] border border-white/5 hover:bg-white/10 transition-colors">
+              <div class="text-4xl md:text-5xl font-light text-white mb-3">+5%</div>
+              <div class="text-sm text-white/50"><span data-lang="en">Revenue growth tied to strategy</span><span data-lang="pt">Crescimento de receita atrelado à estratégia</span></div>
+            </div>
+            <div class="bg-white/5 p-8 rounded-[2rem] border border-white/5 hover:bg-white/10 transition-colors">
+              <div class="text-4xl md:text-5xl font-light text-white mb-3">4.0★</div>
+              <div class="text-sm text-white/50"><span data-lang="en">Reputation recovery (from ~2.5)</span><span data-lang="pt">Recuperação de reputação (de ~2.5)</span></div>
+            </div>
+            <div class="bg-white/5 p-8 rounded-[2rem] border border-white/5 hover:bg-white/10 transition-colors">
+              <div class="text-xl md:text-2xl font-medium text-white mb-3 mt-4"><span data-lang="en">AI Systems</span><span data-lang="pt">Sistemas de IA</span></div>
+              <div class="text-sm text-white/50"><span data-lang="en">Visual content pipelines</span><span data-lang="pt">Pipelines de conteúdo visual</span></div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="order-1 lg:order-2">
+          <span class="px-3 py-1 rounded-full bg-neonBlue/10 border border-neonBlue/20 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-6 inline-block"><span data-lang="en">Case Study 02</span><span data-lang="pt">Estudo de Caso 02</span></span>
+          <h2 class="text-5xl md:text-6xl font-medium tracking-tight mb-4 text-glow">Fiesta Motel</h2>
+          <h3 class="text-2xl md:text-3xl text-white/70 font-light mb-10 leading-[1.3]"><span data-lang="en">Turning operational bottlenecks into growth opportunities.</span><span data-lang="pt">Transformando gargalos operacionais em oportunidades de crescimento.</span></h3>
+          
+          <div class="space-y-6 text-white/50 text-base md:text-lg font-light leading-relaxed">
+            <p><span data-lang="en">At Fiesta Motel, I worked far beyond traditional marketing. Instead of starting from campaigns, I started from operational analysis: occupancy rates, revenue distribution, suite profitability, customer behavior and low-demand periods.</span><span data-lang="pt">No Fiesta Motel, trabalhei muito além do marketing tradicional. Em vez de começar pelas campanhas, comecei pela análise operacional: taxas de ocupação, distribuição de receita, lucratividade das suítes, comportamento do cliente e períodos de baixa demanda.</span></p>
+            <p><span data-lang="en">By analyzing internal operational data, I identified that increasing occupancy during weak days could generate meaningful revenue growth with minimal additional operational cost.</span><span data-lang="pt">Analisando os dados operacionais internos, identifiquei que aumentar a ocupação em dias fracos poderia gerar um crescimento significativo de receita com custo operacional adicional mínimo.</span></p>
+            <p class="pl-6 border-l-2 border-neonBlue/30 text-white/90 font-medium"><span data-lang="en">From this insight, I created the "Double Time" campaign: customers received double the booked time during low-demand weekdays. It increased occupancy and revenue, and was later replicated by competitors.</span><span data-lang="pt">A partir desse insight, criei a campanha "Tempo em Dobro": os clientes recebiam o dobro do tempo reservado durante os dias de semana de baixa demanda. Isso aumentou a ocupação e a receita, e mais tarde foi replicado por concorrentes.</span></p>
+            <p><span data-lang="en">I also helped create new suite concepts, including the Cinema Suite, which became one of the highest-demand experiences in the business.</span><span data-lang="pt">Também ajudei a criar novos conceitos de suítes, incluindo a Suíte Cinema, que se tornou uma das experiências de maior demanda no negócio.</span></p>
+            <p><span data-lang="en">Beyond campaigns, I contributed to reputation restructuring, Google review recovery, AI-assisted content creation, visual repositioning, and website redesign.</span><span data-lang="pt">Além de campanhas, contribuí para reestruturação de reputação, recuperação de avaliações no Google, criação de conteúdo assistida por IA, reposicionamento visual e reformulação do site.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: AI SMART STUDIOS -->
+    <section class="min-h-screen flex items-center px-8 md:px-16 py-24 max-w-[1600px] mx-auto border-t border-white/5">
+      <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div>
+          <span class="px-3 py-1 rounded-full bg-neonBlue/10 border border-neonBlue/20 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-6 inline-block"><span data-lang="en">Case Study 03</span><span data-lang="pt">Estudo de Caso 03</span></span>
+          <h2 class="text-5xl md:text-6xl font-medium tracking-tight mb-8 text-glow flex items-center gap-4">
+            AI Smart Studios
+          </h2>
+          
+          <!-- UPWORK CREDIBILITY BANNER -->
+          <div class="flex flex-wrap items-center gap-3 mb-10 p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md w-fit">
+            <img src="./assets/upwork-logo-white.png" class="h-5 md:h-6 object-contain mr-2 filter drop-shadow-[0_0_10px_rgba(20,168,0,0.5)]" alt="Upwork">
+            <span class="flex items-center gap-1.5 px-3 py-1 bg-[#14a800]/10 border border-[#14a800]/30 text-[#14a800] rounded-full text-[10px] md:text-xs font-mono font-medium">
+              <iconify-icon icon="solar:medal-star-bold" width="14"></iconify-icon> Top Rated
+            </span>
+            <span class="flex items-center gap-1.5 px-3 py-1 bg-white/5 border border-white/10 text-white/80 rounded-full text-[10px] md:text-xs font-mono">
+              <iconify-icon icon="solar:chart-square-bold" class="text-neonBlue" width="14"></iconify-icon> <span data-lang="en">100% Job Success</span><span data-lang="pt">100% de Sucesso</span>
+            </span>
+            <span class="flex items-center gap-1.5 px-3 py-1 bg-white/5 border border-white/10 text-white/80 rounded-full text-[10px] md:text-xs font-mono">
+              <iconify-icon icon="solar:star-bold" class="text-yellow-400" width="14"></iconify-icon> 5 Stars
+            </span>
+            <span class="flex items-center gap-1.5 px-3 py-1 bg-white/5 border border-white/10 text-white/80 rounded-full text-[10px] md:text-xs font-mono">
+              <iconify-icon icon="solar:star-bold" class="text-[#14a800]" width="14"></iconify-icon> Rising Talent
+            </span>
+          </div>
+
+          <h3 class="text-2xl md:text-3xl text-white/70 font-light mb-10 leading-[1.3]"><span data-lang="en">Surfing the AI wave before the market stabilized.</span><span data-lang="pt">Surfando a onda da IA antes do mercado estabilizar.</span></h3>
+          
+          <div class="space-y-6 text-white/50 text-base md:text-lg font-light leading-relaxed mb-10">
+            <p><span data-lang="en">When AI-generated video systems started reaching commercial quality, I quickly immersed myself in the technology and began building AI-driven creative pipelines focused on cinematic storytelling and scalable production.</span><span data-lang="pt">Quando os sistemas de vídeo gerados por IA começaram a atingir qualidade comercial, rapidamente mergulhei na tecnologia e comecei a construir pipelines criativos baseados em IA focados em storytelling cinematográfico e produção escalável.</span></p>
+            <p><span data-lang="en">Together with a business partner, I created AI Smart Studios targeting international clients through platforms like Upwork, operating directly in the U.S. market.</span><span data-lang="pt">Junto com um parceiro de negócios, criei o AI Smart Studios focado em clientes internacionais por meio de plataformas como Upwork, operando diretamente no mercado dos EUA.</span></p>
+            <p><span data-lang="en">The project pushed me into prompt engineering, AI filmmaking workflows, cinematic storytelling, high-speed creative iteration, and international positioning.</span><span data-lang="pt">O projeto me impulsionou para engenharia de prompts, fluxos de trabalho de filmmaking com IA, storytelling cinematográfico, iteração criativa em alta velocidade e posicionamento internacional.</span></p>
+            <p class="glass-panel p-8 rounded-3xl text-white/80 font-medium">
+              <span data-lang="en">One of the biggest lessons came from operational reality: AI production at high quality levels required heavy experimentation, constant iteration and significant technology costs, making pricing and scalability complex.</span>
+              <span data-lang="pt">Uma das maiores lições veio da realidade operacional: a produção com IA em níveis de alta qualidade exigia experimentação pesada, iteração constante e custos significativos de tecnologia, tornando a precificação e escalabilidade complexas.</span>
+            </p>
+            <p><span data-lang="en">Even though the business model became difficult to sustain financially, the project accelerated my expertise in AI-assisted production, storytelling systems and creative execution at a professional level.</span><span data-lang="pt">Embora o modelo de negócios tenha se tornado difícil de sustentar financeiramente, o projeto acelerou minha expertise em produção assistida por IA, sistemas de storytelling e execução criativa em nível profissional.</span></p>
+          </div>
+        </div>
+        
+        <div class="glass-panel rounded-[3rem] relative overflow-hidden group border border-white/5 flex flex-col">
+          <div class="w-full relative flex items-center justify-center pt-10 px-10">
+             <div class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 pointer-events-none"></div>
+             <div class="absolute inset-0 bg-gradient-to-t from-[#020205] to-transparent z-10 pointer-events-none"></div>
+             <img src="./assets/aismart-reviews.png" class="w-full h-auto object-contain relative z-20 grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700 rounded-t-2xl border-t border-x border-white/10 shadow-2xl" alt="AI Smart Studios Reviews" />
+          </div>
+          <div class="p-10 md:p-12 relative">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-neonBlue/10 blur-[80px] rounded-full group-hover:bg-neonBlue/20 transition-all"></div>
+            <h4 class="text-sm font-mono text-white/40 tracking-widest uppercase mb-10 flex items-center gap-3">
+            <iconify-icon icon="solar:cpu-linear" width="20"></iconify-icon>
+            <span data-lang="en">Capabilities Acquired</span><span data-lang="pt">Habilidades Adquiridas</span>
+          </h4>
+          <div class="flex flex-wrap gap-4 relative z-10">
+            <span class="px-5 py-3 rounded-xl bg-white/5 border border-white/10 text-white/90 text-sm font-mono hover:bg-white/10 transition-colors"><span data-lang="en">AI video production</span><span data-lang="pt">Produção de vídeo IA</span></span>
+            <span class="px-5 py-3 rounded-xl bg-white/5 border border-white/10 text-white/90 text-sm font-mono hover:bg-white/10 transition-colors"><span data-lang="en">U.S. market positioning</span><span data-lang="pt">Posicionamento EUA</span></span>
+            <span class="px-5 py-3 rounded-xl bg-white/5 border border-white/10 text-white/90 text-sm font-mono hover:bg-white/10 transition-colors"><span data-lang="en">Cinematic storytelling</span><span data-lang="pt">Storytelling de cinema</span></span>
+            <span class="px-5 py-3 rounded-xl bg-white/5 border border-white/10 text-white/90 text-sm font-mono hover:bg-white/10 transition-colors"><span data-lang="en">Prompt engineering</span><span data-lang="pt">Engenharia de Prompt</span></span>
+            <span class="px-5 py-3 rounded-xl bg-white/5 border border-white/10 text-white/90 text-sm font-mono hover:bg-white/10 transition-colors"><span data-lang="en">Viral marketing</span><span data-lang="pt">Marketing viral</span></span>
+            <span class="px-5 py-3 rounded-xl bg-white/5 border border-white/10 text-white/90 text-sm font-mono hover:bg-white/10 transition-colors"><span data-lang="en">International clients</span><span data-lang="pt">Clientes internacionais</span></span>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: AGROJOB -->
+    <section class="min-h-screen flex items-center px-8 md:px-16 py-24 max-w-[1600px] mx-auto border-t border-white/5">
+      <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div class="order-2 lg:order-1 glass-panel rounded-[3rem] relative overflow-hidden group border border-white/5 flex flex-col">
+          <div class="h-64 w-full relative overflow-hidden">
+             <div class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10"></div>
+             <div class="absolute inset-0 bg-gradient-to-t from-[#020205] to-transparent z-10"></div>
+             <img src="./assets/agrojob-drone.jpg" class="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" alt="Agrojob" />
+          </div>
+          <div class="p-10 md:p-12 relative">
+            <div class="absolute top-0 left-0 w-64 h-64 bg-neonBlue/10 blur-[80px] rounded-full group-hover:bg-neonBlue/20 transition-all"></div>
+            <h4 class="text-sm font-mono text-white/40 tracking-widest uppercase mb-10 flex items-center gap-3">
+            <iconify-icon icon="solar:target-linear" width="20"></iconify-icon>
+            <span data-lang="en">Coordination</span><span data-lang="pt">Coordenação</span>
+          </h4>
+          <ul class="space-y-6 text-white/80 text-base font-light">
+            <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue" width="24"></iconify-icon> <span data-lang="en">Experiential marketing activation</span><span data-lang="pt">Ativação de marketing de experiência</span></li>
+            <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue" width="24"></iconify-icon> <span data-lang="en">High-engagement live event strategy</span><span data-lang="pt">Estratégia de eventos ao vivo de alto engajamento</span></li>
+            <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue" width="24"></iconify-icon> <span data-lang="en">Brand positioning from scratch</span><span data-lang="pt">Posicionamento de marca do zero</span></li>
+            <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue" width="24"></iconify-icon> <span data-lang="en">Digital ecosystem development</span><span data-lang="pt">Desenvolvimento de ecossistema digital</span></li>
+            <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue" width="24"></iconify-icon> <span data-lang="en">Lead generation systems</span><span data-lang="pt">Sistemas de geração de leads</span></li>
+            <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue" width="24"></iconify-icon> <span data-lang="en">Recruitment communication workflows</span><span data-lang="pt">Fluxos de comunicação de recrutamento</span></li>
+            <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue" width="24"></iconify-icon> <span data-lang="en">Operational logistics & backup systems</span><span data-lang="pt">Logística operacional e sistemas de backup</span></li>
+          </ul>
+        </div>
+        </div>
+
+        <div class="order-1 lg:order-2">
+          <span class="px-3 py-1 rounded-full bg-neonBlue/10 border border-neonBlue/20 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-6 inline-block"><span data-lang="en">Case Study 04</span><span data-lang="pt">Estudo de Caso 04</span></span>
+          <h2 class="text-5xl md:text-6xl font-medium tracking-tight mb-4 text-glow">Agrojob</h2>
+          <h3 class="text-2xl md:text-3xl text-white/70 font-light mb-10 leading-[1.3]"><span data-lang="en">Making an unknown startup impossible to ignore.</span><span data-lang="pt">Tornando uma startup desconhecida impossível de ignorar.</span></h3>
+          
+          <div class="space-y-6 text-white/50 text-base md:text-lg font-light leading-relaxed">
+            <p><span data-lang="en">At Agrojob, the challenge wasn't only marketing. It was communication inside a traditionally closed and highly fragmented market.</span><span data-lang="pt">Na Agrojob, o desafio não era apenas marketing. Era comunicação dentro de um mercado tradicionalmente fechado e altamente fragmentado.</span></p>
+            <p><span data-lang="en">The business needed to speak with two completely different audiences: farm owners and rural workers. To solve this, I developed the company's branding, digital positioning, website structure, recruitment communication systems, paid campaigns and event strategies.</span><span data-lang="pt">O negócio precisava falar com dois públicos completamente diferentes: donos de fazendas e trabalhadores rurais. Para resolver isso, desenvolvi o branding da empresa, posicionamento digital, estrutura do site, sistemas de comunicação de recrutamento, campanhas pagas e estratégias de eventos.</span></p>
+            <p class="text-white/90 font-medium pl-6 border-l-2 border-neonBlue/30"><span data-lang="en">One of the strongest cases came during an agricultural drone event.</span><span data-lang="pt">Um dos cases mais fortes aconteceu durante um evento de drones agrícolas.</span></p>
+            <p><span data-lang="en">Instead of simply displaying products, I designed an interactive drone simulation experience where visitors could attempt a drone challenge in exchange for branded rewards. The activation transformed the stand into one of the busiest attractions of the event, generating massive engagement and lead capture through experiential marketing.</span><span data-lang="pt">Em vez de simplesmente exibir produtos, desenhei uma experiência interativa de simulação de drones onde os visitantes podiam tentar um desafio em troca de brindes da marca. A ativação transformou o estande em uma das atrações mais movimentadas do evento, gerando engajamento massivo e captura de leads através de marketing de experiência.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL SECTION: PHILOSOPHY & SKILLS -->
+    <section id="philosophy" class="min-h-screen flex flex-col justify-center px-8 md:px-16 py-24 max-w-[1600px] mx-auto border-t border-white/5 relative">
+      <div class="absolute inset-0 bg-gradient-to-t from-neonBlue/5 to-transparent pointer-events-none"></div>
+      <div class="max-w-5xl mx-auto text-center z-10">
+        <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-8 inline-block"><span data-lang="en">Philosophy</span><span data-lang="pt">Filosofia</span></span>
+        <h2 class="text-5xl md:text-7xl font-medium tracking-tight text-glow mb-12 leading-[1.1]">
+          <span data-lang="en">I don't see marketing as content.<br/><span class="text-white/50">I see it as systems, behavior and positioning.</span></span>
+          <span data-lang="pt">Eu não vejo marketing como conteúdo.<br/><span class="text-white/50">Eu vejo como sistemas, comportamento e posicionamento.</span></span>
+        </h2>
+        
+        <p class="text-xl md:text-3xl text-white/70 font-light mb-20 leading-relaxed max-w-4xl mx-auto">
+          <span data-lang="en">The strongest businesses are usually built by people capable of connecting strategy, psychology, operations, storytelling and execution into one coherent system.<br/><br/><span class="text-white font-medium">That intersection is where I operate.</span></span>
+          <span data-lang="pt">Os negócios mais fortes geralmente são construídos por pessoas capazes de conectar estratégia, psicologia, operações, storytelling e execução em um sistema coerente.<br/><br/><span class="text-white font-medium">Essa intersecção é onde eu opero.</span></span>
+        </p>
+
+        <div class="glass-panel p-12 md:p-16 rounded-[3rem] text-left relative overflow-hidden">
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-neonBlue/5 blur-[120px] rounded-full pointer-events-none"></div>
+          <h4 class="text-sm font-mono text-white/40 tracking-widest uppercase mb-12 text-center"><span data-lang="en">Core Competencies</span><span data-lang="pt">Competências Principais</span></h4>
+          <div class="flex flex-wrap justify-center gap-4 relative z-10">
+            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Growth Strategy</span><span data-lang="pt">Estratégia de Growth</span></span>
+            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Brand Strategy</span><span data-lang="pt">Estratégia de Marca</span></span>
+            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">AI Workflows</span><span data-lang="pt">Workflows com IA</span></span>
+            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Creative Direction</span><span data-lang="pt">Direção Criativa</span></span>
+            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Behavioral Marketing</span><span data-lang="pt">Marketing Comportamental</span></span>
+            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Performance Marketing</span><span data-lang="pt">Marketing de Performance</span></span>
+            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">UX Thinking</span><span data-lang="pt">Pensamento UX</span></span>
+            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Storytelling</span><span data-lang="pt">Storytelling</span></span>
+            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Live Marketing</span><span data-lang="pt">Live Marketing</span></span>
+            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Digital Strategy</span><span data-lang="pt">Estratégia Digital</span></span>
+            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Product Positioning</span><span data-lang="pt">Posicionamento de Produto</span></span>
+            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Systems Thinking</span><span data-lang="pt">Pensamento Sistêmico</span></span>
+            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Prompt Engineering</span><span data-lang="pt">Engenharia de Prompt</span></span>
+          </div>
+        </div>
+        
+        <div class="mt-24 pb-12">
+          <a href="mailto:contato@raphael.com" class="inline-flex items-center gap-4 px-10 py-5 rounded-full bg-neonBlue text-white text-lg font-medium hover:bg-neonBlue/80 hover:scale-105 transition-all shadow-[0_0_40px_rgba(14,165,233,0.4)]">
+            <span data-lang="en">Let's build together</span><span data-lang="pt">Vamos construir juntos</span>
+            <iconify-icon icon="solar:arrow-right-linear" width="24"></iconify-icon>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleLanguage() {
+      const knob = document.getElementById('lang-knob');
+      const isPt = document.documentElement.lang === 'pt';
+      
+      if (!isPt) {
+        document.documentElement.lang = 'pt';
+        knob.style.transform = 'translateX(16px)';
+        document.getElementById('lang-en-label').classList.replace('text-white', 'text-white/40');
+        document.getElementById('lang-pt-label').classList.replace('text-white/40', 'text-white');
+      } else {
+        document.documentElement.lang = 'en';
+        knob.style.transform = 'translateX(0)';
+        document.getElementById('lang-en-label').classList.replace('text-white/40', 'text-white');
+        document.getElementById('lang-pt-label').classList.replace('text-white', 'text-white/40');
+      }
+    }
+  </script>
+</body>
+</html>
