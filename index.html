@@ -346,7 +346,11 @@
         <!-- 1. Intro / Context -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
           <div class="flex justify-center lg:order-1 order-2">
-            <img src="./assets/less-paper-logo-02.png" class="w-full max-w-[300px] object-cover rounded-3xl filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)] hover:scale-105 transition-transform duration-700" alt="Less Paper Official Logo">
+            <div class="relative overflow-hidden rounded-3xl group max-w-[300px] w-full filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)]">
+              <div class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[#020205]/50 to-transparent z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700"></div>
+              <img src="./assets/less-paper-logo-02.png" class="w-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" alt="Less Paper Official Logo">
+            </div>
           </div>
           <div class="lg:order-2 order-1">
             <h2 class="text-5xl md:text-7xl font-bold tracking-tight mb-4 text-white flex items-center gap-4">
@@ -394,10 +398,18 @@
           
           <div class="lg:col-span-7 flex flex-col gap-2 pt-8 lg:ml-auto w-full">
             <!-- Eventbrite Sales Dashboard -->
-            <img src="./assets/eventbrite-clean.png" class="w-full md:w-[55%] md:mr-auto rounded-2xl filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)] grayscale hover:grayscale-0 transition-all duration-500 relative z-10 md:-mb-8" alt="Eventbrite Sales Dashboard">
+            <div class="relative overflow-hidden rounded-2xl group w-full md:w-[55%] md:mr-auto filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)] z-10 md:-mb-8">
+              <div class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[#020205]/50 to-transparent z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700"></div>
+              <img src="./assets/eventbrite-clean.png" class="w-full grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" alt="Eventbrite Sales Dashboard">
+            </div>
             <!-- Award photo + logo card - tight gap -->
             <div class="flex items-stretch gap-3 md:w-[90%] md:ml-auto relative z-0">
-              <img src="./assets/0.jpg" class="w-[90px] md:w-[170px] shrink-0 rounded-xl object-cover border-4 border-[#0a0a0f] filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)] grayscale hover:grayscale-0 transition-all duration-500" alt="8Ps Award">
+              <div class="relative overflow-hidden rounded-xl group shrink-0 w-[90px] md:w-[170px] border-4 border-[#0a0a0f] filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)]">
+                <div class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#020205]/50 to-transparent z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700"></div>
+                <img src="./assets/0.jpg" class="w-full h-full object-cover grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" alt="8Ps Award">
+              </div>
               <div class="flex flex-col justify-center gap-2 bg-white/[0.03] border border-white/5 p-3 md:p-5 rounded-2xl flex-1 md:flex-none md:w-[280px]">
                 <img src="./assets/Logo-Reveillon-Negativa.png" class="w-[80px] md:w-[130px] object-contain opacity-90" alt="Villa Rizza Logo">
                 <p class="text-[10px] md:text-xs text-white/50 font-light leading-relaxed">
@@ -414,7 +426,10 @@
         <!-- 3. Domatus Pivot -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center relative z-10">
           <div class="lg:col-span-7 flex justify-center">
-            <img src="./assets/domatus-composed.png" class="w-full h-auto object-contain scale-[1.55] md:scale-[1.15] -translate-y-4 md:-translate-y-8 filter drop-shadow-[0_30px_50px_rgba(0,0,0,0.8)] hover:scale-[1.6] md:hover:scale-[1.25] transition-transform duration-700" alt="Domatus Case Composition">
+            <div class="relative group w-full filter drop-shadow-[0_30px_50px_rgba(0,0,0,0.8)] scale-[1.55] md:scale-[1.15] -translate-y-4 md:-translate-y-8 hover:scale-[1.6] md:hover:scale-[1.25] transition-transform duration-700">
+               <div class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700"></div>
+               <img src="./assets/domatus-composed.png" class="w-full h-auto object-contain grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700" alt="Domatus Case Composition">
+            </div>
           </div>
 
           <div class="lg:col-span-5">
@@ -533,7 +548,9 @@
         <div class="glass-panel rounded-[3rem] relative overflow-hidden group border border-white/5 flex flex-col">
           <!-- Image: scrollable on mobile so user can read the full screenshot -->
           <div class="w-full overflow-x-auto">
-            <div class="min-w-full relative">
+            <div class="min-w-full relative overflow-hidden">
+              <div class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[#020205]/50 to-transparent z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700"></div>
               <img src="./assets/aismart-reviews.png" class="w-full h-auto grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700" alt="AI Smart Studios Reviews" />
             </div>
           </div>
