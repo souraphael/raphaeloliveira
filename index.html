@@ -111,8 +111,10 @@
               <span data-lang="pt">Disponível para novos desafios</span>
             </span>
           </div>
-          <div class="flex flex-col md:flex-row md:items-center gap-6 mb-8">
-            <img src="./profile.png" alt="Raphael Oliveira" class="w-36 h-36 md:w-48 md:h-48 rounded-full border border-white/10 shadow-[0_0_50px_rgba(14,165,233,0.3)] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105 flex-shrink-0" />
+          <!-- Mobile: photo centered, then h1 left. Desktop: side by side -->
+          <img src="./profile.png" alt="Raphael Oliveira" class="w-36 h-36 md:w-48 md:h-48 rounded-full border border-white/10 shadow-[0_0_50px_rgba(14,165,233,0.3)] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105 flex-shrink-0 block mx-auto md:hidden mb-4" />
+          <div class="flex md:flex-row md:items-center gap-6 mb-8">
+            <img src="./profile.png" alt="Raphael Oliveira" class="hidden md:block w-48 h-48 rounded-full border border-white/10 shadow-[0_0_50px_rgba(14,165,233,0.3)] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105 flex-shrink-0" />
             <h1 class="text-6xl md:text-7xl lg:text-8xl font-medium tracking-tighter leading-[1.1] text-glow">
               <span data-lang="en">AI Systems<br/>&amp;&nbsp;Growth<br/>Strategist.</span>
               <span data-lang="pt">Estrategista<br/>de Sistemas<br/>IA &amp; Growth.</span>
@@ -140,7 +142,7 @@
           </div>
         </div>
         
-        <div class="lg:col-span-5 fade-in-up flex justify-center" style="animation-delay: 0.3s">
+        <div class="lg:col-span-5 fade-in-up" style="animation-delay: 0.3s">
           <div class="glass-panel p-8 md:p-10 rounded-[2.5rem] relative overflow-hidden group">
             <div class="absolute top-0 right-0 w-32 h-32 bg-neonBlue/20 blur-[60px] rounded-full group-hover:bg-neonBlue/30 transition-all"></div>
             <h3 class="text-lg font-medium mb-6 flex items-center gap-3 relative z-10">
@@ -371,7 +373,7 @@
 
         <!-- 3. Domatus Pivot -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center relative z-10">
-          <div class="lg:col-span-7 flex justify-center overflow-hidden">
+          <div class="lg:col-span-7 flex justify-center">
             <img src="./assets/domatus-composed.png" class="w-full h-auto object-contain scale-[1.55] md:scale-[1.4] -translate-y-4 md:-translate-y-16 filter drop-shadow-[0_30px_50px_rgba(0,0,0,0.8)] hover:scale-[1.6] transition-transform duration-700" alt="Domatus Case Composition">
           </div>
 
@@ -500,7 +502,7 @@
               <iconify-icon icon="solar:cpu-linear" width="20"></iconify-icon>
               <span data-lang="en">Capabilities Acquired</span><span data-lang="pt">Habilidades Adquiridas</span>
             </h4>
-            <div class="flex flex-wrap gap-4 relative z-10">
+            <div class="grid grid-cols-2 gap-3 relative z-10">
               <span class="px-5 py-3 rounded-xl bg-white/5 border border-white/10 text-white/90 text-sm font-mono hover:bg-white/10 transition-colors"><span data-lang="en">AI video production</span><span data-lang="pt">Produção de vídeo IA</span></span>
               <span class="px-5 py-3 rounded-xl bg-white/5 border border-white/10 text-white/90 text-sm font-mono hover:bg-white/10 transition-colors"><span data-lang="en">U.S. market positioning</span><span data-lang="pt">Posicionamento EUA</span></span>
               <span class="px-5 py-3 rounded-xl bg-white/5 border border-white/10 text-white/90 text-sm font-mono hover:bg-white/10 transition-colors"><span data-lang="en">Cinematic storytelling</span><span data-lang="pt">Storytelling de cinema</span></span>
