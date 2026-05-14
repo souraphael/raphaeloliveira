@@ -42,26 +42,23 @@
         </div>
         <span class="text-lg font-medium tracking-tight whitespace-nowrap hidden sm:block">Raphael Oliveira</span>
       </div>
+      <!-- Desktop nav links -->
       <div class="hidden md:flex items-center gap-1 lg:gap-2 bg-white/5 p-1 lg:p-1.5 rounded-full border border-white/10 backdrop-blur-md flex-shrink-0">
         <a href="#hero" class="px-3 lg:px-5 py-2 rounded-full text-white text-xs lg:text-sm font-medium hover:bg-white/10 transition-all whitespace-nowrap">
-          <span data-lang="en">Start</span>
-          <span data-lang="pt">Início</span>
+          <span data-lang="en">Start</span><span data-lang="pt">Início</span>
         </a>
         <a href="#about" class="px-3 lg:px-5 py-2 rounded-full text-white/60 hover:text-white hover:bg-white/5 text-xs lg:text-sm font-medium transition-all whitespace-nowrap">
-          <span data-lang="en">Operator</span>
-          <span data-lang="pt">Operador</span>
+          <span data-lang="en">Operator</span><span data-lang="pt">Operador</span>
         </a>
         <a href="#cases" class="px-3 lg:px-5 py-2 rounded-full text-white/60 hover:text-white hover:bg-white/5 text-xs lg:text-sm font-medium transition-all whitespace-nowrap">
-          <span data-lang="en">Systems</span>
-          <span data-lang="pt">Sistemas</span>
+          <span data-lang="en">Systems</span><span data-lang="pt">Sistemas</span>
         </a>
         <a href="#philosophy" class="px-3 lg:px-5 py-2 rounded-full text-white/60 hover:text-white hover:bg-white/5 text-xs lg:text-sm font-medium transition-all whitespace-nowrap">
-          <span data-lang="en">Philosophy</span>
-          <span data-lang="pt">Filosofia</span>
+          <span data-lang="en">Philosophy</span><span data-lang="pt">Filosofia</span>
         </a>
       </div>
       <div class="flex items-center gap-2 lg:gap-4 flex-shrink-0">
-        <!-- Language Toggle -->
+        <!-- Language Toggle desktop -->
         <div class="hidden md:flex items-center gap-2 bg-white/5 p-1.5 rounded-full border border-white/10 backdrop-blur-md">
           <span class="text-[10px] font-mono font-medium text-white px-1" id="lang-en-label">EN</span>
           <button id="lang-toggle" onclick="toggleLanguage()" class="relative w-9 h-5 rounded-full bg-white/10 border border-white/20 transition-colors focus:outline-none hover:bg-white/20" aria-label="Toggle language">
@@ -69,9 +66,35 @@
           </button>
           <span class="text-[10px] font-mono font-medium text-white/40 px-1" id="lang-pt-label">PT</span>
         </div>
+        <!-- Mobile lang toggle (compact) -->
+        <button onclick="toggleLanguage()" class="md:hidden flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-[10px] font-mono text-white/60 hover:text-white transition-all" aria-label="Toggle language">
+          <span id="lang-mobile-label">EN</span>
+          <iconify-icon icon="solar:global-linear" width="12" class="text-neonBlue"></iconify-icon>
+        </button>
         <a href="mailto:contato@raphael.com" class="px-4 lg:px-6 py-2 lg:py-2.5 rounded-full bg-neonBlue/10 text-neonBlue border border-neonBlue/20 hover:bg-neonBlue/20 text-xs lg:text-sm font-medium transition-all whitespace-nowrap flex-shrink-0">
           <span data-lang="en">Get in touch</span>
           <span data-lang="pt">Fale comigo</span>
+        </a>
+        <!-- Hamburger mobile -->
+        <button id="mobile-menu-btn" class="md:hidden w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center border border-white/10 hover:bg-white/10 transition-all" onclick="toggleMobileMenu()" aria-label="Menu">
+          <iconify-icon id="hamburger-icon" icon="solar:hamburger-menu-linear" class="text-white/70" width="20"></iconify-icon>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile dropdown menu -->
+    <div id="mobile-menu" class="md:hidden hidden mt-3 mx-0 bg-darkBg/95 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden">
+      <div class="flex flex-col p-2 gap-1">
+        <a href="#hero" onclick="closeMobileMenu()" class="px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/5 text-sm font-medium transition-all">
+          <span data-lang="en">Start</span><span data-lang="pt">Início</span>
+        </a>
+        <a href="#about" onclick="closeMobileMenu()" class="px-4 py-3 rounded-xl text-white/60 hover:text-white hover:bg-white/5 text-sm font-medium transition-all">
+          <span data-lang="en">Operator</span><span data-lang="pt">Operador</span>
+        </a>
+        <a href="#cases" onclick="closeMobileMenu()" class="px-4 py-3 rounded-xl text-white/60 hover:text-white hover:bg-white/5 text-sm font-medium transition-all">
+          <span data-lang="en">Systems</span><span data-lang="pt">Sistemas</span>
+        </a>
+        <a href="#philosophy" onclick="closeMobileMenu()" class="px-4 py-3 rounded-xl text-white/60 hover:text-white hover:bg-white/5 text-sm font-medium transition-all">
+          <span data-lang="en">Philosophy</span><span data-lang="pt">Filosofia</span>
         </a>
       </div>
     </div>
@@ -88,11 +111,11 @@
               <span data-lang="pt">Disponível para novos desafios</span>
             </span>
           </div>
-          <div class="flex flex-col md:flex-row md:items-center gap-8 mb-8">
-            <img src="./profile.png" alt="Raphael Oliveira" class="w-32 h-32 md:w-48 md:h-48 rounded-full border border-white/10 shadow-[0_0_50px_rgba(14,165,233,0.3)] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105" />
-            <h1 class="text-6xl md:text-7xl lg:text-8xl font-medium tracking-tighter leading-[1.05] text-glow">
-              <span data-lang="en">AI Systems & <br/>Growth Strategist.</span>
-              <span data-lang="pt">Estrategista de<br/>Sistemas IA & Growth.</span>
+          <div class="flex flex-col items-center md:flex-row md:items-center gap-6 mb-8">
+            <img src="./profile.png" alt="Raphael Oliveira" class="w-28 h-28 md:w-48 md:h-48 rounded-full border border-white/10 shadow-[0_0_50px_rgba(14,165,233,0.3)] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105 mx-auto md:mx-0 flex-shrink-0" />
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter leading-[1.1] text-glow text-center md:text-left">
+              <span data-lang="en">AI Systems<br/>&amp;&nbsp;Growth<br/>Strategist.</span>
+              <span data-lang="pt">Estrategista<br/>de Sistemas<br/>IA &amp; Growth.</span>
             </h1>
           </div>
           <p class="text-xl md:text-2xl text-white/70 font-light mb-10 max-w-2xl leading-relaxed">
@@ -142,9 +165,11 @@
           </div>
         </div>
       </div>
-      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 animate-bounce">
-        <span class="text-[10px] font-mono tracking-widest uppercase">Scroll</span>
-        <iconify-icon icon="solar:arrow-down-linear" width="20"></iconify-icon>
+      <div class="flex justify-center mt-12 pb-8">
+        <div class="flex flex-col items-center gap-2 text-white/30 animate-bounce">
+          <span class="text-[10px] font-mono tracking-widest uppercase">Scroll</span>
+          <iconify-icon icon="solar:arrow-down-linear" width="20"></iconify-icon>
+        </div>
       </div>
     </section>
 
@@ -348,7 +373,7 @@
         <!-- 3. Domatus Pivot -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center relative z-10">
           <div class="lg:col-span-7 flex justify-center">
-            <img src="./assets/domatus-composed.png" class="w-full h-auto object-contain scale-[1.25] -translate-y-10 md:-translate-y-16 filter drop-shadow-[0_30px_50px_rgba(0,0,0,0.8)] hover:scale-[1.3] transition-transform duration-700" alt="Domatus Case Composition">
+            <img src="./assets/domatus-composed.png" class="w-full h-auto object-contain scale-[1.35] md:scale-[1.25] -translate-y-6 md:-translate-y-16 filter drop-shadow-[0_30px_50px_rgba(0,0,0,0.8)] hover:scale-[1.4] transition-transform duration-700" alt="Domatus Case Composition">
           </div>
 
           <div class="lg:col-span-5">
@@ -387,22 +412,22 @@
             <iconify-icon icon="solar:chart-square-linear" width="20"></iconify-icon>
             <span data-lang="en">Impact</span><span data-lang="pt">Impacto</span>
           </h4>
-          <div class="grid grid-cols-2 gap-6 md:gap-8">
-            <div class="bg-white/5 p-8 rounded-[2rem] border border-white/5 hover:bg-white/10 transition-colors">
-              <div class="text-4xl md:text-5xl font-light text-white mb-3">+5%</div>
-              <div class="text-sm text-white/50"><span data-lang="en">Occupancy growth in low-demand days</span><span data-lang="pt">Crescimento de ocupação em dias de baixa</span></div>
+          <div class="grid grid-cols-2 gap-3 md:gap-6">
+            <div class="bg-white/5 p-4 md:p-8 rounded-[1.5rem] border border-white/5 hover:bg-white/10 transition-colors">
+              <div class="text-2xl md:text-5xl font-light text-white mb-2">+5%</div>
+              <div class="text-xs text-white/50 leading-snug"><span data-lang="en">Occupancy growth in low-demand days</span><span data-lang="pt">Crescimento de ocupação em dias de baixa</span></div>
             </div>
-            <div class="bg-white/5 p-8 rounded-[2rem] border border-white/5 hover:bg-white/10 transition-colors">
-              <div class="text-4xl md:text-5xl font-light text-white mb-3">+5%</div>
-              <div class="text-sm text-white/50"><span data-lang="en">Revenue growth tied to strategy</span><span data-lang="pt">Crescimento de receita atrelado à estratégia</span></div>
+            <div class="bg-white/5 p-4 md:p-8 rounded-[1.5rem] border border-white/5 hover:bg-white/10 transition-colors">
+              <div class="text-2xl md:text-5xl font-light text-white mb-2">+5%</div>
+              <div class="text-xs text-white/50 leading-snug"><span data-lang="en">Revenue growth tied to strategy</span><span data-lang="pt">Crescimento de receita atrelado à estratégia</span></div>
             </div>
-            <div class="bg-white/5 p-8 rounded-[2rem] border border-white/5 hover:bg-white/10 transition-colors">
-              <div class="text-4xl md:text-5xl font-light text-white mb-3">4.0★</div>
-              <div class="text-sm text-white/50"><span data-lang="en">Reputation recovery (from ~2.5)</span><span data-lang="pt">Recuperação de reputação (de ~2.5)</span></div>
+            <div class="bg-white/5 p-4 md:p-8 rounded-[1.5rem] border border-white/5 hover:bg-white/10 transition-colors">
+              <div class="text-2xl md:text-5xl font-light text-white mb-2">4.0★</div>
+              <div class="text-xs text-white/50 leading-snug"><span data-lang="en">Reputation recovery (from ~2.5)</span><span data-lang="pt">Recuperação de reputação (de ~2.5)</span></div>
             </div>
-            <div class="bg-white/5 p-8 rounded-[2rem] border border-white/5 hover:bg-white/10 transition-colors">
-              <div class="text-xl md:text-2xl font-medium text-white mb-3 mt-4"><span data-lang="en">AI Systems</span><span data-lang="pt">Sistemas de IA</span></div>
-              <div class="text-sm text-white/50"><span data-lang="en">Visual content pipelines</span><span data-lang="pt">Pipelines de conteúdo visual</span></div>
+            <div class="bg-white/5 p-4 md:p-8 rounded-[1.5rem] border border-white/5 hover:bg-white/10 transition-colors">
+              <div class="text-base md:text-2xl font-medium text-white mb-2 mt-1"><span data-lang="en">AI Systems</span><span data-lang="pt">Sistemas de IA</span></div>
+              <div class="text-xs text-white/50 leading-snug"><span data-lang="en">Visual content pipelines</span><span data-lang="pt">Pipelines de conteúdo visual</span></div>
             </div>
           </div>
         </div>
@@ -465,10 +490,11 @@
         </div>
         
         <div class="glass-panel rounded-[3rem] relative overflow-hidden group border border-white/5 flex flex-col">
-          <div class="w-full relative flex items-center justify-center pt-10 px-10">
+          <div class="w-full relative overflow-hidden rounded-t-[3rem]">
              <div class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 pointer-events-none"></div>
-             <div class="absolute inset-0 bg-gradient-to-t from-[#020205] to-transparent z-10 pointer-events-none"></div>
-             <img src="./assets/aismart-reviews.png" class="w-full h-auto object-contain relative z-20 grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700 rounded-t-2xl border-t border-x border-white/10 shadow-2xl" alt="AI Smart Studios Reviews" />
+             <div class="absolute inset-0 bg-gradient-to-t from-[#020205] via-transparent to-transparent z-10 pointer-events-none"></div>
+             <img src="./assets/aismart-reviews.png" class="w-full h-auto object-cover relative z-0 grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700" alt="AI Smart Studios Reviews" />
+          </div>
           </div>
           <div class="p-10 md:p-12 relative">
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-neonBlue/10 blur-[80px] rounded-full group-hover:bg-neonBlue/20 transition-all"></div>
@@ -641,19 +667,45 @@
   <script>
     function toggleLanguage() {
       const knob = document.getElementById('lang-knob');
+      const mobileLabel = document.getElementById('lang-mobile-label');
       const isPt = document.documentElement.lang === 'pt';
-      
       if (!isPt) {
         document.documentElement.lang = 'pt';
-        knob.style.transform = 'translateX(16px)';
-        document.getElementById('lang-en-label').classList.replace('text-white', 'text-white/40');
-        document.getElementById('lang-pt-label').classList.replace('text-white/40', 'text-white');
+        if (knob) knob.style.transform = 'translateX(16px)';
+        if (mobileLabel) mobileLabel.textContent = 'PT';
+        const enLabel = document.getElementById('lang-en-label');
+        const ptLabel = document.getElementById('lang-pt-label');
+        if (enLabel) enLabel.classList.replace('text-white', 'text-white/40');
+        if (ptLabel) ptLabel.classList.replace('text-white/40', 'text-white');
       } else {
         document.documentElement.lang = 'en';
-        knob.style.transform = 'translateX(0)';
-        document.getElementById('lang-en-label').classList.replace('text-white/40', 'text-white');
-        document.getElementById('lang-pt-label').classList.replace('text-white', 'text-white/40');
+        if (knob) knob.style.transform = 'translateX(0)';
+        if (mobileLabel) mobileLabel.textContent = 'EN';
+        const enLabel = document.getElementById('lang-en-label');
+        const ptLabel = document.getElementById('lang-pt-label');
+        if (enLabel) enLabel.classList.replace('text-white/40', 'text-white');
+        if (ptLabel) ptLabel.classList.replace('text-white', 'text-white/40');
       }
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('hamburger-icon');
+      const isOpen = !menu.classList.contains('hidden');
+      if (isOpen) {
+        menu.classList.add('hidden');
+        icon.setAttribute('icon', 'solar:hamburger-menu-linear');
+      } else {
+        menu.classList.remove('hidden');
+        icon.setAttribute('icon', 'solar:close-circle-linear');
+      }
+    }
+
+    function closeMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('hamburger-icon');
+      menu.classList.add('hidden');
+      icon.setAttribute('icon', 'solar:hamburger-menu-linear');
     }
   </script>
 </body>
