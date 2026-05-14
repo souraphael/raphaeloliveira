@@ -40,7 +40,7 @@
         <div class="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center border border-white/10 shadow-[0_0_20px_rgba(14,165,233,0.15)]">
           <iconify-icon icon="solar:command-bold" class="text-neonBlue" width="20"></iconify-icon>
         </div>
-        <span class="text-lg font-medium tracking-tight whitespace-nowrap"><span class="sm:hidden">Raphael O.</span><span class="hidden sm:inline">Raphael Oliveira</span></span>
+        <span class="text-lg font-medium tracking-tight whitespace-nowrap">Raphael Oliveira</span>
       </div>
       <!-- Desktop nav links -->
       <div class="hidden md:flex items-center gap-1 lg:gap-2 bg-white/5 p-1 lg:p-1.5 rounded-full border border-white/10 backdrop-blur-md flex-shrink-0">
@@ -71,7 +71,7 @@
           <span id="lang-mobile-label">EN</span>
           <iconify-icon icon="solar:global-linear" width="12" class="text-neonBlue"></iconify-icon>
         </button>
-        <a href="mailto:contato@raphael.com" class="px-4 lg:px-6 py-2 lg:py-2.5 rounded-full bg-neonBlue/10 text-neonBlue border border-neonBlue/20 hover:bg-neonBlue/20 text-xs lg:text-sm font-medium transition-all whitespace-nowrap flex-shrink-0">
+        <a href="mailto:contato@raphael.com" class="hidden md:inline-flex px-4 lg:px-6 py-2 lg:py-2.5 rounded-full bg-neonBlue/10 text-neonBlue border border-neonBlue/20 hover:bg-neonBlue/20 text-xs lg:text-sm font-medium transition-all whitespace-nowrap flex-shrink-0">
           <span data-lang="en">Get in touch</span>
           <span data-lang="pt">Fale comigo</span>
         </a>
@@ -82,7 +82,7 @@
       </div>
     </div>
     <!-- Mobile dropdown menu -->
-    <div id="mobile-menu" class="md:hidden hidden mt-3 mx-0 bg-darkBg/95 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden">
+    <div id="mobile-menu" class="md:hidden hidden mt-3 mx-0 bg-darkBg/95 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.5)]">
       <div class="flex flex-col p-2 gap-1">
         <a href="#hero" onclick="closeMobileMenu()" class="px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/5 text-sm font-medium transition-all">
           <span data-lang="en">Start</span><span data-lang="pt">Início</span>
@@ -95,6 +95,15 @@
         </a>
         <a href="#philosophy" onclick="closeMobileMenu()" class="px-4 py-3 rounded-xl text-white/60 hover:text-white hover:bg-white/5 text-sm font-medium transition-all">
           <span data-lang="en">Philosophy</span><span data-lang="pt">Filosofia</span>
+        </a>
+        <div class="h-px bg-white/10 my-1 mx-2"></div>
+        <a href="https://www.linkedin.com/in/souraphael/" target="_blank" rel="noopener noreferrer" class="px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/5 text-sm font-medium transition-all flex items-center gap-3">
+          <iconify-icon icon="mdi:linkedin" width="18"></iconify-icon>
+          LinkedIn
+        </a>
+        <a href="mailto:contato@raphael.com" class="px-4 py-3 rounded-xl text-neonBlue bg-neonBlue/5 hover:bg-neonBlue/10 border border-neonBlue/10 text-sm font-medium transition-all flex items-center gap-3 mt-1">
+          <iconify-icon icon="solar:letter-bold" width="18"></iconify-icon>
+          <span data-lang="en">Get in touch</span><span data-lang="pt">Fale comigo</span>
         </a>
       </div>
     </div>
