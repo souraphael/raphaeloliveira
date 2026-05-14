@@ -99,9 +99,21 @@
             <span data-lang="en">I help companies turn unclear growth problems into scalable marketing workflows using behavioral strategy, AI and rapid commercial execution.</span>
             <span data-lang="pt">Ajudo empresas a transformar problemas de crescimento pouco claros em workflows de marketing escaláveis usando estratégia comportamental, IA e execução comercial rápida.</span>
           </p>
-          <div class="text-sm text-white/50 font-mono max-w-xl leading-relaxed border-l-2 border-neonBlue/30 pl-4">
-            <span data-lang="en">17 years · R$600K agency revenue · R$1.9M in client results · AI-native workflows · U.S. market delivery</span>
-            <span data-lang="pt">17 anos · R$600K em receita de agência · R$1,9M em resultados de clientes · Workflows nativos de IA · Entrega no mercado americano</span>
+          <div class="text-xs text-white/50 font-mono max-w-xl leading-relaxed border-l-2 border-neonBlue/30 pl-4 flex flex-wrap gap-x-3 gap-y-1">
+            <span data-lang="en">17 years</span>
+            <span class="text-white/20 hidden sm:inline">·</span>
+            <span data-lang="en">R$600K agency revenue</span>
+            <span class="text-white/20 hidden sm:inline">·</span>
+            <span data-lang="en">R$1.9M in client results</span>
+            <span class="text-white/20 hidden sm:inline">·</span>
+            <span data-lang="en">AI-native workflows</span>
+            <span class="text-white/20 hidden sm:inline">·</span>
+            <span data-lang="en">U.S. market delivery</span>
+            <span data-lang="pt" class="hidden">17 anos</span>
+            <span data-lang="pt" class="hidden">R$600K receita agência</span>
+            <span data-lang="pt" class="hidden">R$1,9M em resultados</span>
+            <span data-lang="pt" class="hidden">Workflows nativos de IA</span>
+            <span data-lang="pt" class="hidden">Mercado americano</span>
           </div>
         </div>
         
@@ -160,7 +172,7 @@
     <section class="px-8 md:px-16 py-20 max-w-[1600px] mx-auto border-t border-white/5">
       <div class="max-w-5xl mx-auto">
         <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-10 inline-block"><span data-lang="en">Operational Strengths</span><span data-lang="pt">Forças Operacionais</span></span>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-3">
           <div class="glass-panel p-5 rounded-2xl border border-white/5 hover:border-neonBlue/20 transition-all group">
             <iconify-icon icon="solar:bolt-bold" class="text-neonBlue mb-3 block" width="20"></iconify-icon>
             <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">Rapid adaptation under pressure</span><span data-lang="pt">Adaptação rápida sob pressão</span></span>
@@ -312,21 +324,19 @@
             </div>
           </div>
           
-          <div class="lg:col-span-7 relative w-full flex flex-col items-end justify-center pt-8">
-            <!-- Eventbrite Sales Base -->
-            <img src="./assets/eventbrite-clean.png" class="relative z-10 w-[85%] md:w-[75%] rounded-2xl filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)] grayscale hover:grayscale-0 transition-all duration-500" alt="Eventbrite Sales Dashboard">
+          <!-- Image collage block - stacks cleanly on mobile -->
+          <div class="lg:col-span-7 flex flex-col gap-4 pt-8">
+            <!-- Eventbrite Sales Dashboard -->
+            <img src="./assets/eventbrite-clean.png" class="w-full rounded-2xl filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)] grayscale hover:grayscale-0 transition-all duration-500" alt="Eventbrite Sales Dashboard">
             
-            <!-- Bottom Section (Collage overlap) -->
-            <div class="relative z-20 w-full flex items-end gap-4 md:gap-6 -mt-8 md:-mt-16 pr-[5%] md:pr-0">
-              <!-- Award (Overlaps the left side of the dashboard) -->
-              <img src="./assets/0.jpg" class="w-[140px] h-[140px] md:w-[220px] md:h-[220px] shrink-0 rounded-xl object-cover border-[6px] border-[#0a0a0f] filter drop-shadow-[0_20px_30px_rgba(0,0,0,0.9)] grayscale hover:grayscale-0 hover:scale-105 transition-transform duration-500" alt="8Ps Award">
-              
-              <!-- Logo and Explanatory Text block -->
-              <div class="flex items-center gap-4 bg-[#0a0a0f]/80 backdrop-blur-md border border-white/5 p-4 md:p-5 rounded-2xl mb-2 md:mb-4">
-                <img src="./assets/Logo-Reveillon-Negativa.png" class="w-[80px] md:w-[120px] shrink-0 object-contain filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)] opacity-90 hover:opacity-100 hover:scale-105 transition-all duration-500" alt="Villa Rizza Logo">
-                <p class="text-[10px] md:text-xs text-white/50 font-light leading-relaxed border-l border-white/10 pl-4 m-0">
-                  <span data-lang="en">Driving ultra-targeted Facebook traffic to a streamlined Eventbrite checkout. We turned a minimal ad spend into maximum event capacity.</span>
-                  <span data-lang="pt">Tráfego ultra-segmentado no Facebook direto para o checkout do Eventbrite. Transformamos um orçamento mínimo em capacidade máxima no evento.</span>
+            <!-- Award photo + logo card -->
+            <div class="flex items-center gap-4">
+              <img src="./assets/0.jpg" class="w-[100px] h-[100px] md:w-[160px] md:h-[160px] shrink-0 rounded-xl object-cover border-4 border-[#0a0a0f] filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)] grayscale hover:grayscale-0 transition-all duration-500" alt="8Ps Award">
+              <div class="flex flex-col items-start gap-3 bg-white/[0.03] border border-white/5 p-4 rounded-2xl flex-1">
+                <img src="./assets/Logo-Reveillon-Negativa.png" class="w-[90px] object-contain opacity-90" alt="Villa Rizza Logo">
+                <p class="text-[10px] md:text-xs text-white/50 font-light leading-relaxed">
+                  <span data-lang="en">R$190K in ticket sales. Less than R$1K in media. Ultra-targeted Facebook traffic direct to Eventbrite checkout.</span>
+                  <span data-lang="pt">R$190 mil em ingressos. Menos de R$1 mil em mídia. Tráfego Facebook ultra-segmentado direto para o checkout Eventbrite.</span>
                 </p>
               </div>
             </div>
