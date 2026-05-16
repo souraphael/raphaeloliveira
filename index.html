@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +23,7 @@
   <meta name="twitter:image" content="https://souraphael.vercel.app/assets/og-preview.png">
 
   <script>
-    (function() {
+    (function () {
       const savedLang = localStorage.getItem('preferredLang');
       const browserLang = navigator.language || navigator.userLanguage;
       if (savedLang) {
@@ -36,7 +37,9 @@
       }
     })();
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -58,75 +61,101 @@
   <link rel="stylesheet" href="./style.css?v=3">
   <link rel="icon" type="image/png" href="./assets/favicon.png">
 </head>
+
 <body class="text-white selection:bg-neonBlue/30 overflow-x-hidden relative">
   <!-- Background Elements -->
   <div class="blob blob-1"></div>
   <div class="blob blob-2"></div>
   <div class="blob blob-3"></div>
-  <div class="fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-150 contrast-150 pointer-events-none mix-blend-overlay z-0"></div>
-  <div class="fixed inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:100px_100px] pointer-events-none z-0"></div>
+  <div
+    class="fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-150 contrast-150 pointer-events-none mix-blend-overlay z-0">
+  </div>
+  <div
+    class="fixed inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:100px_100px] pointer-events-none z-0">
+  </div>
 
   <!-- Navigation -->
-  <nav class="fixed top-0 left-0 w-full z-50 px-6 md:px-8 py-4 md:py-6 bg-gradient-to-b from-darkBg/90 to-transparent backdrop-blur-sm">
+  <nav
+    class="fixed top-0 left-0 w-full z-50 px-6 md:px-8 py-4 md:py-6 bg-gradient-to-b from-darkBg/90 to-transparent backdrop-blur-sm">
     <div class="max-w-[1600px] mx-auto flex justify-between items-center gap-2 md:gap-4 lg:gap-8">
       <div class="flex items-center gap-3 flex-shrink-0">
-        <div class="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center border border-white/10 shadow-[0_0_20px_rgba(14,165,233,0.15)]">
-          <img src="./assets/chess.png" width="20" height="20" alt="" style="filter: brightness(0) saturate(100%) invert(58%) sepia(80%) saturate(700%) hue-rotate(175deg) brightness(100%);">
+        <div
+          class="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center border border-white/10 shadow-[0_0_20px_rgba(14,165,233,0.15)]">
+          <img src="./assets/chess.png" width="20" height="20" alt=""
+            style="filter: brightness(0) saturate(100%) invert(58%) sepia(80%) saturate(700%) hue-rotate(175deg) brightness(100%);">
         </div>
         <span class="text-lg font-medium tracking-tight whitespace-nowrap">Raphael Oliveira</span>
       </div>
       <!-- Desktop nav links -->
-      <div class="hidden md:flex items-center gap-1 lg:gap-2 bg-white/5 p-1 lg:p-1.5 rounded-full border border-white/10 backdrop-blur-md flex-shrink-0">
-        <a href="#hero" class="px-3 lg:px-5 py-2 rounded-full text-white text-xs lg:text-sm font-medium hover:bg-white/10 transition-all whitespace-nowrap">
+      <div
+        class="hidden md:flex items-center gap-1 lg:gap-2 bg-white/5 p-1 lg:p-1.5 rounded-full border border-white/10 backdrop-blur-md flex-shrink-0">
+        <a href="#hero"
+          class="px-3 lg:px-5 py-2 rounded-full text-white text-xs lg:text-sm font-medium hover:bg-white/10 transition-all whitespace-nowrap">
           <span data-lang="en">Home</span><span data-lang="pt">Home</span>
         </a>
-        <a href="#about" class="px-3 lg:px-5 py-2 rounded-full text-white/60 hover:text-white hover:bg-white/5 text-xs lg:text-sm font-medium transition-all whitespace-nowrap">
+        <a href="#about"
+          class="px-3 lg:px-5 py-2 rounded-full text-white/60 hover:text-white hover:bg-white/5 text-xs lg:text-sm font-medium transition-all whitespace-nowrap">
           <span data-lang="en">Journey</span><span data-lang="pt">Jornada</span>
         </a>
-        <a href="#cases" class="px-3 lg:px-5 py-2 rounded-full text-white/60 hover:text-white hover:bg-white/5 text-xs lg:text-sm font-medium transition-all whitespace-nowrap">
+        <a href="#cases"
+          class="px-3 lg:px-5 py-2 rounded-full text-white/60 hover:text-white hover:bg-white/5 text-xs lg:text-sm font-medium transition-all whitespace-nowrap">
           <span data-lang="en">Cases</span><span data-lang="pt">Cases</span>
         </a>
-        <a href="#philosophy" class="px-3 lg:px-5 py-2 rounded-full text-white/60 hover:text-white hover:bg-white/5 text-xs lg:text-sm font-medium transition-all whitespace-nowrap">
+        <a href="#philosophy"
+          class="px-3 lg:px-5 py-2 rounded-full text-white/60 hover:text-white hover:bg-white/5 text-xs lg:text-sm font-medium transition-all whitespace-nowrap">
           <span data-lang="en">Philosophy</span><span data-lang="pt">Filosofia</span>
         </a>
       </div>
       <div class="flex items-center gap-2 lg:gap-3 flex-shrink-0">
         <!-- Language Toggle desktop -->
-        <div class="hidden md:flex items-center gap-2 bg-white/5 p-1.5 rounded-full border border-white/10 backdrop-blur-md">
+        <div
+          class="hidden md:flex items-center gap-2 bg-white/5 p-1.5 rounded-full border border-white/10 backdrop-blur-md">
           <span class="text-[10px] font-mono font-medium text-white px-1" id="lang-en-label">EN</span>
-          <button id="lang-toggle" onclick="toggleLanguage()" class="relative w-9 h-5 rounded-full bg-white/10 border border-white/20 transition-colors focus:outline-none hover:bg-white/20" aria-label="Toggle language">
-            <div id="lang-knob" class="absolute left-[3px] top-[1.5px] w-3.5 h-3.5 bg-neonBlue rounded-full transition-transform duration-300"></div>
+          <button id="lang-toggle" onclick="toggleLanguage()"
+            class="relative w-9 h-5 rounded-full bg-white/10 border border-white/20 transition-colors focus:outline-none hover:bg-white/20"
+            aria-label="Toggle language">
+            <div id="lang-knob"
+              class="absolute left-[3px] top-[1.5px] w-3.5 h-3.5 bg-neonBlue rounded-full transition-transform duration-300">
+            </div>
           </button>
           <span class="text-[10px] font-mono font-medium text-white/40 px-1" id="lang-pt-label">PT</span>
         </div>
 
         <!-- LinkedIn Desktop -->
-        <a href="https://www.linkedin.com/in/souraphael/" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center justify-center w-9 h-9 lg:w-10 lg:h-10 rounded-full bg-white/5 hover:bg-white/15 border border-white/10 transition-all text-white/80 hover:text-white" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/souraphael/" target="_blank" rel="noopener noreferrer"
+          class="hidden md:flex items-center justify-center w-9 h-9 lg:w-10 lg:h-10 rounded-full bg-white/5 hover:bg-white/15 border border-white/10 transition-all text-white/80 hover:text-white"
+          aria-label="LinkedIn">
           <iconify-icon icon="mdi:linkedin" width="20"></iconify-icon>
         </a>
 
         <!-- Mobile lang toggle (compact) -->
-        <button onclick="toggleLanguage()" class="md:hidden flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-[10px] font-mono text-white/60 hover:text-white transition-all" aria-label="Toggle language">
+        <button onclick="toggleLanguage()"
+          class="md:hidden flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-[10px] font-mono text-white/60 hover:text-white transition-all"
+          aria-label="Toggle language">
           <span id="lang-mobile-label">EN</span>
           <iconify-icon icon="solar:global-linear" width="12" class="text-neonBlue"></iconify-icon>
         </button>
-        
+
         <!-- Download CV Dropdown -->
         <div class="hidden lg:relative lg:inline-block group flex-shrink-0">
-          <button class="inline-flex items-center gap-2 px-4 py-2 lg:py-2.5 rounded-full bg-white/5 text-white/80 border border-white/10 hover:bg-white/10 hover:text-white text-xs lg:text-sm font-medium transition-all whitespace-nowrap">
+          <button
+            class="inline-flex items-center gap-2 px-4 py-2 lg:py-2.5 rounded-full bg-white/5 text-white/80 border border-white/10 hover:bg-white/10 hover:text-white text-xs lg:text-sm font-medium transition-all whitespace-nowrap">
             <iconify-icon icon="solar:download-minimalistic-bold" width="16"></iconify-icon>
             <span data-lang="en">Download CV</span><span data-lang="pt">Baixar CV</span>
             <iconify-icon icon="solar:alt-arrow-down-linear" width="14"></iconify-icon>
           </button>
-          
+
           <!-- Dropdown menu -->
-          <div class="absolute right-0 top-full mt-2 w-48 bg-darkBg/95 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-            <a href="./RAPHAEL_OLIVEIRA_CV_EN.pdf" target="_blank" class="flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition-colors text-sm text-white/80 hover:text-white">
+          <div
+            class="absolute right-0 top-full mt-2 w-48 bg-darkBg/95 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="./RAPHAEL_OLIVEIRA_CV_EN.pdf" target="_blank"
+              class="flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition-colors text-sm text-white/80 hover:text-white">
               <iconify-icon icon="solar:document-text-bold" width="18" class="text-neonBlue"></iconify-icon>
               English Version
             </a>
             <div class="h-px bg-white/10"></div>
-            <a href="./RAPHAEL_OLIVEIRA_CV_PT.pdf" target="_blank" class="flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition-colors text-sm text-white/80 hover:text-white">
+            <a href="./RAPHAEL_OLIVEIRA_CV_PT.pdf" target="_blank"
+              class="flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition-colors text-sm text-white/80 hover:text-white">
               <iconify-icon icon="solar:document-text-bold" width="18" class="text-neonBlue"></iconify-icon>
               Versão em PT-BR
             </a>
@@ -134,46 +163,59 @@
         </div>
 
         <!-- Desktop CTA -->
-        <a href="mailto:souraphael@gmail.com" class="hidden md:inline-flex items-center gap-2 px-4 lg:px-6 py-2 lg:py-2.5 rounded-full bg-neonBlue/10 text-neonBlue border border-neonBlue/20 hover:bg-neonBlue/20 text-xs lg:text-sm font-medium transition-all whitespace-nowrap flex-shrink-0">
+        <a href="mailto:souraphael@gmail.com"
+          class="hidden md:inline-flex items-center gap-2 px-4 lg:px-6 py-2 lg:py-2.5 rounded-full bg-neonBlue/10 text-neonBlue border border-neonBlue/20 hover:bg-neonBlue/20 text-xs lg:text-sm font-medium transition-all whitespace-nowrap flex-shrink-0">
           <iconify-icon icon="solar:letter-bold" width="16"></iconify-icon>
           <span data-lang="en">Send email</span>
           <span data-lang="pt">Enviar email</span>
         </a>
         <!-- Hamburger mobile -->
-        <button id="mobile-menu-btn" class="md:hidden w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center border border-white/10 hover:bg-white/10 transition-all" onclick="toggleMobileMenu()" aria-label="Menu">
-          <iconify-icon id="hamburger-icon" icon="solar:hamburger-menu-linear" class="text-white/70" width="20"></iconify-icon>
+        <button id="mobile-menu-btn"
+          class="md:hidden w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center border border-white/10 hover:bg-white/10 transition-all"
+          onclick="toggleMobileMenu()" aria-label="Menu">
+          <iconify-icon id="hamburger-icon" icon="solar:hamburger-menu-linear" class="text-white/70"
+            width="20"></iconify-icon>
         </button>
       </div>
     </div>
     <!-- Mobile dropdown menu -->
-    <div id="mobile-menu" class="md:hidden hidden mt-3 mx-0 bg-darkBg/60 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.5)]">
+    <div id="mobile-menu"
+      class="md:hidden hidden mt-3 mx-0 bg-darkBg/60 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.5)]">
       <div class="flex flex-col p-2 gap-1">
-        <a href="#hero" onclick="closeMobileMenu()" class="px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/5 text-sm font-medium transition-all">
+        <a href="#hero" onclick="closeMobileMenu()"
+          class="px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/5 text-sm font-medium transition-all">
           <span data-lang="en">Home</span><span data-lang="pt">Home</span>
         </a>
-        <a href="#about" onclick="closeMobileMenu()" class="px-4 py-3 rounded-xl text-white/60 hover:text-white hover:bg-white/5 text-sm font-medium transition-all">
+        <a href="#about" onclick="closeMobileMenu()"
+          class="px-4 py-3 rounded-xl text-white/60 hover:text-white hover:bg-white/5 text-sm font-medium transition-all">
           <span data-lang="en">Journey</span><span data-lang="pt">Jornada</span>
         </a>
-        <a href="#cases" onclick="closeMobileMenu()" class="px-4 py-3 rounded-xl text-white/60 hover:text-white hover:bg-white/5 text-sm font-medium transition-all">
+        <a href="#cases" onclick="closeMobileMenu()"
+          class="px-4 py-3 rounded-xl text-white/60 hover:text-white hover:bg-white/5 text-sm font-medium transition-all">
           <span data-lang="en">Cases</span><span data-lang="pt">Cases</span>
         </a>
-        <a href="#philosophy" onclick="closeMobileMenu()" class="px-4 py-3 rounded-xl text-white/60 hover:text-white hover:bg-white/5 text-sm font-medium transition-all">
+        <a href="#philosophy" onclick="closeMobileMenu()"
+          class="px-4 py-3 rounded-xl text-white/60 hover:text-white hover:bg-white/5 text-sm font-medium transition-all">
           <span data-lang="en">Philosophy</span><span data-lang="pt">Filosofia</span>
         </a>
         <div class="h-px bg-white/10 my-1 mx-2"></div>
-        <a href="https://www.linkedin.com/in/souraphael/" target="_blank" rel="noopener noreferrer" class="px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/5 text-sm font-medium transition-all flex items-center gap-3">
+        <a href="https://www.linkedin.com/in/souraphael/" target="_blank" rel="noopener noreferrer"
+          class="px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/5 text-sm font-medium transition-all flex items-center gap-3">
           <iconify-icon icon="mdi:linkedin" width="18"></iconify-icon>
           LinkedIn
         </a>
-        <a href="./RAPHAEL_OLIVEIRA_CV_EN.pdf" target="_blank" class="px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/5 text-sm font-medium transition-all flex items-center gap-3">
+        <a href="./RAPHAEL_OLIVEIRA_CV_EN.pdf" target="_blank"
+          class="px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/5 text-sm font-medium transition-all flex items-center gap-3">
           <iconify-icon icon="solar:document-text-bold" width="18" class="text-neonBlue"></iconify-icon>
           Download CV (EN)
         </a>
-        <a href="./RAPHAEL_OLIVEIRA_CV_PT.pdf" target="_blank" class="px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/5 text-sm font-medium transition-all flex items-center gap-3">
+        <a href="./RAPHAEL_OLIVEIRA_CV_PT.pdf" target="_blank"
+          class="px-4 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/5 text-sm font-medium transition-all flex items-center gap-3">
           <iconify-icon icon="solar:document-text-bold" width="18" class="text-neonBlue"></iconify-icon>
           Baixar Currículo (PT)
         </a>
-        <a href="mailto:souraphael@gmail.com" class="px-4 py-3 rounded-xl text-neonBlue bg-neonBlue/5 hover:bg-neonBlue/10 border border-neonBlue/10 text-sm font-medium transition-all flex items-center gap-3 mt-1">
+        <a href="mailto:souraphael@gmail.com"
+          class="px-4 py-3 rounded-xl text-neonBlue bg-neonBlue/5 hover:bg-neonBlue/10 border border-neonBlue/10 text-sm font-medium transition-all flex items-center gap-3 mt-1">
           <iconify-icon icon="solar:letter-bold" width="18"></iconify-icon>
           <span data-lang="en">Send email</span><span data-lang="pt">Enviar email</span>
         </a>
@@ -181,8 +223,9 @@
     </div>
   </nav>
 
-  <main class="relative z-10">    <!-- HERO SECTION -->
-    <section id="hero" class="min-h-screen flex flex-col justify-center px-8 md:px-16 pt-40 lg:pt-48 pb-8 max-w-[1600px] mx-auto relative">
+  <main class="relative z-10"> <!-- HERO SECTION -->
+    <section id="hero"
+      class="min-h-screen flex flex-col justify-center px-8 md:px-16 pt-40 lg:pt-48 pb-8 max-w-[1600px] mx-auto relative">
       <div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div class="lg:col-span-7 animate-on-scroll" style="transition-delay: 100ms">
           <div class="flex items-center gap-3 mb-6">
@@ -194,20 +237,26 @@
           </div>
           <!-- Mobile: photo centered, then h1 left. Desktop: side by side -->
           <div class="flex justify-center md:hidden mb-4">
-            <img src="./profile.png" alt="Raphael Oliveira" class="w-36 h-36 rounded-full border border-white/10 shadow-[0_0_50px_rgba(14,165,233,0.3)] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105" />
+            <img src="./profile.png" alt="Raphael Oliveira"
+              class="w-36 h-36 rounded-full border border-white/10 shadow-[0_0_50px_rgba(14,165,233,0.3)] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105" />
           </div>
           <div class="flex md:flex-row md:items-center gap-6 mb-8">
-            <img src="./profile.png" alt="Raphael Oliveira" class="hidden md:block w-48 h-48 rounded-full border border-white/10 shadow-[0_0_50px_rgba(14,165,233,0.3)] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105 flex-shrink-0" />
+            <img src="./profile.png" alt="Raphael Oliveira"
+              class="hidden md:block w-48 h-48 rounded-full border border-white/10 shadow-[0_0_50px_rgba(14,165,233,0.3)] object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105 flex-shrink-0" />
             <h1 class="text-6xl md:text-7xl lg:text-8xl font-medium tracking-tighter leading-[1.1] text-glow">
-              <span data-lang="en">Growth &amp;<br/>Marketing<br/>Lead.</span>
-              <span data-lang="pt">Lead de<br/>Growth &amp;<br/>Marketing.</span>
+              <span data-lang="en">Growth &amp;<br />Marketing<br />Lead.</span>
+              <span data-lang="pt">Lead de<br />Growth &amp;<br />Marketing.</span>
             </h1>
           </div>
           <p class="text-xl md:text-2xl text-white/70 font-light mb-10 max-w-2xl leading-relaxed">
-            <span data-lang="en">I see the business. I see the audience. I structure the machine that makes the sale happen. 16 years solving marketing, positioning and growth problems across complex corporate environments.</span>
-            <span data-lang="pt">Vejo o negócio. Vejo o público. Estruturo a máquina que faz a venda acontecer. 16 anos resolvendo problemas de marketing, posicionamento e growth em cenários corporativos complexos.</span>
+            <span data-lang="en">I see the business. I see the audience. I structure the machine that makes the sale
+              happen. 16 years solving marketing, positioning and growth problems across complex corporate
+              environments.</span>
+            <span data-lang="pt">Vejo o negócio. Vejo o público. Estruturo a máquina que faz a venda acontecer. 16 anos
+              resolvendo problemas de marketing, posicionamento e growth em cenários corporativos complexos.</span>
           </p>
-          <div class="text-xs text-white/50 font-mono max-w-xl leading-relaxed border-l-2 border-neonBlue/30 pl-4 flex flex-wrap gap-x-3 gap-y-1">
+          <div
+            class="text-xs text-white/50 font-mono max-w-xl leading-relaxed border-l-2 border-neonBlue/30 pl-4 flex flex-wrap gap-x-3 gap-y-1">
             <span data-lang="en">R$600K revenue in 4 years via remote agency</span>
             <span data-lang="en" class="text-white/20 max-sm:hidden">·</span>
             <span data-lang="en">R$1.9M generated for a single client during the pandemic</span>
@@ -224,34 +273,54 @@
             <span data-lang="pt">Entregas para grandes empresas nos EUA</span>
           </div>
         </div>
-        
-      <!-- Core Operations: desktop only inside grid -->
+
+        <!-- Core Operations: desktop only inside grid -->
         <div class="hidden lg:block lg:col-span-5 animate-on-scroll" style="transition-delay: 300ms">
           <div class="glass-panel p-8 md:p-10 rounded-[2.5rem] relative overflow-hidden group">
-            <div class="absolute top-0 right-0 w-32 h-32 bg-neonBlue/20 blur-[60px] rounded-full group-hover:bg-neonBlue/30 transition-all"></div>
+            <div
+              class="absolute top-0 right-0 w-32 h-32 bg-neonBlue/20 blur-[60px] rounded-full group-hover:bg-neonBlue/30 transition-all">
+            </div>
             <h3 class="text-lg font-medium mb-6 flex items-center gap-3 relative z-10">
               <iconify-icon icon="solar:layers-minimalistic-linear" class="text-neonBlue" width="24"></iconify-icon>
               <span data-lang="en">Core Operations</span>
               <span data-lang="pt">Operações Principais</span>
             </h3>
             <div class="flex flex-wrap gap-2 md:gap-3 mb-8 relative z-10">
-              <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] md:text-xs font-mono tracking-wide"><span data-lang="en">Branding Strategy</span><span data-lang="pt">Estratégia de Branding</span></span>
-              <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] md:text-xs font-mono tracking-wide"><span data-lang="en">Product Development</span><span data-lang="pt">Desenvolvimento de Produto</span></span>
-              <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] md:text-xs font-mono tracking-wide"><span data-lang="en">Commercial Performance</span><span data-lang="pt">Performance Comercial</span></span>
-              <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] md:text-xs font-mono tracking-wide"><span data-lang="en">AI Workflow Automation</span><span data-lang="pt">Automação de Workflows com IA</span></span>
-              <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] md:text-xs font-mono tracking-wide"><span data-lang="en">Audience Perception</span><span data-lang="pt">Percepção de Público</span></span>
+              <span
+                class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] md:text-xs font-mono tracking-wide"><span
+                  data-lang="en">Branding Strategy</span><span data-lang="pt">Estratégia de Branding</span></span>
+              <span
+                class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] md:text-xs font-mono tracking-wide"><span
+                  data-lang="en">Product Development</span><span data-lang="pt">Desenvolvimento de Produto</span></span>
+              <span
+                class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] md:text-xs font-mono tracking-wide"><span
+                  data-lang="en">Commercial Performance</span><span data-lang="pt">Performance Comercial</span></span>
+              <span
+                class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] md:text-xs font-mono tracking-wide"><span
+                  data-lang="en">AI Workflow Automation</span><span data-lang="pt">Automação de Workflows com
+                  IA</span></span>
+              <span
+                class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-[10px] md:text-xs font-mono tracking-wide"><span
+                  data-lang="en">Audience Perception</span><span data-lang="pt">Percepção de Público</span></span>
             </div>
             <div class="p-6 bg-white/[0.02] border border-white/5 rounded-2xl relative z-10">
               <p class="text-sm md:text-base text-white/60 leading-relaxed font-light">
-                <span data-lang="en">I build revenue-oriented workflows that connect brand clarity, customer behavior, AI-assisted production and commercial delivery into scalable results.</span>
-                <span data-lang="pt">Construo workflows orientados a receita que conectam clareza de marca, comportamento do cliente, produção assistida por IA e entrega comercial em resultados escaláveis.</span>
+                <span data-lang="en">I build revenue-oriented workflows that connect brand clarity, customer behavior,
+                  AI-assisted production and commercial delivery into scalable results.</span>
+                <span data-lang="pt">Construo workflows orientados a receita que conectam clareza de marca,
+                  comportamento do cliente, produção assistida por IA e entrega comercial em resultados
+                  escaláveis.</span>
               </p>
             </div>
           </div>
           <div class="mt-8 flex justify-end">
-            <a href="https://wa.me/5561994568187" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden px-8 py-4 bg-neonBlue/5 hover:bg-neonBlue/15 border border-neonBlue/20 hover:border-neonBlue/40 text-neonBlue rounded-2xl text-sm font-medium transition-all duration-300 flex items-center gap-3 backdrop-blur-sm shadow-[0_0_20px_rgba(14,165,233,0.05)] hover:shadow-[0_0_30px_rgba(14,165,233,0.15)]">
-              <div class="absolute inset-0 pointer-events-none rounded-2xl overflow-hidden" style="padding: 1px; -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude;">
-                <div class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_0_340deg,#0ea5e9_360deg)] opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <a href="https://wa.me/5561994568187" target="_blank" rel="noopener noreferrer"
+              class="group relative overflow-hidden px-8 py-4 bg-neonBlue/5 hover:bg-neonBlue/15 border border-neonBlue/20 hover:border-neonBlue/40 text-neonBlue rounded-2xl text-sm font-medium transition-all duration-300 flex items-center gap-3 backdrop-blur-sm shadow-[0_0_20px_rgba(14,165,233,0.05)] hover:shadow-[0_0_30px_rgba(14,165,233,0.15)]">
+              <div class="absolute inset-0 pointer-events-none rounded-2xl overflow-hidden"
+                style="padding: 1px; -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude;">
+                <div
+                  class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_0_340deg,#0ea5e9_360deg)] opacity-70 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
               </div>
               <iconify-icon icon="ic:baseline-whatsapp" width="20" class="relative z-10"></iconify-icon>
               <span class="relative z-10" data-lang="en">Chat on WhatsApp</span>
@@ -279,23 +348,40 @@
           <span data-lang="pt">Operações Principais</span>
         </h3>
         <div class="grid grid-cols-2 gap-2 mb-6 relative z-10">
-          <span class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide text-center col-span-2"><span data-lang="en">Branding Strategy</span><span data-lang="pt">Estratégia de Branding</span></span>
-          <span class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide text-center col-span-2"><span data-lang="en">Product Development</span><span data-lang="pt">Desenvolvimento de Produto</span></span>
-          <span class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide text-center col-span-2"><span data-lang="en">Commercial Performance</span><span data-lang="pt">Performance Comercial</span></span>
-          <span class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide text-center col-span-2"><span data-lang="en">AI Workflow Automation</span><span data-lang="pt">Automação de Workflows com IA</span></span>
-          <span class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide text-center col-span-2"><span data-lang="en">Audience Perception</span><span data-lang="pt">Percepção de Público</span></span>
+          <span
+            class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide text-center col-span-2"><span
+              data-lang="en">Branding Strategy</span><span data-lang="pt">Estratégia de Branding</span></span>
+          <span
+            class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide text-center col-span-2"><span
+              data-lang="en">Product Development</span><span data-lang="pt">Desenvolvimento de Produto</span></span>
+          <span
+            class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide text-center col-span-2"><span
+              data-lang="en">Commercial Performance</span><span data-lang="pt">Performance Comercial</span></span>
+          <span
+            class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide text-center col-span-2"><span
+              data-lang="en">AI Workflow Automation</span><span data-lang="pt">Automação de Workflows com
+              IA</span></span>
+          <span
+            class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/80 text-[10px] font-mono tracking-wide text-center col-span-2"><span
+              data-lang="en">Audience Perception</span><span data-lang="pt">Percepção de Público</span></span>
         </div>
         <div class="p-5 bg-white/[0.02] border border-white/5 rounded-2xl relative z-10 text-center">
           <p class="text-sm text-white/60 leading-relaxed font-light">
-            <span data-lang="en">I build revenue-oriented workflows that connect brand clarity, customer behavior, AI-assisted production and commercial delivery into scalable results.</span>
-            <span data-lang="pt">Construo workflows orientados a receita que conectam clareza de marca, comportamento do cliente, produção assistida por IA e entrega comercial em resultados escaláveis.</span>
+            <span data-lang="en">I build revenue-oriented workflows that connect brand clarity, customer behavior,
+              AI-assisted production and commercial delivery into scalable results.</span>
+            <span data-lang="pt">Construo workflows orientados a receita que conectam clareza de marca, comportamento do
+              cliente, produção assistida por IA e entrega comercial em resultados escaláveis.</span>
           </p>
         </div>
       </div>
       <div class="mt-6 flex justify-center">
-        <a href="https://wa.me/5561994568187" target="_blank" rel="noopener noreferrer" class="w-full group relative overflow-hidden px-6 py-4 bg-neonBlue/5 hover:bg-neonBlue/15 border border-neonBlue/20 text-neonBlue rounded-2xl text-sm font-medium transition-all duration-300 flex justify-center items-center gap-3 shadow-[0_0_15px_rgba(14,165,233,0.05)]">
-          <div class="absolute inset-0 pointer-events-none rounded-2xl overflow-hidden" style="padding: 1px; -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude;">
-            <div class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_0_340deg,#0ea5e9_360deg)] opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <a href="https://wa.me/5561994568187" target="_blank" rel="noopener noreferrer"
+          class="w-full group relative overflow-hidden px-6 py-4 bg-neonBlue/5 hover:bg-neonBlue/15 border border-neonBlue/20 text-neonBlue rounded-2xl text-sm font-medium transition-all duration-300 flex justify-center items-center gap-3 shadow-[0_0_15px_rgba(14,165,233,0.05)]">
+          <div class="absolute inset-0 pointer-events-none rounded-2xl overflow-hidden"
+            style="padding: 1px; -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude;">
+            <div
+              class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_0_340deg,#0ea5e9_360deg)] opacity-70 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
           </div>
           <iconify-icon icon="ic:baseline-whatsapp" width="20" class="relative z-10"></iconify-icon>
           <span class="relative z-10" data-lang="en">Chat on WhatsApp</span>
@@ -306,19 +392,32 @@
 
     <section id="about" class="px-8 md:px-16 py-24 max-w-[1600px] mx-auto border-t border-white/5">
       <div class="max-w-4xl mx-auto">
-        <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-8 inline-block animate-on-scroll"><span data-lang="en">The Journey</span><span data-lang="pt">A Jornada</span></span>
-        <h2 class="text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight text-glow mb-12 leading-[1.1] animate-on-scroll" style="transition-delay: 100ms">
-          <span data-lang="en">From designer to<br/> marketing operator.</span>
-          <span data-lang="pt">De designer a<br/> operador de marketing.</span>
+        <span
+          class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-8 inline-block animate-on-scroll"><span
+            data-lang="en">The Journey</span><span data-lang="pt">A Jornada</span></span>
+        <h2
+          class="text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight text-glow mb-12 leading-[1.1] animate-on-scroll"
+          style="transition-delay: 100ms">
+          <span data-lang="en">From designer to<br /> marketing operator.</span>
+          <span data-lang="pt">De designer a<br /> operador de marketing.</span>
         </h2>
         <div class="max-w-3xl space-y-8">
-          <p class="text-xl md:text-2xl text-white/60 font-light leading-relaxed animate-on-scroll" style="transition-delay: 200ms">
-            <span data-lang="en">Started in design in 2010. Spent 8 years in advertising agencies in the federal capital, learning to operate under the gravity of budgets, hierarchies, and complex approvals. From this foundation, I evolved into marketing leadership and commercial operations. I connect customer behavior directly to commercial performance.</span>
-            <span data-lang="pt">Comecei no design em 2010. Passei 8 anos em agências da capital federal aprendendo a operar sob a gravidade de orçamentos, hierarquias e aprovações complexas. Dessa base, evoluí para operações comerciais e liderança de marketing. Conecto o comportamento do cliente à performance financeira da empresa.</span>
+          <p class="text-xl md:text-2xl text-white/60 font-light leading-relaxed animate-on-scroll"
+            style="transition-delay: 200ms">
+            <span data-lang="en">Started in design in 2010. Spent 8 years in advertising agencies in the federal
+              capital, learning to operate under the gravity of budgets, hierarchies, and complex approvals. From this
+              foundation, I evolved into marketing leadership and commercial operations. I connect customer behavior
+              directly to commercial performance.</span>
+            <span data-lang="pt">Comecei no design em 2010. Passei 8 anos em agências da capital federal aprendendo a
+              operar sob a gravidade de orçamentos, hierarquias e aprovações complexas. Dessa base, evoluí para
+              operações comerciais e liderança de marketing. Conecto o comportamento do cliente à performance financeira
+              da empresa.</span>
           </p>
           <p class="text-lg text-white/40 font-light leading-relaxed pl-6 border-l-2 border-neonBlue/20">
-            <span data-lang="en">I learned early that clarity, speed and commercial awareness matter more than aesthetic perfection. That shift changed how I work.</span>
-            <span data-lang="pt">Aprendi cedo que clareza, velocidade e consciência comercial importam mais do que perfeição estética. Essa mudança transformou minha forma de trabalhar.</span>
+            <span data-lang="en">I learned early that clarity, speed and commercial awareness matter more than aesthetic
+              perfection. That shift changed how I work.</span>
+            <span data-lang="pt">Aprendi cedo que clareza, velocidade e consciência comercial importam mais do que
+              perfeição estética. Essa mudança transformou minha forma de trabalhar.</span>
           </p>
         </div>
       </div>
@@ -327,47 +426,60 @@
     <!-- OPERATIONAL STRENGTHS -->
     <section class="px-8 md:px-16 py-20 max-w-[1600px] mx-auto border-t border-white/5">
       <div class="max-w-5xl mx-auto">
-        <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-10 inline-block"><span data-lang="en">Operational Strengths</span><span data-lang="pt">Forças Operacionais</span></span>
+        <span
+          class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-10 inline-block"><span
+            data-lang="en">Operational Strengths</span><span data-lang="pt">Forças Operacionais</span></span>
         <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-3">
           <div class="glass-panel p-5 rounded-2xl border border-white/5 hover:border-neonBlue/20 transition-all group">
             <iconify-icon icon="solar:bolt-bold" class="text-neonBlue mb-3 block" width="20"></iconify-icon>
-            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">Rapid adaptation under pressure</span><span data-lang="pt">Adaptação rápida sob pressão</span></span>
+            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">Rapid adaptation under
+                pressure</span><span data-lang="pt">Adaptação rápida sob pressão</span></span>
           </div>
           <div class="glass-panel p-5 rounded-2xl border border-white/5 hover:border-neonBlue/20 transition-all group">
             <iconify-icon icon="solar:cpu-bold" class="text-neonBlue mb-3 block" width="20"></iconify-icon>
-            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">AI-assisted operational systems</span><span data-lang="pt">Sistemas operacionais com IA</span></span>
+            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">AI-assisted operational
+                systems</span><span data-lang="pt">Sistemas operacionais com IA</span></span>
           </div>
           <div class="glass-panel p-5 rounded-2xl border border-white/5 hover:border-neonBlue/20 transition-all group">
             <iconify-icon icon="solar:chart-square-bold" class="text-neonBlue mb-3 block" width="20"></iconify-icon>
-            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">Behavioral growth strategy</span><span data-lang="pt">Estratégia de growth comportamental</span></span>
+            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">Behavioral growth
+                strategy</span><span data-lang="pt">Estratégia de growth comportamental</span></span>
           </div>
           <div class="glass-panel p-5 rounded-2xl border border-white/5 hover:border-neonBlue/20 transition-all group">
             <iconify-icon icon="solar:rocket-bold" class="text-neonBlue mb-3 block" width="20"></iconify-icon>
-            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">High-speed execution</span><span data-lang="pt">Execução em alta velocidade</span></span>
+            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">High-speed
+                execution</span><span data-lang="pt">Execução em alta velocidade</span></span>
           </div>
           <div class="glass-panel p-5 rounded-2xl border border-white/5 hover:border-neonBlue/20 transition-all group">
-            <iconify-icon icon="solar:users-group-two-rounded-bold" class="text-neonBlue mb-3 block" width="20"></iconify-icon>
-            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">Cross-functional leadership</span><span data-lang="pt">Liderança multifuncional</span></span>
+            <iconify-icon icon="solar:users-group-two-rounded-bold" class="text-neonBlue mb-3 block"
+              width="20"></iconify-icon>
+            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">Cross-functional
+                leadership</span><span data-lang="pt">Liderança multifuncional</span></span>
           </div>
           <div class="glass-panel p-5 rounded-2xl border border-white/5 hover:border-neonBlue/20 transition-all group">
             <iconify-icon icon="solar:widget-bold" class="text-neonBlue mb-3 block" width="20"></iconify-icon>
-            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">Creative workflow architecture</span><span data-lang="pt">Arquitetura de fluxos criativos</span></span>
+            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">Creative workflow
+                architecture</span><span data-lang="pt">Arquitetura de fluxos criativos</span></span>
           </div>
           <div class="glass-panel p-5 rounded-2xl border border-white/5 hover:border-neonBlue/20 transition-all group">
             <iconify-icon icon="solar:tag-bold" class="text-neonBlue mb-3 block" width="20"></iconify-icon>
-            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">Brand positioning systems</span><span data-lang="pt">Sistemas de posicionamento de marca</span></span>
+            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">Brand positioning
+                systems</span><span data-lang="pt">Sistemas de posicionamento de marca</span></span>
           </div>
           <div class="glass-panel p-5 rounded-2xl border border-white/5 hover:border-neonBlue/20 transition-all group">
             <iconify-icon icon="solar:chat-square-bold" class="text-neonBlue mb-3 block" width="20"></iconify-icon>
-            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">Commercial communication strategy</span><span data-lang="pt">Estratégia de comunicação comercial</span></span>
+            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">Commercial communication
+                strategy</span><span data-lang="pt">Estratégia de comunicação comercial</span></span>
           </div>
           <div class="glass-panel p-5 rounded-2xl border border-white/5 hover:border-neonBlue/20 transition-all group">
             <iconify-icon icon="solar:layers-bold" class="text-neonBlue mb-3 block" width="20"></iconify-icon>
-            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">Scalable production pipelines</span><span data-lang="pt">Pipelines de produção escaláveis</span></span>
+            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">Scalable production
+                pipelines</span><span data-lang="pt">Pipelines de produção escaláveis</span></span>
           </div>
           <div class="glass-panel p-5 rounded-2xl border border-white/5 hover:border-neonBlue/20 transition-all group">
             <iconify-icon icon="solar:shield-bold" class="text-neonBlue mb-3 block" width="20"></iconify-icon>
-            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">Problem-solving in chaotic environments</span><span data-lang="pt">Resolução de problemas em ambientes caóticos</span></span>
+            <span class="text-sm text-white/80 font-light leading-snug"><span data-lang="en">Problem-solving in chaotic
+                environments</span><span data-lang="pt">Resolução de problemas em ambientes caóticos</span></span>
           </div>
         </div>
       </div>
@@ -376,17 +488,41 @@
     <!-- BEST FIT ROLES -->
     <section class="px-8 md:px-16 py-16 max-w-[1600px] mx-auto border-t border-white/5">
       <div class="max-w-5xl mx-auto">
-        <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-10 inline-block"><span data-lang="en">Best Fit Roles</span><span data-lang="pt">Cargos Ideais</span></span>
+        <span
+          class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-10 inline-block"><span
+            data-lang="en">Best Fit Roles</span><span data-lang="pt">Cargos Ideais</span></span>
         <div class="flex flex-wrap gap-3">
-          <span class="px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-white/80 text-sm font-light hover:border-neonBlue/30 hover:text-white transition-all cursor-default"><span data-lang="en">Marketing Director</span><span data-lang="pt">Diretor de Marketing</span></span>
-          <span class="px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-white/80 text-sm font-light hover:border-neonBlue/30 hover:text-white transition-all cursor-default"><span data-lang="en">Head of Marketing</span><span data-lang="pt">Head de Marketing</span></span>
-          <span class="px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-white/80 text-sm font-light hover:border-neonBlue/30 hover:text-white transition-all cursor-default"><span data-lang="en">Senior Marketing Manager</span><span data-lang="pt">Gerente Sênior de Marketing</span></span>
-          <span class="px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-white/80 text-sm font-light hover:border-neonBlue/30 hover:text-white transition-all cursor-default"><span data-lang="en">Growth Manager</span><span data-lang="pt">Gerente de Growth</span></span>
-          <span class="px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-white/80 text-sm font-light hover:border-neonBlue/30 hover:text-white transition-all cursor-default"><span data-lang="en">Brand Manager</span><span data-lang="pt">Gerente de Marca</span></span>
-          <span class="px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-white/80 text-sm font-light hover:border-neonBlue/30 hover:text-white transition-all cursor-default"><span data-lang="en">Creative Director</span><span data-lang="pt">Diretor Criativo</span></span>
-          <span class="px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-white/80 text-sm font-light hover:border-neonBlue/30 hover:text-white transition-all cursor-default"><span data-lang="en">Digital Marketing Manager</span><span data-lang="pt">Gerente de Marketing Digital</span></span>
-          <span class="px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-white/80 text-sm font-light hover:border-neonBlue/30 hover:text-white transition-all cursor-default"><span data-lang="en">Marketing Operations Manager</span><span data-lang="pt">Gerente de Operações de Marketing</span></span>
-          <span class="px-5 py-3 rounded-full bg-neonBlue/10 border border-neonBlue/30 text-neonBlue text-sm font-light cursor-default"><span data-lang="en">Performance Marketing Manager</span><span data-lang="pt">Gerente de Marketing de Performance</span></span>
+          <span
+            class="px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-white/80 text-sm font-light hover:border-neonBlue/30 hover:text-white transition-all cursor-default"><span
+              data-lang="en">Marketing Director</span><span data-lang="pt">Diretor de Marketing</span></span>
+          <span
+            class="px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-white/80 text-sm font-light hover:border-neonBlue/30 hover:text-white transition-all cursor-default"><span
+              data-lang="en">Head of Marketing</span><span data-lang="pt">Head de Marketing</span></span>
+          <span
+            class="px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-white/80 text-sm font-light hover:border-neonBlue/30 hover:text-white transition-all cursor-default"><span
+              data-lang="en">Senior Marketing Manager</span><span data-lang="pt">Gerente Sênior de
+              Marketing</span></span>
+          <span
+            class="px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-white/80 text-sm font-light hover:border-neonBlue/30 hover:text-white transition-all cursor-default"><span
+              data-lang="en">Growth Manager</span><span data-lang="pt">Gerente de Growth</span></span>
+          <span
+            class="px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-white/80 text-sm font-light hover:border-neonBlue/30 hover:text-white transition-all cursor-default"><span
+              data-lang="en">Brand Manager</span><span data-lang="pt">Gerente de Marca</span></span>
+          <span
+            class="px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-white/80 text-sm font-light hover:border-neonBlue/30 hover:text-white transition-all cursor-default"><span
+              data-lang="en">Creative Director</span><span data-lang="pt">Diretor Criativo</span></span>
+          <span
+            class="px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-white/80 text-sm font-light hover:border-neonBlue/30 hover:text-white transition-all cursor-default"><span
+              data-lang="en">Digital Marketing Manager</span><span data-lang="pt">Gerente de Marketing
+              Digital</span></span>
+          <span
+            class="px-5 py-3 rounded-full bg-white/[0.04] border border-white/10 text-white/80 text-sm font-light hover:border-neonBlue/30 hover:text-white transition-all cursor-default"><span
+              data-lang="en">Marketing Operations Manager</span><span data-lang="pt">Gerente de Operações de
+              Marketing</span></span>
+          <span
+            class="px-5 py-3 rounded-full bg-neonBlue/10 border border-neonBlue/30 text-neonBlue text-sm font-light cursor-default"><span
+              data-lang="en">Performance Marketing Manager</span><span data-lang="pt">Gerente de Marketing de
+              Performance</span></span>
         </div>
       </div>
     </section>
@@ -394,52 +530,96 @@
     <!-- WHAT I CAN OWN -->
     <section class="px-8 md:px-16 py-16 max-w-[1600px] mx-auto border-t border-white/5">
       <div class="max-w-5xl mx-auto">
-        <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-10 inline-block"><span data-lang="en">What I Can Own</span><span data-lang="pt">O Que Posso Liderar</span></span>
+        <span
+          class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-10 inline-block"><span
+            data-lang="en">What I Can Own</span><span data-lang="pt">O Que Posso Liderar</span></span>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="flex items-start gap-4 p-5 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-white/10 transition-all">
-            <iconify-icon icon="solar:arrow-right-bold" class="text-neonBlue mt-0.5 flex-shrink-0" width="16"></iconify-icon>
-            <span class="text-white/70 text-sm font-light leading-relaxed"><span data-lang="en">Turn unclear business problems into actionable marketing workflows with measurable commercial output</span><span data-lang="pt">Transformar problemas de negócio pouco claros em workflows de marketing acionáveis com resultado comercial mensurável</span></span>
+          <div
+            class="flex items-start gap-4 p-5 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-white/10 transition-all">
+            <iconify-icon icon="solar:arrow-right-bold" class="text-neonBlue mt-0.5 flex-shrink-0"
+              width="16"></iconify-icon>
+            <span class="text-white/70 text-sm font-light leading-relaxed"><span data-lang="en">Turn unclear business
+                problems into actionable marketing workflows with measurable commercial output</span><span
+                data-lang="pt">Transformar problemas de negócio pouco claros em workflows de marketing acionáveis com
+                resultado comercial mensurável</span></span>
           </div>
-          <div class="flex items-start gap-4 p-5 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-white/10 transition-all">
-            <iconify-icon icon="solar:arrow-right-bold" class="text-neonBlue mt-0.5 flex-shrink-0" width="16"></iconify-icon>
-            <span class="text-white/70 text-sm font-light leading-relaxed"><span data-lang="en">Build AI-assisted creative and content workflows for scalable delivery</span><span data-lang="pt">Construir workflows criativos e de conteúdo com assistência de IA para entrega escalável</span></span>
+          <div
+            class="flex items-start gap-4 p-5 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-white/10 transition-all">
+            <iconify-icon icon="solar:arrow-right-bold" class="text-neonBlue mt-0.5 flex-shrink-0"
+              width="16"></iconify-icon>
+            <span class="text-white/70 text-sm font-light leading-relaxed"><span data-lang="en">Build AI-assisted
+                creative and content workflows for scalable delivery</span><span data-lang="pt">Construir workflows
+                criativos e de conteúdo com assistência de IA para entrega escalável</span></span>
           </div>
-          <div class="flex items-start gap-4 p-5 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-white/10 transition-all">
-            <iconify-icon icon="solar:arrow-right-bold" class="text-neonBlue mt-0.5 flex-shrink-0" width="16"></iconify-icon>
-            <span class="text-white/70 text-sm font-light leading-relaxed"><span data-lang="en">Translate brand positioning into campaigns, funnels and sales assets that move revenue</span><span data-lang="pt">Traduzir posicionamento de marca em campanhas, funis e ativos de vendas que geram receita</span></span>
+          <div
+            class="flex items-start gap-4 p-5 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-white/10 transition-all">
+            <iconify-icon icon="solar:arrow-right-bold" class="text-neonBlue mt-0.5 flex-shrink-0"
+              width="16"></iconify-icon>
+            <span class="text-white/70 text-sm font-light leading-relaxed"><span data-lang="en">Translate brand
+                positioning into campaigns, funnels and sales assets that move revenue</span><span
+                data-lang="pt">Traduzir posicionamento de marca em campanhas, funis e ativos de vendas que geram
+                receita</span></span>
           </div>
-          <div class="flex items-start gap-4 p-5 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-white/10 transition-all">
-            <iconify-icon icon="solar:arrow-right-bold" class="text-neonBlue mt-0.5 flex-shrink-0" width="16"></iconify-icon>
-            <span class="text-white/70 text-sm font-light leading-relaxed"><span data-lang="en">Lead creative execution from strategy to delivery without losing operational speed</span><span data-lang="pt">Liderar execução criativa da estratégia à entrega sem perder velocidade operacional</span></span>
+          <div
+            class="flex items-start gap-4 p-5 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-white/10 transition-all">
+            <iconify-icon icon="solar:arrow-right-bold" class="text-neonBlue mt-0.5 flex-shrink-0"
+              width="16"></iconify-icon>
+            <span class="text-white/70 text-sm font-light leading-relaxed"><span data-lang="en">Lead creative execution
+                from strategy to delivery without losing operational speed</span><span data-lang="pt">Liderar execução
+                criativa da estratégia à entrega sem perder velocidade operacional</span></span>
           </div>
-          <div class="flex items-start gap-4 p-5 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-white/10 transition-all">
-            <iconify-icon icon="solar:arrow-right-bold" class="text-neonBlue mt-0.5 flex-shrink-0" width="16"></iconify-icon>
-            <span class="text-white/70 text-sm font-light leading-relaxed"><span data-lang="en">Find hidden revenue opportunities through customer behavior analysis and operational data</span><span data-lang="pt">Encontrar oportunidades de receita ocultas através de análise de comportamento do cliente e dados operacionais</span></span>
+          <div
+            class="flex items-start gap-4 p-5 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-white/10 transition-all">
+            <iconify-icon icon="solar:arrow-right-bold" class="text-neonBlue mt-0.5 flex-shrink-0"
+              width="16"></iconify-icon>
+            <span class="text-white/70 text-sm font-light leading-relaxed"><span data-lang="en">Find hidden revenue
+                opportunities through customer behavior analysis and operational data</span><span
+                data-lang="pt">Encontrar oportunidades de receita ocultas através de análise de comportamento do cliente
+                e dados operacionais</span></span>
           </div>
-          <div class="flex items-start gap-4 p-5 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-white/10 transition-all">
-            <iconify-icon icon="solar:arrow-right-bold" class="text-neonBlue mt-0.5 flex-shrink-0" width="16"></iconify-icon>
-            <span class="text-white/70 text-sm font-light leading-relaxed"><span data-lang="en">Deliver results with limited resources, incomplete information and real operational constraints</span><span data-lang="pt">Entregar resultados com recursos limitados, informação incompleta e restrições operacionais reais</span></span>
+          <div
+            class="flex items-start gap-4 p-5 rounded-2xl border border-white/5 bg-white/[0.02] hover:border-white/10 transition-all">
+            <iconify-icon icon="solar:arrow-right-bold" class="text-neonBlue mt-0.5 flex-shrink-0"
+              width="16"></iconify-icon>
+            <span class="text-white/70 text-sm font-light leading-relaxed"><span data-lang="en">Deliver results with
+                limited resources, incomplete information and real operational constraints</span><span
+                data-lang="pt">Entregar resultados com recursos limitados, informação incompleta e restrições
+                operacionais reais</span></span>
           </div>
         </div>
       </div>
     </section>
     <section id="cases" class="px-8 md:px-16 py-24 max-w-[1600px] mx-auto border-t border-white/5">
       <div class="mb-12">
-        <span class="px-3 py-1 rounded-full bg-neonBlue/10 border border-neonBlue/20 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-6 inline-block"><span data-lang="en">Case Study 01</span><span data-lang="pt">Estudo de Caso 01</span></span>
+        <span
+          class="px-3 py-1 rounded-full bg-neonBlue/10 border border-neonBlue/20 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-6 inline-block"><span
+            data-lang="en">Case Study 01</span><span data-lang="pt">Estudo de Caso 01</span></span>
       </div>
 
-      <div class="glass-panel p-10 md:p-16 rounded-[3rem] relative overflow-hidden border border-white/5 flex flex-col gap-20 animate-on-scroll">
+      <div
+        class="glass-panel p-10 md:p-16 rounded-[3rem] relative overflow-hidden border border-white/5 flex flex-col gap-20 animate-on-scroll">
         <!-- Background glows -->
-        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-neonBlue/5 blur-[120px] rounded-full pointer-events-none"></div>
-        <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-red-500/5 blur-[120px] rounded-full pointer-events-none"></div>
+        <div
+          class="absolute top-0 right-0 w-[600px] h-[600px] bg-neonBlue/5 blur-[120px] rounded-full pointer-events-none">
+        </div>
+        <div
+          class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-red-500/5 blur-[120px] rounded-full pointer-events-none">
+        </div>
 
         <!-- 1. Intro / Context -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
           <div class="flex justify-center order-1 lg:order-1">
-            <div class="relative overflow-hidden rounded-3xl group max-w-[300px] w-full filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)]">
-              <div class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700 pointer-events-none"></div>
-              <div class="absolute inset-0 bg-gradient-to-t from-[#020205]/50 to-transparent z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700 pointer-events-none"></div>
-              <img src="./assets/less-paper-logo-02.png" class="w-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 relative z-0" alt="Less Paper Official Logo">
+            <div
+              class="relative overflow-hidden rounded-3xl group max-w-[300px] w-full filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)]">
+              <div
+                class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700 pointer-events-none">
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#020205]/50 to-transparent z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700 pointer-events-none">
+              </div>
+              <img src="./assets/less-paper-logo-02.png"
+                class="w-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 relative z-0"
+                alt="Less Paper Official Logo">
             </div>
           </div>
           <div class="order-2 lg:order-2">
@@ -447,19 +627,41 @@
               <span data-lang="en">Less Paper Agency</span><span data-lang="pt">Agência Less Paper</span>
             </h2>
             <h3 class="text-2xl text-white/70 font-light mb-6 leading-[1.3]">
-              <span data-lang="en">Built and operated a 360º digital marketing agency, managing multiple accounts remotely for over four years.</span>
-              <span data-lang="pt">Construí e operei uma agência de marketing digital 360º, gerenciando múltiplas contas remotamente por mais de quatro anos.</span>
+              <span data-lang="en">Built and operated a 360º digital marketing agency, managing multiple accounts
+                remotely for over four years.</span>
+              <span data-lang="pt">Construí e operei uma agência de marketing digital 360º, gerenciando múltiplas contas
+                remotamente por mais de quatro anos.</span>
             </h3>
             <div class="text-white/50 text-base font-light leading-relaxed">
-              <p><span data-lang="en">Scaled the operation from zero to nearly <strong class="text-white">R$600K in revenue.</strong> Until then, my highest salary had been R$3,500. I got tired of just delivering artwork. I started building campaigns and operations focused on commercial results. Led the simultaneous execution of dozens of clients, directly managing a team of up to 12 people (contractors and freelancers) and ensuring constant alignment between ownership, clients, and production. Built structured routines and communication systems from scratch.</span><span data-lang="pt">Escalei a operação do zero a quase <strong class="text-white">R$600 mil em receita.</strong> Até então, meu maior salário tinha sido R$3.500. Cansei de entregar apenas arte. Passei a construir campanhas e operações focadas em resultado comercial. Liderei a execução simultânea de dezenas de clientes, gerenciando diretamente um time de até 12 pessoas (entre contratados e freelancers) e garantindo o alinhamento constante entre diretoria, clientes e produção. Construí rotinas estruturadas e sistemas de comunicação do zero.</span></p>
-              
+              <p><span data-lang="en">Scaled the operation from zero to nearly <strong class="text-white">R$600K in
+                    revenue.</strong> Until then, my highest salary had been R$3,500. I got tired of just delivering
+                  artwork. I started building campaigns and operations focused on commercial results. Led the
+                  simultaneous execution of dozens of clients, directly managing a team of up to 12 people (contractors
+                  and freelancers) and ensuring constant alignment between ownership, clients, and production. Built
+                  structured routines and communication systems from scratch.</span><span data-lang="pt">Escalei a
+                  operação do zero a quase <strong class="text-white">R$600 mil em receita.</strong> Até então, meu
+                  maior salário tinha sido R$3.500. Cansei de entregar apenas arte. Passei a construir campanhas e
+                  operações focadas em resultado comercial. Liderei a execução simultânea de dezenas de clientes,
+                  gerenciando diretamente um time de até 12 pessoas (entre contratados e freelancers) e garantindo o
+                  alinhamento constante entre diretoria, clientes e produção. Construí rotinas estruturadas e sistemas
+                  de comunicação do zero.</span></p>
+
               <div class="mt-8 border-l-2 border-neonBlue/30 pl-6 py-2 bg-white/[0.02] rounded-r-2xl">
-                <h4 class="text-[10px] md:text-xs font-mono text-neonBlue uppercase tracking-widest mb-4">Operational Focus</h4>
+                <h4 class="text-[10px] md:text-xs font-mono text-neonBlue uppercase tracking-widest mb-4">Operational
+                  Focus</h4>
                 <ul class="space-y-3 text-white/70 text-sm font-light">
-                  <li class="flex items-center gap-3"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue" width="16"></iconify-icon> <span data-lang="en">Distributed creative operations</span><span data-lang="pt">Operações criativas distribuídas</span></li>
-                  <li class="flex items-center gap-3"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue" width="16"></iconify-icon> <span data-lang="en">Remote collaboration systems</span><span data-lang="pt">Sistemas de colaboração remota</span></li>
-                  <li class="flex items-center gap-3"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue" width="16"></iconify-icon> <span data-lang="en">Campaign execution workflows</span><span data-lang="pt">Fluxos de trabalho de execução de campanhas</span></li>
-                  <li class="flex items-center gap-3"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue" width="16"></iconify-icon> <span data-lang="en">Multi-client production management</span><span data-lang="pt">Gerenciamento de produção multi-clientes</span></li>
+                  <li class="flex items-center gap-3"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue"
+                      width="16"></iconify-icon> <span data-lang="en">Distributed creative operations</span><span
+                      data-lang="pt">Operações criativas distribuídas</span></li>
+                  <li class="flex items-center gap-3"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue"
+                      width="16"></iconify-icon> <span data-lang="en">Remote collaboration systems</span><span
+                      data-lang="pt">Sistemas de colaboração remota</span></li>
+                  <li class="flex items-center gap-3"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue"
+                      width="16"></iconify-icon> <span data-lang="en">Campaign execution workflows</span><span
+                      data-lang="pt">Fluxos de trabalho de execução de campanhas</span></li>
+                  <li class="flex items-center gap-3"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue"
+                      width="16"></iconify-icon> <span data-lang="en">Multi-client production management</span><span
+                      data-lang="pt">Gerenciamento de produção multi-clientes</span></li>
                 </ul>
               </div>
             </div>
@@ -472,37 +674,72 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
           <div class="lg:col-span-5">
             <h4 class="text-sm font-mono text-neonBlue tracking-widest uppercase mb-4 flex items-center gap-3">
-              <iconify-icon icon="solar:cup-star-bold" width="20"></iconify-icon> <span data-lang="en">National 8Ps Award (2018/2019)</span><span data-lang="pt">Prêmio Nacional 8Ps (2018/2019)</span>
+              <iconify-icon icon="solar:cup-star-bold" width="20"></iconify-icon> <span data-lang="en">National 8Ps
+                Award (2018/2019)</span><span data-lang="pt">Prêmio Nacional 8Ps (2018/2019)</span>
             </h4>
-            <h3 class="text-3xl md:text-4xl font-medium mb-6"><span data-lang="en">Fast Application, Extreme ROI</span><span data-lang="pt">Aplicação rápida, ROI Extremo</span></h3>
+            <h3 class="text-3xl md:text-4xl font-medium mb-6"><span data-lang="en">Fast Application, Extreme
+                ROI</span><span data-lang="pt">Aplicação rápida, ROI Extremo</span></h3>
             <div class="space-y-4 text-white/60 font-light text-sm md:text-base leading-relaxed">
-              <p><span data-lang="en">Villa Rizza was Less Paper's third client. The challenge was to revive a New Year's Eve party that, the previous year, had attracted only 20 people.</span><span data-lang="pt">A Villa Rizza foi o terceiro cliente da Less Paper. O desafio era reviver uma festa de Réveillon que, no ano anterior, atraiu apenas 20 pessoas.</span></p>
-              <p><span data-lang="en">I dove into the client's operation and participated in strategic decisions to completely reposition the event.</span><span data-lang="pt">Mergulhei na operação do cliente e participei de decisões estratégicas para reposicionar completamente o evento.</span></p>
-              <p><span data-lang="en">After applying conversion frameworks learned at the 8Ps immersion, we created an unprecedented positioning for Brasília: a New Year's Eve focused on traditional families, with experiences for children, youth and adults.</span><span data-lang="pt">Após aplicar frameworks de conversão aprendidos na imersão 8Ps, criamos um posicionamento inédito para Brasília: um Réveillon voltado para famílias tradicionais, com experiências para crianças, jovens e adultos.</span></p>
-              <p><span data-lang="en">In about 40 days, the event generated approximately <strong class="text-white">R$120K in revenue</strong> with less than R$1K invested in paid media.</span><span data-lang="pt">Em cerca de 40 dias, o evento gerou aproximadamente <strong class="text-white">R$120 mil em faturamento</strong> com menos de R$1 mil investidos em mídia paga.</span></p>
-              <p><span data-lang="en">The project earned me the national One Week Club award by Conrado Adolpho.</span><span data-lang="pt">O projeto me rendeu o prêmio nacional One Week Club, do Conrado Adolpho.</span></p>
+              <p><span data-lang="en">Villa Rizza was Less Paper's third client. The challenge was to revive a New
+                  Year's Eve party that, the previous year, had attracted only 20 people.</span><span data-lang="pt">A
+                  Villa Rizza foi o terceiro cliente da Less Paper. O desafio era reviver uma festa de Réveillon que, no
+                  ano anterior, atraiu apenas 20 pessoas.</span></p>
+              <p><span data-lang="en">I dove into the client's operation and participated in strategic decisions to
+                  completely reposition the event.</span><span data-lang="pt">Mergulhei na operação do cliente e
+                  participei de decisões estratégicas para reposicionar completamente o evento.</span></p>
+              <p><span data-lang="en">After applying conversion frameworks learned at the 8Ps immersion, we created an
+                  unprecedented positioning for Brasília: a New Year's Eve focused on traditional families, with
+                  experiences for children, youth and adults.</span><span data-lang="pt">Após aplicar frameworks de
+                  conversão aprendidos na imersão 8Ps, criamos um posicionamento inédito para Brasília: um Réveillon
+                  voltado para famílias tradicionais, com experiências para crianças, jovens e adultos.</span></p>
+              <p><span data-lang="en">In about 40 days, the event generated approximately <strong
+                    class="text-white">R$120K in revenue</strong> with less than R$1K invested in paid
+                  media.</span><span data-lang="pt">Em cerca de 40 dias, o evento gerou aproximadamente <strong
+                    class="text-white">R$120 mil em faturamento</strong> com menos de R$1 mil investidos em mídia
+                  paga.</span></p>
+              <p><span data-lang="en">The project earned me the national One Week Club award by Conrado
+                  Adolpho.</span><span data-lang="pt">O projeto me rendeu o prêmio nacional One Week Club, do Conrado
+                  Adolpho.</span></p>
             </div>
           </div>
-          
+
           <div class="lg:col-span-7 flex flex-col gap-2 pt-8 w-full items-center">
             <!-- Eventbrite Sales Dashboard -->
-            <div class="relative overflow-hidden rounded-2xl group w-full md:w-[65%] filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)] z-10 md:-mb-8">
-              <div class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700"></div>
-              <div class="absolute inset-0 bg-gradient-to-t from-[#020205]/50 to-transparent z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700"></div>
-              <img src="./assets/eventbrite-clean.png" class="w-full grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" alt="Eventbrite Sales Dashboard">
+            <div
+              class="relative overflow-hidden rounded-2xl group w-full md:w-[65%] filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)] z-10 md:-mb-8">
+              <div
+                class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700">
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#020205]/50 to-transparent z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700">
+              </div>
+              <img src="./assets/eventbrite-clean.png"
+                class="w-full grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                alt="Eventbrite Sales Dashboard">
             </div>
             <!-- Award photo + logo card - tight gap -->
             <div class="flex items-stretch justify-center gap-3 w-full md:w-auto relative z-0">
-              <div class="relative overflow-hidden rounded-xl group shrink-0 w-[90px] md:w-[170px] border-4 border-[#0a0a0f] filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)]">
-                <div class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700"></div>
-                <div class="absolute inset-0 bg-gradient-to-t from-[#020205]/50 to-transparent z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700"></div>
-                <img src="./assets/0.jpg" class="w-full h-full object-cover grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" alt="8Ps Award">
+              <div
+                class="relative overflow-hidden rounded-xl group shrink-0 w-[90px] md:w-[170px] border-4 border-[#0a0a0f] filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.9)]">
+                <div
+                  class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700">
+                </div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-[#020205]/50 to-transparent z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700">
+                </div>
+                <img src="./assets/0.jpg"
+                  class="w-full h-full object-cover grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                  alt="8Ps Award">
               </div>
-              <div class="flex flex-col justify-center gap-2 bg-white/[0.03] border border-white/5 p-3 md:p-5 rounded-2xl flex-1 md:flex-none md:w-[260px]">
-                <img src="./assets/Logo-Reveillon-Negativa.png" class="w-[100px] md:w-[140px] object-contain opacity-90" alt="Villa Rizza Logo">
+              <div
+                class="flex flex-col justify-center gap-2 bg-white/[0.03] border border-white/5 p-3 md:p-5 rounded-2xl flex-1 md:flex-none md:w-[260px]">
+                <img src="./assets/Logo-Reveillon-Negativa.png" class="w-[100px] md:w-[140px] object-contain opacity-90"
+                  alt="Villa Rizza Logo">
                 <p class="text-[10px] md:text-xs text-white/50 font-light leading-relaxed">
-                  <span data-lang="en">R$91,820 platform + ~R$30K direct sales. ~R$120K total. Less than R$1K in media. National 8Ps Award winner.</span>
-                  <span data-lang="pt">R$91.820 na plataforma + ~R$30K em vendas diretas. ~R$120K total. Menos de R$1K em mídia. Vencedor do Prêmio Nacional 8Ps.</span>
+                  <span data-lang="en">R$91,820 platform + ~R$30K direct sales. ~R$120K total. Less than R$1K in media.
+                    National 8Ps Award winner.</span>
+                  <span data-lang="pt">R$91.820 na plataforma + ~R$30K em vendas diretas. ~R$120K total. Menos de R$1K
+                    em mídia. Vencedor do Prêmio Nacional 8Ps.</span>
                 </p>
               </div>
             </div>
@@ -514,22 +751,41 @@
         <!-- 3. Domatus Pivot -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center relative z-10">
           <div class="lg:col-span-7 flex justify-center">
-            <div class="relative group w-full filter drop-shadow-[0_30px_50px_rgba(0,0,0,0.8)] scale-[1.55] md:scale-[1.15] -translate-y-4 md:-translate-y-8 hover:scale-[1.6] md:hover:scale-[1.25] transition-transform duration-700">
-               <img src="./assets/domatus-composed.png" class="w-full h-auto object-contain [filter:grayscale(1)_sepia(1)_hue-rotate(170deg)_saturate(0.85)_brightness(0.8)_contrast(1.1)] group-hover:[filter:none] transition-all duration-700 opacity-80 group-hover:opacity-100" alt="Domatus Case Composition">
+            <div
+              class="relative group w-full filter drop-shadow-[0_30px_50px_rgba(0,0,0,0.8)] scale-[1.55] md:scale-[1.15] -translate-y-4 md:-translate-y-8 hover:scale-[1.6] md:hover:scale-[1.25] transition-transform duration-700">
+              <img src="./assets/domatus-composed.png"
+                class="w-full h-auto object-contain [filter:grayscale(1)_sepia(1)_hue-rotate(170deg)_saturate(0.85)_brightness(0.8)_contrast(1.1)] group-hover:[filter:none] transition-all duration-700 opacity-80 group-hover:opacity-100"
+                alt="Domatus Case Composition">
             </div>
           </div>
 
           <div class="lg:col-span-5">
             <h4 class="text-sm font-mono text-red-400 tracking-widest uppercase mb-4 flex items-center gap-3">
-              <iconify-icon icon="solar:flame-bold" width="20"></iconify-icon> <span data-lang="en">The 2020 Pandemic Pivot</span><span data-lang="pt">O Pivô da Pandemia em 2020</span>
+              <iconify-icon icon="solar:flame-bold" width="20"></iconify-icon> <span data-lang="en">The 2020 Pandemic
+                Pivot</span><span data-lang="pt">O Pivô da Pandemia em 2020</span>
             </h4>
-            <h3 class="text-3xl md:text-4xl font-medium mb-6"><span data-lang="en">Domatus: Adapting to Survive</span><span data-lang="pt">Domatus: Adaptação para Sobreviver</span></h3>
+            <h3 class="text-3xl md:text-4xl font-medium mb-6"><span data-lang="en">Domatus: Adapting to
+                Survive</span><span data-lang="pt">Domatus: Adaptação para Sobreviver</span></h3>
             <div class="space-y-4 text-white/60 font-light text-sm leading-relaxed">
-              <p><span data-lang="en">Domatus, an electronic security company, came to me after the national award results.</span><span data-lang="pt">A Domatus, empresa de segurança eletrônica, chegou até mim após os resultados do prêmio nacional.</span></p>
-              <p><span data-lang="en">The initial focus of the operation was large monitoring and security contracts for hypermarkets, schools and public agencies.</span><span data-lang="pt">O foco inicial da operação eram grandes contratos de monitoramento e segurança para hipermercados, escolas e órgãos públicos.</span></p>
-              <p><span data-lang="en">As soon as we finalized the strategic planning, the pandemic began. I executed a rapid repositioning amidst the market collapse. In a few days, we rebuilt the company's entire commercial strategy.</span><span data-lang="pt">Assim que finalizamos o planejamento estratégico, a pandemia começou. Executei um reposicionamento rápido em meio ao colapso do mercado. Em poucos dias, reconstruímos toda a estratégia comercial da empresa.</span></p>
-              <p><span data-lang="en">We redirected the operation to thermal cameras and adapted communication, positioning and campaigns to the new market demand.</span><span data-lang="pt">Redirecionamos a operação para câmeras térmicas e adaptamos comunicação, posicionamento e campanhas para a nova demanda do mercado.</span></p>
-              <p><span data-lang="en">The adaptation secured over <strong class="text-white">R$1.9 million in revenue</strong> during the peak of the crisis.</span><span data-lang="pt">A adaptação garantiu mais de <strong class="text-white">R$1,9 milhão em faturamento</strong> durante o auge da crise.</span></p>
+              <p><span data-lang="en">Domatus, an electronic security company, came to me after the national award
+                  results.</span><span data-lang="pt">A Domatus, empresa de segurança eletrônica, chegou até mim após os
+                  resultados do prêmio nacional.</span></p>
+              <p><span data-lang="en">The initial focus of the operation was large monitoring and security contracts for
+                  hypermarkets, schools and public agencies.</span><span data-lang="pt">O foco inicial da operação eram
+                  grandes contratos de monitoramento e segurança para hipermercados, escolas e órgãos públicos.</span>
+              </p>
+              <p><span data-lang="en">As soon as we finalized the strategic planning, the pandemic began. I executed a
+                  rapid repositioning amidst the market collapse. In a few days, we rebuilt the company's entire
+                  commercial strategy.</span><span data-lang="pt">Assim que finalizamos o planejamento estratégico, a
+                  pandemia começou. Executei um reposicionamento rápido em meio ao colapso do mercado. Em poucos dias,
+                  reconstruímos toda a estratégia comercial da empresa.</span></p>
+              <p><span data-lang="en">We redirected the operation to thermal cameras and adapted communication,
+                  positioning and campaigns to the new market demand.</span><span data-lang="pt">Redirecionamos a
+                  operação para câmeras térmicas e adaptamos comunicação, posicionamento e campanhas para a nova demanda
+                  do mercado.</span></p>
+              <p><span data-lang="en">The adaptation secured over <strong class="text-white">R$1.9 million in
+                    revenue</strong> during the peak of the crisis.</span><span data-lang="pt">A adaptação garantiu mais
+                  de <strong class="text-white">R$1,9 milhão em faturamento</strong> durante o auge da crise.</span></p>
             </div>
           </div>
         </div>
@@ -539,55 +795,92 @@
 
     <!-- MICRO -->
     <div class="px-8 md:px-16 py-6 max-w-[1600px] mx-auto">
-      <p class="text-[10px] font-mono text-white/20 tracking-[0.3em] uppercase"><span data-lang="en">I move fast without losing direction.</span><span data-lang="pt">Me movo rápido sem perder a direção.</span></p>
+      <p class="text-[10px] font-mono text-white/20 tracking-[0.3em] uppercase"><span data-lang="en">I move fast without
+          losing direction.</span><span data-lang="pt">Me movo rápido sem perder a direção.</span></p>
     </div>
 
     <!-- SECTION 4: FIESTA MOTEL -->
     <section class="min-h-screen flex items-center px-8 md:px-16 py-24 max-w-[1600px] mx-auto border-t border-white/5">
       <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-        <div class="order-2 lg:order-1 glass-panel rounded-[3rem] relative overflow-hidden border border-white/5 flex flex-col animate-on-scroll">
+        <div
+          class="order-2 lg:order-1 glass-panel rounded-[3rem] relative overflow-hidden border border-white/5 flex flex-col animate-on-scroll">
           <div class="h-80 md:h-96 w-full relative overflow-hidden group">
-             <div class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700 pointer-events-none"></div>
-             <div class="absolute inset-0 bg-gradient-to-t from-[#020205] to-transparent z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700 pointer-events-none"></div>
-             <img src="./assets/suite-cinema.png" class="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" alt="Fiesta Motel" />
+            <div
+              class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700 pointer-events-none">
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#020205] to-transparent z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700 pointer-events-none">
+            </div>
+            <img src="./assets/suite-cinema.png"
+              class="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+              alt="Fiesta Motel" />
           </div>
           <div class="p-10 md:p-12 relative">
-            <div class="absolute bottom-0 left-0 w-64 h-64 bg-neonBlue/10 blur-[80px] rounded-full group-hover:bg-neonBlue/20 transition-all"></div>
+            <div
+              class="absolute bottom-0 left-0 w-64 h-64 bg-neonBlue/10 blur-[80px] rounded-full group-hover:bg-neonBlue/20 transition-all">
+            </div>
             <h4 class="text-sm font-mono text-white/40 tracking-widest uppercase mb-10 flex items-center gap-3">
-            <iconify-icon icon="solar:chart-square-linear" width="20"></iconify-icon>
-            <span data-lang="en">Impact</span><span data-lang="pt">Impacto</span>
-          </h4>
-          <div class="grid grid-cols-2 gap-3 md:gap-6">
-            <div class="bg-white/5 p-4 md:p-8 rounded-[1.5rem] border border-white/5 hover:bg-white/10 transition-colors">
-              <div class="text-xl md:text-4xl font-light text-white mb-2">R$220K</div>
-              <div class="text-xs text-white/50 leading-snug"><span data-lang="en">avg monthly revenue at start</span><span data-lang="pt">receita média mensal no início</span></div>
-            </div>
-            <div class="bg-white/5 p-4 md:p-8 rounded-[1.5rem] border border-white/5 hover:bg-white/10 transition-colors">
-              <div class="text-xl md:text-4xl font-light text-white mb-2">R$305K</div>
-              <div class="text-xs text-white/50 leading-snug"><span data-lang="en">avg monthly revenue after 2 years</span><span data-lang="pt">receita média mensal após 2 anos</span></div>
-            </div>
-            <div class="bg-white/5 p-4 md:p-8 rounded-[1.5rem] border border-white/5 hover:bg-white/10 transition-colors">
-              <div class="text-2xl md:text-5xl font-light text-white mb-2">+39%</div>
-              <div class="text-xs text-white/50 leading-snug"><span data-lang="en">revenue growth over 2 years</span><span data-lang="pt">crescimento de receita em 2 anos</span></div>
-            </div>
-            <div class="bg-white/5 p-4 md:p-8 rounded-[1.5rem] border border-white/5 hover:bg-white/10 transition-colors">
-              <div class="text-2xl md:text-5xl font-light text-white mb-2">4.0★</div>
-              <div class="text-xs text-white/50 leading-snug"><span data-lang="en">Reputation recovery (from 2.5)</span><span data-lang="pt">Recuperação de reputação (de 2.5)</span></div>
+              <iconify-icon icon="solar:chart-square-linear" width="20"></iconify-icon>
+              <span data-lang="en">Impact</span><span data-lang="pt">Impacto</span>
+            </h4>
+            <div class="grid grid-cols-2 gap-3 md:gap-6">
+              <div
+                class="bg-white/5 p-4 md:p-8 rounded-[1.5rem] border border-white/5 hover:bg-white/10 transition-colors">
+                <div class="text-xl md:text-4xl font-light text-white mb-2">R$220K</div>
+                <div class="text-xs text-white/50 leading-snug"><span data-lang="en">avg monthly revenue at
+                    start</span><span data-lang="pt">receita média mensal no início</span></div>
+              </div>
+              <div
+                class="bg-white/5 p-4 md:p-8 rounded-[1.5rem] border border-white/5 hover:bg-white/10 transition-colors">
+                <div class="text-xl md:text-4xl font-light text-white mb-2">R$305K</div>
+                <div class="text-xs text-white/50 leading-snug"><span data-lang="en">avg monthly revenue after 2
+                    years</span><span data-lang="pt">receita média mensal após 2 anos</span></div>
+              </div>
+              <div
+                class="bg-white/5 p-4 md:p-8 rounded-[1.5rem] border border-white/5 hover:bg-white/10 transition-colors">
+                <div class="text-2xl md:text-5xl font-light text-white mb-2">+39%</div>
+                <div class="text-xs text-white/50 leading-snug"><span data-lang="en">revenue growth over 2
+                    years</span><span data-lang="pt">crescimento de receita em 2 anos</span></div>
+              </div>
+              <div
+                class="bg-white/5 p-4 md:p-8 rounded-[1.5rem] border border-white/5 hover:bg-white/10 transition-colors">
+                <div class="text-2xl md:text-5xl font-light text-white mb-2">4.0★</div>
+                <div class="text-xs text-white/50 leading-snug"><span data-lang="en">Reputation recovery (from
+                    2.5)</span><span data-lang="pt">Recuperação de reputação (de 2.5)</span></div>
+              </div>
             </div>
           </div>
-        </div>
         </div>
 
         <div class="order-1 lg:order-2 animate-on-scroll" style="transition-delay: 200ms">
-          <span class="px-3 py-1 rounded-full bg-neonBlue/10 border border-neonBlue/20 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-6 inline-block"><span data-lang="en">Case Study 02</span><span data-lang="pt">Estudo de Caso 02</span></span>
+          <span
+            class="px-3 py-1 rounded-full bg-neonBlue/10 border border-neonBlue/20 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-6 inline-block"><span
+              data-lang="en">Case Study 02</span><span data-lang="pt">Estudo de Caso 02</span></span>
           <h2 class="text-5xl md:text-6xl font-medium tracking-tight mb-4 text-glow">Fiesta Motel</h2>
-          <h3 class="text-2xl md:text-3xl text-white/70 font-light mb-10 leading-[1.3]"><span data-lang="en">R$220K to R$305K in average monthly revenue over 2 years, across multiple marketing fronts.</span><span data-lang="pt">De R$220K para R$305K de receita média mensal em 2 anos, através de múltiplas frentes de marketing.</span></h3>
-          
+          <h3 class="text-2xl md:text-3xl text-white/70 font-light mb-10 leading-[1.3]"><span data-lang="en">R$220K to
+              R$305K in average monthly revenue over 2 years, across multiple marketing fronts.</span><span
+              data-lang="pt">De R$220K para R$305K de receita média mensal em 2 anos, através de múltiplas frentes de
+              marketing.</span></h3>
+
           <div class="space-y-6 text-white/50 text-base md:text-lg font-light leading-relaxed">
-            <p><span data-lang="en">Working alongside ownership, I adapted positioning strategies to the financial and structural constraints of the business. Identified hidden revenue opportunities through occupancy data and customer behavior.</span><span data-lang="pt">Trabalhando lado a lado com a diretoria, adaptei estratégias de posicionamento às restrições financeiras e estruturais do negócio. Identifiquei oportunidades de receita ocultas através de dados de ocupação e comportamento do cliente.</span></p>
-            <p><span data-lang="en">Led the creation of scalable promotional systems, including the "Double Time" campaign, later replicated by competitors.</span><span data-lang="pt">Liderei a criação de sistemas promocionais escaláveis, incluindo a campanha "Tempo em Dobro", posteriormente replicados por concorrentes.</span></p>
-            <p><span data-lang="en">Structured campaigns from raw occupancy data. Contributed to reputation recovery, Google reviews, AI content pipelines, visual repositioning and a complete redesign of the digital presence.</span><span data-lang="pt">Estruturei campanhas a partir de dados brutos de ocupação. Contribuí para recuperação de reputação, avaliações no Google, pipelines de conteúdo com IA, reposicionamento visual e reformulação da presença digital.</span></p>
-            <p><span data-lang="en">Also helped create new suite concepts, including the Cinema Suite, which became one of the highest-demand experiences in the business.</span><span data-lang="pt">Também ajudei a criar novos conceitos de suítes, incluindo a Suíte Cinema, que se tornou uma das experiências de maior demanda no negócio.</span></p>
+            <p><span data-lang="en">Working alongside ownership, I adapted positioning strategies to the financial and
+                structural constraints of the business. Identified hidden revenue opportunities through occupancy data
+                and customer behavior.</span><span data-lang="pt">Trabalhando lado a lado com a diretoria, adaptei
+                estratégias de posicionamento às restrições financeiras e estruturais do negócio. Identifiquei
+                oportunidades de receita ocultas através de dados de ocupação e comportamento do cliente.</span></p>
+            <p><span data-lang="en">Led the creation of scalable promotional systems, including the "Double Time"
+                campaign, later replicated by competitors.</span><span data-lang="pt">Liderei a criação de sistemas
+                promocionais escaláveis, incluindo a campanha "Tempo em Dobro", posteriormente replicados por
+                concorrentes.</span></p>
+            <p><span data-lang="en">Structured campaigns from raw occupancy data. Contributed to reputation recovery,
+                Google reviews, AI content pipelines, visual repositioning and a complete redesign of the digital
+                presence.</span><span data-lang="pt">Estruturei campanhas a partir de dados brutos de ocupação.
+                Contribuí para recuperação de reputação, avaliações no Google, pipelines de conteúdo com IA,
+                reposicionamento visual e reformulação da presença digital.</span></p>
+            <p><span data-lang="en">Also helped create new suite concepts, including the Cinema Suite, which became one
+                of the highest-demand experiences in the business.</span><span data-lang="pt">Também ajudei a criar
+                novos conceitos de suítes, incluindo a Suíte Cinema, que se tornou uma das experiências de maior demanda
+                no negócio.</span></p>
           </div>
         </div>
       </div>
@@ -595,72 +888,144 @@
 
     <!-- MICRO -->
     <div class="px-8 md:px-16 py-6 max-w-[1600px] mx-auto">
-      <p class="text-[10px] font-mono text-white/20 tracking-[0.3em] uppercase"><span data-lang="en">Results speak louder than positioning.</span><span data-lang="pt">Resultados falam mais alto do que posicionamento.</span></p>
+      <p class="text-[10px] font-mono text-white/20 tracking-[0.3em] uppercase"><span data-lang="en">Results speak
+          louder than positioning.</span><span data-lang="pt">Resultados falam mais alto do que posicionamento.</span>
+      </p>
     </div>
 
     <!-- SECTION 5: AI SMART STUDIOS -->
     <section class="min-h-screen flex items-center px-8 md:px-16 py-24 max-w-[1600px] mx-auto border-t border-white/5">
       <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
         <div class="animate-on-scroll">
-          <span class="px-3 py-1 rounded-full bg-neonBlue/10 border border-neonBlue/20 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-6 inline-block"><span data-lang="en">Case Study 03</span><span data-lang="pt">Estudo de Caso 03</span></span>
+          <span
+            class="px-3 py-1 rounded-full bg-neonBlue/10 border border-neonBlue/20 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-6 inline-block"><span
+              data-lang="en">Case Study 03</span><span data-lang="pt">Estudo de Caso 03</span></span>
           <h2 class="text-5xl md:text-6xl font-medium tracking-tight mb-8 text-glow flex items-center gap-4">
             AI Smart Studios
           </h2>
-          
+
           <!-- UPWORK CREDIBILITY BANNER -->
-          <div class="flex flex-wrap items-center gap-3 mb-10 p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md w-fit">
-            <img src="./assets/upwork-logo-white.png" class="h-5 md:h-6 object-contain mr-2 filter drop-shadow-[0_0_10px_rgba(20,168,0,0.5)]" alt="Upwork">
-            <span class="flex items-center gap-1.5 px-3 py-1 bg-[#14a800]/10 border border-[#14a800]/30 text-[#14a800] rounded-full text-[10px] md:text-xs font-mono font-medium">
+          <div
+            class="flex flex-wrap items-center gap-3 mb-10 p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md w-fit">
+            <img src="./assets/upwork-logo-white.png"
+              class="h-5 md:h-6 object-contain mr-2 filter drop-shadow-[0_0_10px_rgba(20,168,0,0.5)]" alt="Upwork">
+            <span
+              class="flex items-center gap-1.5 px-3 py-1 bg-[#14a800]/10 border border-[#14a800]/30 text-[#14a800] rounded-full text-[10px] md:text-xs font-mono font-medium">
               <iconify-icon icon="solar:medal-star-bold" width="14"></iconify-icon> Top Rated
             </span>
-            <span class="flex items-center gap-1.5 px-3 py-1 bg-white/5 border border-white/10 text-white/80 rounded-full text-[10px] md:text-xs font-mono">
-              <iconify-icon icon="solar:chart-square-bold" class="text-neonBlue" width="14"></iconify-icon> <span data-lang="en">100% Job Success</span><span data-lang="pt">100% de Sucesso</span>
+            <span
+              class="flex items-center gap-1.5 px-3 py-1 bg-white/5 border border-white/10 text-white/80 rounded-full text-[10px] md:text-xs font-mono">
+              <iconify-icon icon="solar:chart-square-bold" class="text-neonBlue" width="14"></iconify-icon> <span
+                data-lang="en">100% Job Success</span><span data-lang="pt">100% de Sucesso</span>
             </span>
-            <span class="flex items-center gap-1.5 px-3 py-1 bg-white/5 border border-white/10 text-white/80 rounded-full text-[10px] md:text-xs font-mono">
+            <span
+              class="flex items-center gap-1.5 px-3 py-1 bg-white/5 border border-white/10 text-white/80 rounded-full text-[10px] md:text-xs font-mono">
               <iconify-icon icon="solar:star-bold" class="text-yellow-400" width="14"></iconify-icon> 5 Stars
             </span>
-            <span class="flex items-center gap-1.5 px-3 py-1 bg-white/5 border border-white/10 text-white/80 rounded-full text-[10px] md:text-xs font-mono">
+            <span
+              class="flex items-center gap-1.5 px-3 py-1 bg-white/5 border border-white/10 text-white/80 rounded-full text-[10px] md:text-xs font-mono">
               <iconify-icon icon="solar:star-bold" class="text-[#14a800]" width="14"></iconify-icon> Rising Talent
             </span>
           </div>
 
-          <h3 class="text-2xl md:text-3xl text-white/70 font-light mb-10 leading-[1.3]"><span data-lang="en">AI-assisted creative production and content workflows for international clients.</span><span data-lang="pt">Produção criativa assistida por IA e workflows de conteúdo para clientes internacionais.</span></h3>
-          
+          <h3 class="text-2xl md:text-3xl text-white/70 font-light mb-10 leading-[1.3]"><span data-lang="en">AI-assisted
+              creative production and content workflows for international clients.</span><span data-lang="pt">Produção
+              criativa assistida por IA e workflows de conteúdo para clientes internacionais.</span></h3>
+
           <div class="space-y-6 text-white/50 text-base md:text-lg font-light leading-relaxed mb-10">
-            <p><span data-lang="en">Acting as a parallel innovation hub, I built an AI creative production operation from scratch that generated ~$12,000 USD in about 6 months serving companies in the US market.</span><span data-lang="pt">Atuando como um núcleo de inovação paralelo, construí do zero uma operação de produção criativa com IA que gerou ~$12.000 USD em cerca de 6 meses atendendo empresas do mercado americano.</span></p>
-            <p><span data-lang="en">During this short period, I went from experimentation to a complete AI-first production structure, integrating prompting, storytelling, automation, creative direction, editing, and scalable delivery workflows.</span><span data-lang="pt">Neste curto período, saí da experimentação rápida para uma estrutura completa de produção AI-first, integrando prompting, storytelling, automação, direção criativa, edição e workflows escaláveis de entrega.</span></p>
-            <p><span data-lang="en">Secured projects with brands like Fusion Academy, an educational group with 80 campuses in the US, and Jettly, a startup focused on private jet access.</span><span data-lang="pt">Fechei projetos com marcas como Fusion Academy, grupo educacional com 80 campus nos Estados Unidos, e Jettly, startup focada em acesso a jatos privados.</span></p>
-            <p><span data-lang="en">Directly managed global deliveries, overseeing production, quality, creative direction, iteration, and decision-making in high-speed environments with still-unstable technology.</span><span data-lang="pt">Geri diretamente entregas globais, coordenando produção, qualidade, direção criativa, iteração e tomada de decisão em ambientes de alta velocidade e tecnologia ainda instável.</span></p>
-            <p><span data-lang="en">Consolidated experience in AI applied to video, audio, image, and code, validated in market deliveries and integrated into complete commercial pipelines.</span><span data-lang="pt">Experiência consolidada em IA aplicada a vídeo, áudio, imagem e código, validada na prática e integrada a pipelines comerciais completos.</span></p>
-            <p><span data-lang="en">The experience consolidated advanced knowledge in prompt engineering applied to commercial production and building creative AI pipelines at real market scale.</span><span data-lang="pt">A experiência consolidou conhecimento avançado em engenharia de prompt aplicada à produção comercial e construção de pipelines criativos com IA em escala real de mercado.</span></p>
-            <p class="glass-panel p-8 rounded-3xl text-white/80 font-medium"><span data-lang="en">More than just producing content with AI, I built an operation capable of transforming adaptation speed, iteration, and creative direction into consistent commercial delivery.</span><span data-lang="pt">Mais do que produzir conteúdo com IA, construí uma operação capaz de transformar velocidade de adaptação, iteração e direção criativa em entrega comercial consistente.</span></p>
+            <p><span data-lang="en">Acting as a parallel innovation hub, I built an AI creative production operation
+                from scratch that generated ~$12,000 USD in about 6 months serving companies in the US
+                market.</span><span data-lang="pt">Atuando como um núcleo de inovação paralelo, construí do zero uma
+                operação de produção criativa com IA que gerou ~$12.000 USD em cerca de 6 meses atendendo empresas do
+                mercado americano.</span></p>
+            <p><span data-lang="en">During this short period, I went from experimentation to a complete AI-first
+                production structure, integrating prompting, storytelling, automation, creative direction, editing, and
+                scalable delivery workflows.</span><span data-lang="pt">Neste curto período, saí da experimentação
+                rápida para uma estrutura completa de produção AI-first, integrando prompting, storytelling, automação,
+                direção criativa, edição e workflows escaláveis de entrega.</span></p>
+            <p><span data-lang="en">Secured projects with brands like Fusion Academy, an educational group with 80
+                campuses in the US, and Jettly, a startup focused on private jet access.</span><span
+                data-lang="pt">Fechei projetos com marcas como Fusion Academy, grupo educacional com 80 campus nos
+                Estados Unidos, e Jettly, startup focada em acesso a jatos privados.</span></p>
+            <p><span data-lang="en">Directly managed global deliveries, overseeing production, quality, creative
+                direction, iteration, and decision-making in high-speed environments with still-unstable
+                technology.</span><span data-lang="pt">Geri diretamente entregas globais, coordenando produção,
+                qualidade, direção criativa, iteração e tomada de decisão em ambientes de alta velocidade e tecnologia
+                ainda instável.</span></p>
+            <p><span data-lang="en">Consolidated experience in AI applied to video, audio, image, and code, validated in
+                market deliveries and integrated into complete commercial pipelines.</span><span
+                data-lang="pt">Experiência consolidada em IA aplicada a vídeo, áudio, imagem e código, validada na
+                prática e integrada a pipelines comerciais completos.</span></p>
+            <p><span data-lang="en">The experience consolidated advanced knowledge in prompt engineering applied to
+                commercial production and building creative AI pipelines at real market scale.</span><span
+                data-lang="pt">A experiência consolidou conhecimento avançado em engenharia de prompt aplicada à
+                produção comercial e construção de pipelines criativos com IA em escala real de mercado.</span></p>
+            <p class="glass-panel p-8 rounded-3xl text-white/80 font-medium"><span data-lang="en">More than just
+                producing content with AI, I built an operation capable of transforming adaptation speed, iteration, and
+                creative direction into consistent commercial delivery.</span><span data-lang="pt">Mais do que produzir
+                conteúdo com IA, construí uma operação capaz de transformar velocidade de adaptação, iteração e direção
+                criativa em entrega comercial consistente.</span></p>
           </div>
         </div>
-        
-        <div class="glass-panel rounded-[3rem] relative overflow-hidden border border-white/5 flex flex-col animate-on-scroll" style="transition-delay: 200ms">
+
+        <div
+          class="glass-panel rounded-[3rem] relative overflow-hidden border border-white/5 flex flex-col animate-on-scroll"
+          style="transition-delay: 200ms">
           <!-- Image: scrollable on mobile so user can read the full screenshot -->
           <div class="w-full overflow-x-auto">
             <div class="min-w-full relative overflow-hidden group">
-              <div class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700 pointer-events-none"></div>
-              <div class="absolute inset-0 bg-gradient-to-t from-[#020205]/50 to-transparent z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700 pointer-events-none"></div>
-              <img src="./assets/aismart-reviews.png" class="w-full h-auto grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700" alt="AI Smart Studios Reviews" />
+              <div
+                class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700 pointer-events-none">
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#020205]/50 to-transparent z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700 pointer-events-none">
+              </div>
+              <img src="./assets/aismart-reviews.png"
+                class="w-full h-auto grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700"
+                alt="AI Smart Studios Reviews" />
             </div>
           </div>
           <div class="p-10 md:p-12 relative">
-            <div class="absolute top-0 left-0 w-64 h-64 bg-neonBlue/10 blur-[80px] rounded-full group-hover:bg-neonBlue/20 transition-all"></div>
+            <div
+              class="absolute top-0 left-0 w-64 h-64 bg-neonBlue/10 blur-[80px] rounded-full group-hover:bg-neonBlue/20 transition-all">
+            </div>
             <h4 class="text-sm font-mono text-white/40 tracking-widest uppercase mb-10 flex items-center gap-3">
               <iconify-icon icon="solar:cpu-linear" width="20"></iconify-icon>
               <span data-lang="en">Consolidated Competencies</span><span data-lang="pt">Competências Consolidadas</span>
             </h4>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-2 relative z-10">
-              <span class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/90 text-[10px] font-mono hover:bg-white/10 transition-colors leading-tight"><span data-lang="en">AI-assisted creative production</span><span data-lang="pt">Produção criativa assistida por IA</span></span>
-              <span class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/90 text-[10px] font-mono hover:bg-white/10 transition-colors leading-tight"><span data-lang="en">Scalable workflow structuring</span><span data-lang="pt">Estruturação de workflows escaláveis</span></span>
-              <span class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/90 text-[10px] font-mono hover:bg-white/10 transition-colors leading-tight"><span data-lang="en">AI Content Operations</span><span data-lang="pt">Operações de Conteúdo com IA</span></span>
-              <span class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/90 text-[10px] font-mono hover:bg-white/10 transition-colors leading-tight"><span data-lang="en">Storytelling & conversion campaigns</span><span data-lang="pt">Storytelling e campanhas orientadas à conversão</span></span>
-              <span class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/90 text-[10px] font-mono hover:bg-white/10 transition-colors leading-tight"><span data-lang="en">International client operations</span><span data-lang="pt">Operação de clientes internacionais</span></span>
-              <span class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/90 text-[10px] font-mono hover:bg-white/10 transition-colors leading-tight"><span data-lang="en">Performance & acquisition marketing</span><span data-lang="pt">Marketing de performance e aquisição</span></span>
-              <span class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/90 text-[10px] font-mono hover:bg-white/10 transition-colors leading-tight"><span data-lang="en">Creative direction & execution</span><span data-lang="pt">Direção criativa e execução operacional</span></span>
-              <span class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/90 text-[10px] font-mono hover:bg-white/10 transition-colors leading-tight"><span data-lang="en">Production management in fast environments</span><span data-lang="pt">Gestão de produção em ambientes acelerados</span></span>
+              <span
+                class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/90 text-[10px] font-mono hover:bg-white/10 transition-colors leading-tight"><span
+                  data-lang="en">AI-assisted creative production</span><span data-lang="pt">Produção criativa assistida
+                  por IA</span></span>
+              <span
+                class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/90 text-[10px] font-mono hover:bg-white/10 transition-colors leading-tight"><span
+                  data-lang="en">Scalable workflow structuring</span><span data-lang="pt">Estruturação de workflows
+                  escaláveis</span></span>
+              <span
+                class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/90 text-[10px] font-mono hover:bg-white/10 transition-colors leading-tight"><span
+                  data-lang="en">AI Content Operations</span><span data-lang="pt">Operações de Conteúdo com
+                  IA</span></span>
+              <span
+                class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/90 text-[10px] font-mono hover:bg-white/10 transition-colors leading-tight"><span
+                  data-lang="en">Storytelling & conversion campaigns</span><span data-lang="pt">Storytelling e campanhas
+                  orientadas à conversão</span></span>
+              <span
+                class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/90 text-[10px] font-mono hover:bg-white/10 transition-colors leading-tight"><span
+                  data-lang="en">International client operations</span><span data-lang="pt">Operação de clientes
+                  internacionais</span></span>
+              <span
+                class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/90 text-[10px] font-mono hover:bg-white/10 transition-colors leading-tight"><span
+                  data-lang="en">Performance & acquisition marketing</span><span data-lang="pt">Marketing de performance
+                  e aquisição</span></span>
+              <span
+                class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/90 text-[10px] font-mono hover:bg-white/10 transition-colors leading-tight"><span
+                  data-lang="en">Creative direction & execution</span><span data-lang="pt">Direção criativa e execução
+                  operacional</span></span>
+              <span
+                class="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white/90 text-[10px] font-mono hover:bg-white/10 transition-colors leading-tight"><span
+                  data-lang="en">Production management in fast environments</span><span data-lang="pt">Gestão de
+                  produção em ambientes acelerados</span></span>
             </div>
           </div>
         </div>
@@ -669,48 +1034,106 @@
 
     <!-- MICRO -->
     <div class="px-8 md:px-16 py-6 max-w-[1600px] mx-auto">
-      <p class="text-[10px] font-mono text-white/20 tracking-[0.3em] uppercase"><span data-lang="en">Execution creates leverage.</span><span data-lang="pt">Execução cria alavancagem.</span></p>
+      <p class="text-[10px] font-mono text-white/20 tracking-[0.3em] uppercase"><span data-lang="en">Execution creates
+          leverage.</span><span data-lang="pt">Execução cria alavancagem.</span></p>
     </div>
 
     <!-- SECTION 6: AGROJOB -->
     <section class="min-h-screen flex items-center px-8 md:px-16 py-24 max-w-[1600px] mx-auto border-t border-white/5">
       <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-        <div class="order-2 lg:order-1 glass-panel rounded-[3rem] relative overflow-hidden border border-white/5 flex flex-col animate-on-scroll">
+        <div
+          class="order-2 lg:order-1 glass-panel rounded-[3rem] relative overflow-hidden border border-white/5 flex flex-col animate-on-scroll">
           <div class="h-80 md:h-96 w-full relative overflow-hidden group">
-             <div class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700 pointer-events-none"></div>
-             <div class="absolute inset-0 bg-gradient-to-t from-[#020205] to-transparent z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700 pointer-events-none"></div>
-             <img src="./assets/agrojob-crowd.png" class="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" alt="Agrojob" />
+            <div
+              class="absolute inset-0 bg-neonBlue/20 mix-blend-overlay z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700 pointer-events-none">
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#020205] to-transparent z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-700 pointer-events-none">
+            </div>
+            <img src="./assets/agrojob-crowd.png"
+              class="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+              alt="Agrojob" />
           </div>
           <div class="p-10 md:p-12 relative">
-            <div class="absolute top-0 left-0 w-64 h-64 bg-neonBlue/10 blur-[80px] rounded-full group-hover:bg-neonBlue/20 transition-all"></div>
+            <div
+              class="absolute top-0 left-0 w-64 h-64 bg-neonBlue/10 blur-[80px] rounded-full group-hover:bg-neonBlue/20 transition-all">
+            </div>
             <h4 class="text-sm font-mono text-white/40 tracking-widest uppercase mb-10 flex items-center gap-3">
-            <iconify-icon icon="solar:target-linear" width="20"></iconify-icon>
-            <span data-lang="en">Coordination</span><span data-lang="pt">Coordenação</span>
-          </h4>
-          <ul class="space-y-6 text-white/80 text-base font-light">
-            <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue" width="24"></iconify-icon> <span data-lang="en">Marketing operations from scratch</span><span data-lang="pt">Operações de marketing do zero</span></li>
-            <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue" width="24"></iconify-icon> <span data-lang="en">Monday.com & CRM implementation</span><span data-lang="pt">Implementação de CRM e Monday.com</span></li>
-            <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue" width="24"></iconify-icon> <span data-lang="en">Lead capture automation</span><span data-lang="pt">Automação de captação de leads</span></li>
-            <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue" width="24"></iconify-icon> <span data-lang="en">Cross-department workflows</span><span data-lang="pt">Workflows entre setores</span></li>
-            <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue" width="24"></iconify-icon> <span data-lang="en">+12,000 leads cataloged</span><span data-lang="pt">+12.000 cadastros catalogados</span></li>
-            <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue" width="24"></iconify-icon> <span data-lang="en">Offline experiential marketing</span><span data-lang="pt">Marketing de experiência offline</span></li>
-            <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue" width="24"></iconify-icon> <span data-lang="en">High-conversion live events</span><span data-lang="pt">Eventos com alta conversão comercial</span></li>
-          </ul>
-        </div>
+              <iconify-icon icon="solar:target-linear" width="20"></iconify-icon>
+              <span data-lang="en">Coordination</span><span data-lang="pt">Coordenação</span>
+            </h4>
+            <ul class="space-y-6 text-white/80 text-base font-light">
+              <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue"
+                  width="24"></iconify-icon> <span data-lang="en">Marketing operations from scratch</span><span
+                  data-lang="pt">Operações de marketing do zero</span></li>
+              <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue"
+                  width="24"></iconify-icon> <span data-lang="en">Monday.com & CRM implementation</span><span
+                  data-lang="pt">Implementação de CRM e Monday.com</span></li>
+              <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue"
+                  width="24"></iconify-icon> <span data-lang="en">Lead capture automation</span><span
+                  data-lang="pt">Automação de captação de leads</span></li>
+              <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue"
+                  width="24"></iconify-icon> <span data-lang="en">Cross-department workflows</span><span
+                  data-lang="pt">Workflows entre setores</span></li>
+              <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue"
+                  width="24"></iconify-icon> <span data-lang="en">+12,000 leads cataloged</span><span
+                  data-lang="pt">+12.000 cadastros catalogados</span></li>
+              <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue"
+                  width="24"></iconify-icon> <span data-lang="en">Offline experiential marketing</span><span
+                  data-lang="pt">Marketing de experiência offline</span></li>
+              <li class="flex items-center gap-4"><iconify-icon icon="solar:check-circle-bold" class="text-neonBlue"
+                  width="24"></iconify-icon> <span data-lang="en">High-conversion live events</span><span
+                  data-lang="pt">Eventos com alta conversão comercial</span></li>
+            </ul>
+          </div>
         </div>
 
         <div class="order-1 lg:order-2">
-          <span class="px-3 py-1 rounded-full bg-neonBlue/10 border border-neonBlue/20 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-6 inline-block"><span data-lang="en">Case Study 04</span><span data-lang="pt">Estudo de Caso 04</span></span>
+          <span
+            class="px-3 py-1 rounded-full bg-neonBlue/10 border border-neonBlue/20 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-6 inline-block"><span
+              data-lang="en">Case Study 04</span><span data-lang="pt">Estudo de Caso 04</span></span>
           <h2 class="text-5xl md:text-6xl font-medium tracking-tight mb-4 text-glow">Agrojob</h2>
-          <h3 class="text-2xl md:text-3xl text-white/70 font-light mb-10 leading-[1.3]"><span data-lang="en">Built the startup's marketing operation from the foundation, capturing over 12,000 rural workers in under 6 months.</span><span data-lang="pt">Construí a operação de marketing da startup desde a fundação, captando mais de 12.000 trabalhadores rurais em menos de 6 meses.</span></h3>
-          
+          <h3 class="text-2xl md:text-3xl text-white/70 font-light mb-10 leading-[1.3]"><span data-lang="en">Built the
+              startup's marketing operation from the foundation, capturing over 12,000 rural workers in under 6
+              months.</span><span data-lang="pt">Construí a operação de marketing da startup desde a fundação, captando
+              mais de 12.000 trabalhadores rurais em menos de 6 meses.</span></h3>
+
           <div class="space-y-6 text-white/50 text-base md:text-lg font-light leading-relaxed">
-            <p><span data-lang="en">At Agrojob, an AgTech HR startup, I built the marketing operation from the ground up. The work started at the foundation: mapping workflows, defining where to begin, and making the machine run in a highly traditional, closed market.</span><span data-lang="pt">Na Agrojob, uma startup HR Tech do agronegócio, construí a operação de marketing do zero. O trabalho começou na base: mapear os fluxos, entender por onde começar e fazer a máquina rodar em um mercado muito fechado e tradicional.</span></p>
-            <p><span data-lang="en">Before scaling campaign spend, I organized the house. I implemented Monday.com to automate internal communication across departments and built the pipeline to send marketing leads straight into the developers' database. Focus on efficiency and eliminating rework.</span><span data-lang="pt">Antes de escalar os gastos com campanhas, eu organizei a casa. Implementei o Monday.com para automatizar a comunicação interna entre os diferentes setores da empresa e criei a ponte para que os leads do marketing caíssem direto e organizados no banco de dados dos desenvolvedores. Foco em eficiência e corte de retrabalho.</span></p>
-            <p><span data-lang="en">With the operation structured, I accelerated lead generation targeting usable volume. In less than 6 months, we captured and cataloged over <strong class="text-white">12,000 rural workers</strong>. A clean database, separated by sectors with fully updated information, ready to generate revenue.</span><span data-lang="pt">Com a operação estruturada, acelerei a captação buscando volume útil. Em menos de 6 meses, captamos e catalogamos mais de <strong class="text-white">12.000 trabalhadores rurais</strong>. Uma base limpa, separada por setores de atuação e com dados 100% atualizados, pronta para gerar faturamento.</span></p>
-            <p class="text-white/90 font-medium pl-6 border-l-2 border-neonBlue/30"><span data-lang="en">A clear example of this raw execution happened at a major agricultural fair.</span><span data-lang="pt">Um exemplo dessa execução nua e crua aconteceu em uma grande feira agrícola.</span></p>
-            <p><span data-lang="en">Our neighboring booth was flying a massive agricultural drone. To steal the attention without blowing the budget, we set up virtual flight simulators. While visitors spent 10 minutes focused on the game, my team conducted deep commercial qualification of the contact.</span><span data-lang="pt">Nosso estande vizinho exibia um drone gigante decolando. Para roubar a atenção sem estourar o orçamento, montamos simuladores de voo virtuais. Enquanto o visitante passava 10 minutos focado no jogo, minha equipe fazia a qualificação comercial profunda do contato.</span></p>
-            <p><span data-lang="en">We became the fair's biggest attraction. We generated a massive volume of offline clients that fed our database on the spot. No magic formulas or trendy buzzwords, just strategy and execution that cut costs and drive real net profit.</span><span data-lang="pt">O estande virou a maior atração da feira. Geramos um volume massivo de clientes no offline alimentando nossa base na mesma hora. Sem fórmulas mágicas ou jargões da moda, apenas estratégia e execução que reduzem custos e trazem lucro real para a operação.</span></p>
+            <p><span data-lang="en">At Agrojob, an AgTech HR startup, I built the marketing operation from the ground
+                up. The work started at the foundation: mapping workflows, defining where to begin, and making the
+                machine run in a highly traditional, closed market.</span><span data-lang="pt">Na Agrojob, uma startup
+                HR Tech do agronegócio, construí a operação de marketing do zero. O trabalho começou na base: mapear os
+                fluxos, entender por onde começar e fazer a máquina rodar em um mercado muito fechado e
+                tradicional.</span></p>
+            <p><span data-lang="en">Before scaling campaign spend, I organized the house. I implemented Monday.com to
+                automate internal communication across departments and built the pipeline to send marketing leads
+                straight into the developers' database. Focus on efficiency and eliminating rework.</span><span
+                data-lang="pt">Antes de escalar os gastos com campanhas, eu organizei a casa. Implementei o Monday.com
+                para automatizar a comunicação interna entre os diferentes setores da empresa e criei a ponte para que
+                os leads do marketing caíssem direto e organizados no banco de dados dos desenvolvedores. Foco em
+                eficiência e corte de retrabalho.</span></p>
+            <p><span data-lang="en">With the operation structured, I accelerated lead generation targeting usable
+                volume. In less than 6 months, we captured and cataloged over <strong class="text-white">12,000 rural
+                  workers</strong>. A clean database, separated by sectors with fully updated information, ready to
+                generate revenue.</span><span data-lang="pt">Com a operação estruturada, acelerei a captação buscando
+                volume útil. Em menos de 6 meses, captamos e catalogamos mais de <strong class="text-white">12.000
+                  trabalhadores rurais</strong>. Uma base limpa, separada por setores de atuação e com dados 100%
+                atualizados, pronta para gerar faturamento.</span></p>
+            <p class="text-white/90 font-medium pl-6 border-l-2 border-neonBlue/30"><span data-lang="en">A clear example
+                of this raw execution happened at a major agricultural fair.</span><span data-lang="pt">Um exemplo dessa
+                execução nua e crua aconteceu em uma grande feira agrícola.</span></p>
+            <p><span data-lang="en">Our neighboring booth was flying a massive agricultural drone. To steal the
+                attention without blowing the budget, we set up virtual flight simulators. While visitors spent 10
+                minutes focused on the game, my team conducted deep commercial qualification of the contact.</span><span
+                data-lang="pt">Nosso estande vizinho exibia um drone gigante decolando. Para roubar a atenção sem
+                estourar o orçamento, montamos simuladores de voo virtuais. Enquanto o visitante passava 10 minutos
+                focado no jogo, minha equipe fazia a qualificação comercial profunda do contato.</span></p>
+            <p><span data-lang="en">We became the fair's biggest attraction. We generated a massive volume of offline
+                clients that fed our database on the spot. No magic formulas or trendy buzzwords, just strategy and
+                execution that cut costs and drive real net profit.</span><span data-lang="pt">O estande virou a maior
+                atração da feira. Geramos um volume massivo de clientes no offline alimentando nossa base na mesma hora.
+                Sem fórmulas mágicas ou jargões da moda, apenas estratégia e execução que reduzem custos e trazem lucro
+                real para a operação.</span></p>
           </div>
         </div>
       </div>
@@ -718,20 +1141,30 @@
 
     <!-- MICRO -->
     <div class="px-8 md:px-16 py-6 max-w-[1600px] mx-auto">
-      <p class="text-[10px] font-mono text-white/20 tracking-[0.3em] uppercase"><span data-lang="en">I adapt fast because markets change fast.</span><span data-lang="pt">Me adapto rápido porque mercados mudam rápido.</span></p>
+      <p class="text-[10px] font-mono text-white/20 tracking-[0.3em] uppercase"><span data-lang="en">I adapt fast
+          because markets change fast.</span><span data-lang="pt">Me adapto rápido porque mercados mudam rápido.</span>
+      </p>
     </div>
 
     <!-- BUILT FOR MOMENTUM -->
     <section class="px-8 md:px-16 py-32 max-w-[1600px] mx-auto border-t border-white/5 relative overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-br from-neonBlue/5 via-transparent to-transparent pointer-events-none"></div>
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-neonBlue/5 blur-[180px] rounded-full pointer-events-none"></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-neonBlue/5 via-transparent to-transparent pointer-events-none">
+      </div>
+      <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-neonBlue/5 blur-[180px] rounded-full pointer-events-none">
+      </div>
       <div class="max-w-4xl mx-auto relative z-10">
-        <span class="px-3 py-1 rounded-full bg-neonBlue/10 border border-neonBlue/20 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-16 inline-block"><span data-lang="en">Operational profile.</span><span data-lang="pt">Perfil operacional.</span></span>
+        <span
+          class="px-3 py-1 rounded-full bg-neonBlue/10 border border-neonBlue/20 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-16 inline-block"><span
+            data-lang="en">Operational profile.</span><span data-lang="pt">Perfil operacional.</span></span>
 
         <div class="space-y-10">
           <p class="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight leading-[1.1] text-white text-glow">
-            <span data-lang="en">Execution-driven.<br/><span class="text-white/40">I turn strategy into commercial routine.</span></span>
-            <span data-lang="pt">Orientado à execução.<br/><span class="text-white/40">Transformo estratégia em rotina comercial.</span></span>
+            <span data-lang="en">Execution-driven.<br /><span class="text-white/40">I turn strategy into commercial
+                routine.</span></span>
+            <span data-lang="pt">Orientado à execução.<br /><span class="text-white/40">Transformo estratégia em rotina
+                comercial.</span></span>
           </p>
 
           <div class="w-16 h-px bg-neonBlue/40"></div>
@@ -742,8 +1175,12 @@
               <span data-lang="pt">Me adapto rápido e mantenho a operação rodando sob alta pressão.</span>
             </p>
             <p>
-              <span data-lang="en">I don't just stay in the realm of ideas. I operate at the exact intersection between strategy and high-speed execution. <span class="text-white font-medium">Give me context, clear goals, and room to execute.</span></span>
-              <span data-lang="pt">Não fico apenas no campo das ideias. Opero na exata intersecção entre estratégia e execução em alta velocidade. <span class="text-white font-medium">Me dê contexto, objetivos claros e espaço para executar.</span></span>
+              <span data-lang="en">I don't just stay in the realm of ideas. I operate at the exact intersection between
+                strategy and high-speed execution. <span class="text-white font-medium">Give me context, clear goals,
+                  and room to execute.</span></span>
+              <span data-lang="pt">Não fico apenas no campo das ideias. Opero na exata intersecção entre estratégia e
+                execução em alta velocidade. <span class="text-white font-medium">Me dê contexto, objetivos claros e
+                  espaço para executar.</span></span>
             </p>
           </div>
         </div>
@@ -752,47 +1189,89 @@
 
     <!-- MICRO -->
     <div class="px-8 md:px-16 py-6 max-w-[1600px] mx-auto">
-      <p class="text-[10px] font-mono text-white/20 tracking-[0.3em] uppercase"><span data-lang="en">Momentum solves problems.</span><span data-lang="pt">Momentum resolve problemas.</span></p>
+      <p class="text-[10px] font-mono text-white/20 tracking-[0.3em] uppercase"><span data-lang="en">Momentum solves
+          problems.</span><span data-lang="pt">Momentum resolve problemas.</span></p>
     </div>
 
     <!-- FINAL SECTION: PHILOSOPHY & SKILLS -->
-    <section id="philosophy" class="min-h-screen flex flex-col justify-center px-8 md:px-16 py-24 max-w-[1600px] mx-auto border-t border-white/5 relative">
+    <section id="philosophy"
+      class="min-h-screen flex flex-col justify-center px-8 md:px-16 py-24 max-w-[1600px] mx-auto border-t border-white/5 relative">
       <div class="absolute inset-0 bg-gradient-to-t from-neonBlue/5 to-transparent pointer-events-none"></div>
       <div class="max-w-5xl mx-auto text-center z-10">
-        <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-8 inline-block animate-on-scroll"><span data-lang="en">Philosophy</span><span data-lang="pt">Filosofia</span></span>
-        <h2 class="text-5xl md:text-7xl font-medium tracking-tight text-glow mb-12 leading-[1.1] animate-on-scroll" style="transition-delay: 100ms">
-          <span data-lang="en">Strategy only matters<br/><span class="text-white/50">when execution follows.</span></span>
-          <span data-lang="pt">Estratégia só tem valor<br/><span class="text-white/50">quando a execução acontece.</span></span>
+        <span
+          class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neonBlue text-[10px] font-mono tracking-widest uppercase mb-8 inline-block animate-on-scroll"><span
+            data-lang="en">Philosophy</span><span data-lang="pt">Filosofia</span></span>
+        <h2 class="text-5xl md:text-7xl font-medium tracking-tight text-glow mb-12 leading-[1.1] animate-on-scroll"
+          style="transition-delay: 100ms">
+          <span data-lang="en">Strategy only matters<br /><span class="text-white/50">when execution
+              follows.</span></span>
+          <span data-lang="pt">Estratégia só tem valor<br /><span class="text-white/50">quando a execução
+              acontece.</span></span>
         </h2>
-        
-        <p class="text-xl md:text-3xl text-white/70 font-light mb-20 leading-relaxed max-w-4xl mx-auto animate-on-scroll" style="transition-delay: 200ms">
-          <span data-lang="en">Strong businesses connect strategy, operations and execution.<br/><br/><span class="text-white font-medium">That's the kind of work I do.</span></span>
-          <span data-lang="pt">Negócios fortes conectam estratégia, operações e execução.<br/><br/><span class="text-white font-medium">Esse é o tipo de trabalho que eu faço.</span></span>
+
+        <p class="text-xl md:text-3xl text-white/70 font-light mb-20 leading-relaxed max-w-4xl mx-auto animate-on-scroll"
+          style="transition-delay: 200ms">
+          <span data-lang="en">Strong businesses connect strategy, operations and execution.<br /><br /><span
+              class="text-white font-medium">That's the kind of work I do.</span></span>
+          <span data-lang="pt">Negócios fortes conectam estratégia, operações e execução.<br /><br /><span
+              class="text-white font-medium">Esse é o tipo de trabalho que eu faço.</span></span>
         </p>
 
         <div class="glass-panel p-12 md:p-16 rounded-[3rem] text-left relative overflow-hidden">
-          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-neonBlue/5 blur-[120px] rounded-full pointer-events-none"></div>
-          <h4 class="text-sm font-mono text-white/40 tracking-widest uppercase mb-12 text-center"><span data-lang="en">Core Competencies</span><span data-lang="pt">Competências Principais</span></h4>
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-neonBlue/5 blur-[120px] rounded-full pointer-events-none">
+          </div>
+          <h4 class="text-sm font-mono text-white/40 tracking-widest uppercase mb-12 text-center"><span
+              data-lang="en">Core Competencies</span><span data-lang="pt">Competências Principais</span></h4>
           <div class="flex flex-wrap justify-center gap-4 relative z-10">
-            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Brand Strategy</span><span data-lang="pt">Estratégia de Marca</span></span>
-            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Growth Strategy</span><span data-lang="pt">Estratégia de Growth</span></span>
-            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Commercial Performance</span><span data-lang="pt">Performance Comercial</span></span>
-            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Revenue Operations</span><span data-lang="pt">Operações de Receita</span></span>
-            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Behavioral Marketing</span><span data-lang="pt">Marketing Comportamental</span></span>
-            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Customer Acquisition</span><span data-lang="pt">Aquisição de Clientes</span></span>
-            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Product Positioning</span><span data-lang="pt">Posicionamento de Produto</span></span>
-            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Storytelling</span><span data-lang="pt">Storytelling</span></span>
-            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">AI Workflows</span><span data-lang="pt">Workflows com IA</span></span>
-            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Audience Perception</span><span data-lang="pt">Percepção de Público</span></span>
-            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">AI Content Operations</span><span data-lang="pt">Operações de Conteúdo com IA</span></span>
-            <span class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span data-lang="en">Paid Media</span><span data-lang="pt">Mídia Paga</span></span>
+            <span
+              class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span
+                data-lang="en">Brand Strategy</span><span data-lang="pt">Estratégia de Marca</span></span>
+            <span
+              class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span
+                data-lang="en">Growth Strategy</span><span data-lang="pt">Estratégia de Growth</span></span>
+            <span
+              class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span
+                data-lang="en">Commercial Performance</span><span data-lang="pt">Performance Comercial</span></span>
+            <span
+              class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span
+                data-lang="en">Revenue Operations</span><span data-lang="pt">Operações de Receita</span></span>
+            <span
+              class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span
+                data-lang="en">Behavioral Marketing</span><span data-lang="pt">Marketing Comportamental</span></span>
+            <span
+              class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span
+                data-lang="en">Customer Acquisition</span><span data-lang="pt">Aquisição de Clientes</span></span>
+            <span
+              class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span
+                data-lang="en">Product Positioning</span><span data-lang="pt">Posicionamento de Produto</span></span>
+            <span
+              class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span
+                data-lang="en">Storytelling</span><span data-lang="pt">Storytelling</span></span>
+            <span
+              class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span
+                data-lang="en">AI Workflows</span><span data-lang="pt">Workflows com IA</span></span>
+            <span
+              class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span
+                data-lang="en">Audience Perception</span><span data-lang="pt">Percepção de Público</span></span>
+            <span
+              class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span
+                data-lang="en">AI Content Operations</span><span data-lang="pt">Operações de Conteúdo com
+                IA</span></span>
+            <span
+              class="px-6 py-4 rounded-[1.5rem] bg-white/5 border border-white/10 text-white text-base hover:bg-white/10 hover:border-neonBlue/50 transition-all cursor-default"><span
+                data-lang="en">Paid Media</span><span data-lang="pt">Mídia Paga</span></span>
           </div>
         </div>
-        
+
         <div class="mt-24 pb-12 flex flex-col items-center gap-4">
-          <a href="https://wa.me/5561994568187" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden inline-flex items-center gap-4 px-10 py-5 rounded-full bg-neonBlue text-white text-lg font-medium hover:bg-neonBlue/80 hover:scale-105 transition-all shadow-[0_0_40px_rgba(14,165,233,0.4)]">
-            <div class="absolute inset-0 pointer-events-none rounded-full overflow-hidden" style="padding: 2px; -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude;">
-              <div class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] opacity-50 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <a href="https://wa.me/5561994568187" target="_blank" rel="noopener noreferrer"
+            class="group relative overflow-hidden inline-flex items-center gap-4 px-10 py-5 rounded-full bg-neonBlue text-white text-lg font-medium hover:bg-neonBlue/80 hover:scale-105 transition-all shadow-[0_0_40px_rgba(14,165,233,0.4)]">
+            <div class="absolute inset-0 pointer-events-none rounded-full overflow-hidden"
+              style="padding: 2px; -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude;">
+              <div
+                class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] opacity-50 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
             </div>
             <iconify-icon icon="ic:baseline-whatsapp" width="24" class="relative z-10"></iconify-icon>
             <span class="relative z-10" data-lang="en">Start a conversation</span>
@@ -819,7 +1298,7 @@
       const mobileLabel = document.getElementById('lang-mobile-label');
       const enLabel = document.getElementById('lang-en-label');
       const ptLabel = document.getElementById('lang-pt-label');
-      
+
       if (isPt) {
         if (knob) knob.style.transform = 'translateX(16px)';
         if (mobileLabel) mobileLabel.textContent = 'PT';
@@ -874,10 +1353,10 @@
     }
 
     // Close mobile menu when clicking outside
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
       const menu = document.getElementById('mobile-menu');
       const btn = document.getElementById('mobile-menu-btn');
-      
+
       if (!menu.classList.contains('hidden') && !menu.contains(event.target) && !btn.contains(event.target)) {
         closeMobileMenu();
       }
@@ -888,7 +1367,7 @@
       rootMargin: '0px 0px -50px 0px',
       threshold: 0.1
     };
-    
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -904,4 +1383,5 @@
     });
   </script>
 </body>
+
 </html>
