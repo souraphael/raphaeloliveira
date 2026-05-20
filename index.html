@@ -24,16 +24,14 @@
 
   <script>
     (function () {
-      const savedLang = localStorage.getItem('preferredLang');
+      const savedLang = localStorage.getItem('manualLang');
       const browserLang = navigator.language || navigator.userLanguage;
       if (savedLang) {
         document.documentElement.lang = savedLang;
       } else if (browserLang.toLowerCase().startsWith('pt')) {
         document.documentElement.lang = 'pt';
-        localStorage.setItem('preferredLang', 'pt');
       } else {
         document.documentElement.lang = 'en';
-        localStorage.setItem('preferredLang', 'en');
       }
     })();
   </script>
@@ -1303,7 +1301,7 @@
       const isPt = document.documentElement.lang === 'pt';
       if (!isPt) {
         document.documentElement.lang = 'pt';
-        localStorage.setItem('preferredLang', 'pt');
+        localStorage.setItem('manualLang', 'pt');
         if (knob) knob.style.transform = 'translateX(16px)';
         if (mobileLabel) mobileLabel.textContent = 'PT';
         const enLabel = document.getElementById('lang-en-label');
@@ -1312,7 +1310,7 @@
         if (ptLabel) ptLabel.classList.replace('text-white/40', 'text-white');
       } else {
         document.documentElement.lang = 'en';
-        localStorage.setItem('preferredLang', 'en');
+        localStorage.setItem('manualLang', 'en');
         if (knob) knob.style.transform = 'translateX(0)';
         if (mobileLabel) mobileLabel.textContent = 'EN';
         const enLabel = document.getElementById('lang-en-label');
