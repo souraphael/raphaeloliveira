@@ -65,7 +65,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  scrollbar-gutter: stable both-edges;
+  scrollbar-gutter: stable;
 }
 
 /* Base custom selection */
@@ -81,6 +81,7 @@ html[lang="en"] [data-lang="pt"] {
 html[lang="pt"] [data-lang="en"] {
   display: none !important;
 }
+
 /* Scroll Animations */
 .animate-on-scroll {
   opacity: 0;
