@@ -1,26 +1,52 @@
 # Allow all web search engines and specifically Generative AI Crawlers
+
 User-agent: *
 Allow: /
 
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
+# ─── Anthropic / Claude (3 crawlers obrigatorio separar cada um) ───
+# ClaudeBot: coleta dados para treino de modelos
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: Claude-Web
+# Claude-User: busca páginas em tempo real para respostas ao usuário
+User-agent: Claude-User
 Allow: /
 
+# Claude-SearchBot: indexa conteúdo para relevância de busca (NOVO - substitui Claude-Web)
+User-agent: Claude-SearchBot
+Allow: /
+
+# ─── OpenAI / ChatGPT (3 crawlers) ───
+# GPTBot: coleta dados para treino dos modelos OpenAI
+User-agent: GPTBot
+Allow: /
+
+# OAI-SearchBot: indexa conteúdo para o ChatGPT Search
+User-agent: OAI-SearchBot
+Allow: /
+
+# ChatGPT-User: navegação sob demanda do usuário
+User-agent: ChatGPT-User
+Allow: /
+
+# ─── Google ───
+User-agent: Googlebot
+Allow: /
+
+# Google-Extended: usado para AI Overviews / Gemini
 User-agent: Google-Extended
 Allow: /
 
+# ─── Perplexity ───
+User-agent: PerplexityBot
+Allow: /
+
+# ─── Apple ───
 User-agent: Applebot-Extended
 Allow: /
 
-User-agent: PerplexityBot
+# ─── Meta ───
+User-agent: FacebookBot
 Allow: /
 
 Sitemap: https://souraphael.vercel.app/sitemap.xml
